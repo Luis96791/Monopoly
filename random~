@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
+
+void tirarDados(){
+    int num1,num2;
+    srand(time(NULL));
+    for(int c =1;c<=6;c++){
+        num1 = 1 +rand()%(7-1);
+    }
+    cout<<num1<<" ";
+
+    for(int h =1;h<=6;h++){
+        num2 = 1 +rand()%(7-1);
+    }
+    cout<<num2;
+}
+
+int main(){
+
+    tirarDados();
+    return 0;
+}
