@@ -30,7 +30,17 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="C:/SFML-2.1/include" />
 		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="C:/SFML-2.1/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="utility.cpp" />
+		<Unit filename="utility.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
