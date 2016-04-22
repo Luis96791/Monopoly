@@ -33,4 +33,3 @@ int Utility::dadoDos(){
     }
     return num2;
 }
-

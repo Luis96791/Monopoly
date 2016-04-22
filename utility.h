@@ -8,9 +8,9 @@ using namespace std;
 class Utility
 {
     public:
-    string toString(int number);
-    int dadoUno();
-    int dadoDos();
+        string toString(int number);
+        int dadoUno();
+        int dadoDos();
 };
 
 #endif // UTILITY_H

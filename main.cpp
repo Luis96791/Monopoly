@@ -9,14 +9,18 @@ int main()
     Utility utils;
 
     sf::RenderWindow window;
-    sf::Texture text_dado1,text_dado2;
-    sf::Sprite back_dado1,back_dado2;
+    sf::Texture text_dado1,text_dado2,text_tablero;
+    sf::Sprite back_dado1,back_dado2,back_tablero;
 
-    window.create(sf::VideoMode(840,620,32),"Monopoly",sf::Style::Close);
+    window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Close);
     window.setVerticalSyncEnabled(true);
 
-    back_dado1.setPosition(0,0);
-    back_dado2.setPosition(150,0);
+    text_tablero.loadFromFile("tablero.png");
+    back_tablero.setTexture(text_tablero);
+
+    back_tablero.setPosition(0,0);
+    back_dado1.setPosition(300,200);
+    back_dado2.setPosition(500,200);
 
     while (window.isOpen())
     {
@@ -34,12 +38,11 @@ int main()
                 back_dado2.setTexture(text_dado2);
             }
         }
+        window.draw(back_tablero);
         window.draw(back_dado1);
         window.draw(back_dado2);
 
         window.display();
     }
-
-
     return 0;
 }
