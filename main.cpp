@@ -1,19 +1,28 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include "utility.h"
 
-using namespace std;
 
 int main()
 {
     Utility utils;
 
     sf::RenderWindow window;
-    sf::Texture text_dado1,text_dado2,text_tablero;
-    sf::Sprite back_dado1,back_dado2,back_tablero;
+    sf::Texture text_dado1,text_dado2,text_tablero, text_name;
+    sf::Sprite back_dado1,back_dado2,back_tablero, back_name;
+//    sf::Font name;
+//    sf::Text texto_name;
+//    string nombre;
 
     window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Close);
     window.setVerticalSyncEnabled(true);
+
+//    if(!name.loadFromFile("arial.ttf")){
+//
+//    }
+
+//    texto_name.setFont(name);
+//    texto_name.setColor(sf::Color::Green);
+//    texto_name.setPosition(20,0);
 
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
@@ -38,6 +47,10 @@ int main()
                 back_dado2.setTexture(text_dado2);
             }
         }
+
+//        texto_name.setString(cin>>nombre);
+
+//        window.draw(texto_name);
         window.draw(back_tablero);
         window.draw(back_dado1);
         window.draw(back_dado2);
