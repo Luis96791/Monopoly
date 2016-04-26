@@ -1,0 +1,26 @@
+sf::String userInput;
+
+//dentro del loop principal
+if(event.type==sf::Event::TextEntered)
+{
+	userInput.insert(userInput.getSize(),event.text.unicode);
+        pos_text_x.setString(userInput);
+}
+//pos_text_x previamente declarada
+//despues pos_text_x se manda al draw
+
+
+//----------------Esto es para hacer clic en una Sprite---------------
+
+sf::RenderWindow window5;
+bool clickSprite(sf::Sprite a){
+    sf::Vector2f mouse = window5.mapPixelToCoords(sf::Mouse::getPosition(window5));
+    sf::FloatRect bounds = a.getGlobalBounds();
+
+    if(bounds.contains(mouse)){
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+            return true;
+        }
+    }
+    return false;
+}
