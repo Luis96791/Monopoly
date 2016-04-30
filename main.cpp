@@ -10,25 +10,35 @@ int main()
     Utility utils;
 
     sf::RenderWindow window;
-    sf::Texture text_dado1,text_dado2,text_tablero, text_name;
-    sf::Sprite back_dado1,back_dado2,back_tablero, back_name;
+    sf::Texture text_dado1,text_dado2,text_tablero, text_name,text_arca, text_fortuna,text_carta_arca/*,text1*/;
+    sf::Sprite back_dado1,back_dado2,back_tablero, back_name, back_arca, back_fortuna,back_carta_arca,back1;
     sf::Font name;
     sf::Text texto_name;
     string nombre = "Luis";
 
-    window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Close);
+    window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Default);
     window.setVerticalSyncEnabled(true);
 
-    if(!name.loadFromFile("arial.ttf")){
-
-    }
+    if(!name.loadFromFile("arial.ttf")){}
 
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
+    text_arca.loadFromFile("mazo_arca.png");
+    back_arca.setTexture(text_arca);
+    text_fortuna.loadFromFile("mazo_fortuna.png");
+    back_fortuna.setTexture(text_fortuna);
+    text_carta_arca.loadFromFile("arca_comunal/1.png");
+    back_carta_arca.setTexture(text_carta_arca);
+//    text1.loadFromFile("arca_comunal/2.png");
+//    back1.setTexture(text1);
 
     back_tablero.setPosition(0,0);
-    back_dado1.setPosition(300,200);
-    back_dado2.setPosition(500,200);
+    back_dado1.setPosition(1140,580);
+    back_dado2.setPosition(1250,580);
+    back_arca.setPosition(115,115);
+    back_fortuna.setPosition(460,400);
+    back_carta_arca.setPosition(700,10);
+//    back1.setPosition(900,10);
 
     texto_name.setFont(name);
     texto_name.setCharacterSize(72);
@@ -57,7 +67,11 @@ int main()
         window.draw(back_tablero);
         window.draw(back_dado1);
         window.draw(back_dado2);
+        window.draw(back_arca);
+        window.draw(back_fortuna);
         window.draw(texto_name);
+        window.draw(back_carta_arca);
+//        window.draw(back1);
 
         window.display();
     }
