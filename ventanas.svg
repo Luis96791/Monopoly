@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ventanas.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.50933034"
+     inkscape:cx="9.8068956"
+     inkscape:cy="212.04313"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3380"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3364"
+       transform="matrix(1.0919134,0,0,1.3753493,-19.526175,156.70933)"
+       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g3380"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+           id="rect3336"
+           width="594.15479"
+           height="471.4761"
+           x="64.351158"
+           y="250.99907" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot3338"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(1,0,0,1.3226213,-7.1428568,-63.133889)"><flowRegion
+             id="flowRegion3340"><rect
+               id="rect3342"
+               width="222.85715"
+               height="68.571426"
+               x="107.14286"
+               y="298.07648"
+               style="fill:#ffffff" /></flowRegion><flowPara
+             id="flowPara3344">Nombre: </flowPara></flowRoot>        <flowRoot
+           xml:space="preserve"
+           id="flowRoot3346"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(0.78501569,0,0,1,40.345534,-18)"><flowRegion
+             id="flowRegion3348"><rect
+               id="rect3350"
+               width="549.75513"
+               height="58.571442"
+               x="140"
+               y="278.07648"
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9" /></flowRegion><flowPara
+             id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>        <rect
+           style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.48425117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+           id="rect3354"
+           width="220.5387"
+           height="118.23917"
+           x="78.311775"
+           y="454.8934" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot3356"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(0.55699835,0,0,0.67410327,39.909507,143.97146)"><flowRegion
+             id="flowRegion3358"><rect
+               id="rect3360"
+               width="531.34027"
+               height="60.609158"
+               x="101.01525"
+               y="399.80365"
+               style="fill:#ffffff" /></flowRegion><flowPara
+             id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>      </g>
+    </g>
+  </g>
+</svg>
