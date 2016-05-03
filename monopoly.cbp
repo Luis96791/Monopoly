@@ -41,6 +41,8 @@
 			<Add directory="C:/SFML-2.1/lib" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/lib" />
 		</Linker>
+		<Unit filename="Banco.cpp" />
+		<Unit filename="Banco.h" />
 		<Unit filename="CrearJugador.cpp" />
 		<Unit filename="CrearJugador.h" />
 		<Unit filename="main.cpp" />
