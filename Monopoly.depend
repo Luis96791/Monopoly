@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1462224654 source:c:\users\luis\desktop\monopoly\main.cpp
+1462245395 source:c:\users\luis\desktop\monopoly\main.cpp
 	<SFML/Graphics.hpp>
 	"utility.h"
 	"CrearJugador.h"
@@ -752,10 +752,10 @@
 
 1462205644 c:\users\user\desktop\monopoly\banco.h
 
-1462232459 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
+1462246127 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
-1462226837 c:\users\luis\desktop\monopoly\crearjugador.h
+1462244982 c:\users\luis\desktop\monopoly\crearjugador.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<fstream>

@@ -13,10 +13,10 @@ class CrearJugador
 {
     public:
         Utility utility;
-        string nombre;
+        string nombre,color;
         int capital;
-        CrearJugador(string n);
-        void nuevoJugador(string n);
+        CrearJugador(string n,string c);
+        void nuevoJugador(string n,string c);
         vector <CrearJugador>jugadores_ingresados;
         void ventanaCrearJugador();
         void removerJugadores();

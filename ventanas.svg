@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.50933034"
-     inkscape:cx="9.8068956"
-     inkscape:cy="212.04313"
+     inkscape:cx="287.91104"
+     inkscape:cy="57.632168"
      inkscape:document-units="px"
-     inkscape:current-layer="g3380"
+     inkscape:current-layer="g3396"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -63,57 +63,120 @@
          inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90">
-        <rect
-           style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
-           id="rect3336"
-           width="594.15479"
-           height="471.4761"
-           x="64.351158"
-           y="250.99907" />
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3338"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           transform="matrix(1,0,0,1.3226213,-7.1428568,-63.133889)"><flowRegion
-             id="flowRegion3340"><rect
-               id="rect3342"
-               width="222.85715"
-               height="68.571426"
-               x="107.14286"
-               y="298.07648"
-               style="fill:#ffffff" /></flowRegion><flowPara
-             id="flowPara3344">Nombre: </flowPara></flowRoot>        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3346"
-           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           transform="matrix(0.78501569,0,0,1,40.345534,-18)"><flowRegion
-             id="flowRegion3348"><rect
-               id="rect3350"
-               width="549.75513"
-               height="58.571442"
-               x="140"
-               y="278.07648"
-               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9" /></flowRegion><flowPara
-             id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>        <rect
-           style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.48425117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
-           id="rect3354"
-           width="220.5387"
-           height="118.23917"
-           x="78.311775"
-           y="454.8934" />
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3356"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           transform="matrix(0.55699835,0,0,0.67410327,39.909507,143.97146)"><flowRegion
-             id="flowRegion3358"><rect
-               id="rect3360"
-               width="531.34027"
-               height="60.609158"
-               x="101.01525"
-               y="399.80365"
-               style="fill:#ffffff" /></flowRegion><flowPara
-             id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>      </g>
+        <g
+           id="g3396"
+           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90">
+          <g
+             id="g3412"
+             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90"
+             transform="translate(0.00975616,0.00847285)">
+            <rect
+               style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="rect3336"
+               width="594.15479"
+               height="471.4761"
+               x="64.351158"
+               y="250.99907" />
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot3338"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               transform="matrix(1,0,0,1.3226213,-7.1428568,-63.133889)"><flowRegion
+                 id="flowRegion3340"><rect
+                   id="rect3342"
+                   width="222.85715"
+                   height="68.571426"
+                   x="107.14286"
+                   y="298.07648"
+                   style="fill:#ffffff" /></flowRegion><flowPara
+                 id="flowPara3344">Nombre: </flowPara></flowRoot>            <flowRoot
+               xml:space="preserve"
+               id="flowRoot3346"
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               transform="matrix(0.78501569,0,0,1,40.345534,-18)"><flowRegion
+                 id="flowRegion3348"><rect
+                   id="rect3350"
+                   width="549.75513"
+                   height="58.571442"
+                   x="140"
+                   y="278.07648"
+                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9" /></flowRegion><flowPara
+                 id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>            <rect
+               style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.48425117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="rect3354"
+               width="220.5387"
+               height="118.23917"
+               x="100.29157"
+               y="454.8934"
+               inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+               inkscape:export-xdpi="90"
+               inkscape:export-ydpi="90" />
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot3356"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               transform="matrix(0.55699835,0,0,0.67410327,39.909507,143.97146)"><flowRegion
+                 id="flowRegion3358"><rect
+                   id="rect3360"
+                   width="531.34027"
+                   height="60.609158"
+                   x="101.01525"
+                   y="399.80365"
+                   style="fill:#ffffff" /></flowRegion><flowPara
+                 id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>          </g>
+          <rect
+             style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.13979363;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+             id="rect3428"
+             width="64.107651"
+             height="50.89616"
+             x="-327.4205"
+             y="536.25256"
+             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\enabled.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" />
+          <g
+             id="g4283"
+             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\nuevo_jugador.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90">
+            <rect
+               ry="30.863487"
+               y="808.43298"
+               x="367.6514"
+               height="61.726974"
+               width="192.31662"
+               id="rect4232-5"
+               style="opacity:0.98999999;fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+            <rect
+               ry="29.884033"
+               y="809.27777"
+               x="369.84937"
+               height="59.768066"
+               width="188.1709"
+               id="rect4232"
+               style="opacity:0.98999999;fill:#000080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+            <flowRoot
+               transform="matrix(0.73383711,0,0,0.42472593,40.539988,386.63959)"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               id="flowRoot4271"
+               xml:space="preserve"><flowRegion
+                 id="flowRegion4273"><rect
+                   style="text-align:center;text-anchor:middle;fill:#ffffff"
+                   y="1008.1865"
+                   x="478.07874"
+                   height="170.91292"
+                   width="192.13454"
+                   id="rect4275" /></flowRegion><flowPara
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+                 id="flowPara4277">Nuevo </flowPara><flowPara
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+                 id="flowPara4281">Jugador</flowPara></flowRoot>          </g>
+        </g>
+      </g>
     </g>
   </g>
 </svg>

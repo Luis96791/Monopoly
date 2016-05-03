@@ -1,16 +1,15 @@
 #include "CrearJugador.h"
 
-CrearJugador::CrearJugador(string n)
+CrearJugador::CrearJugador(string n,string c)
 {
     nombre = n;
+    color = c;
     capital = 1500;
+    vector<string>titulos_de_propiedad;
 }
 
-void CrearJugador::nuevoJugador(string n){
-    jugadores_ingresados.push_back(CrearJugador(n));
-    string extension = "titulos_de_propiedad/"+n+".txt";
-    jugadores_ingresados.push_back(n);
-    ofstream out(extension.c_str());
+void CrearJugador::nuevoJugador(string n,string color){
+    jugadores_ingresados.push_back(CrearJugador(n,color));
 }
 
 
@@ -18,14 +17,16 @@ void CrearJugador::nuevoJugador(string n){
 void CrearJugador::ventanaCrearJugador(){
     sf::RenderWindow window;
     sf::Texture text_registrar,text_ficha_amarilla,text_ficha_azul,text_ficha_blanca,
-    text_ficha_naranja,text_ficha_roja,text_ficha_verde;
+                text_ficha_naranja,text_ficha_roja,text_ficha_verde, text_nuevo_jugador;
     sf::Sprite back_registrar,back_ficha_amarilla,back_ficha_azul,back_ficha_blanca,
-    back_ficha_naranja,back_ficha_roja,back_ficha_verde;
+                back_ficha_naranja,back_ficha_roja,back_ficha_verde, back_nuevo_jugador;
     sf::Font fuente;
     sf::String nombre_jugador;
     sf::Text txt_nombre_jugador;
 
-    window.create(sf::VideoMode(650,650,32),"Registrar Jugadores",sf::Style::Close);
+    string color;
+
+    window.create(sf::VideoMode(650,500,32),"Registrar Jugadores",sf::Style::Close);
     window.setVerticalSyncEnabled(true);
 
     sf::Vector2f mouse;
@@ -51,12 +52,16 @@ void CrearJugador::ventanaCrearJugador(){
     text_ficha_verde.loadFromFile("fichas/ficha_verde.png");
     back_ficha_verde.setTexture(text_ficha_verde);
 
+    text_nuevo_jugador.loadFromFile("ventanas/nuevo_jugador.png");
+    back_nuevo_jugador.setTexture(text_nuevo_jugador);
+
     back_ficha_amarilla.setPosition(44,285);
     back_ficha_azul.setPosition(125,285);
     back_ficha_blanca.setPosition(205,285);
     back_ficha_naranja.setPosition(44,370);
     back_ficha_roja.setPosition(125,370);
     back_ficha_verde.setPosition(205,370);
+    back_nuevo_jugador.setPosition(400,400);
 
     if(!fuente.loadFromFile("arial.ttf")){}
 
@@ -85,34 +90,47 @@ void CrearJugador::ventanaCrearJugador(){
 
         mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 
+
         if(utility.clickSprite(back_ficha_amarilla,mouse)){
             text_ficha_amarilla.loadFromFile("ventanas/enabled.png");
             back_ficha_amarilla.setTexture(text_ficha_amarilla);
+            color = "ficha_amarilla";
         }
 
         if(utility.clickSprite(back_ficha_azul,mouse)){
             text_ficha_azul.loadFromFile("ventanas/enabled.png");
             back_ficha_azul.setTexture(text_ficha_azul);
+            color = "ficha_azul";
         }
 
         if(utility.clickSprite(back_ficha_blanca,mouse)){
             text_ficha_blanca.loadFromFile("ventanas/enabled.png");
             back_ficha_blanca.setTexture(text_ficha_blanca);
+            color = "ficha_blanca";
         }
 
         if(utility.clickSprite(back_ficha_naranja,mouse)){
             text_ficha_naranja.loadFromFile("ventanas/enabled.png");
             back_ficha_naranja.setTexture(text_ficha_naranja);
+            color = "ficha_naranja";
         }
 
         if(utility.clickSprite(back_ficha_roja,mouse)){
             text_ficha_roja.loadFromFile("ventanas/enabled.png");
             back_ficha_roja.setTexture(text_ficha_roja);
+            color = "ficha_roja";
         }
 
         if(utility.clickSprite(back_ficha_verde,mouse)){
             text_ficha_verde.loadFromFile("ventanas/enabled.png");
             back_ficha_verde.setTexture(text_ficha_verde);
+            color = "ficha_verde";
+        }
+
+        if(utility.clickSprite(back_nuevo_jugador,mouse)){
+            nuevoJugador(nombre_jugador,color);
+            txt_nombre_jugador.setString(nombre_jugador);
+            nombre_jugador = "";
         }
 
 
@@ -124,6 +142,7 @@ void CrearJugador::ventanaCrearJugador(){
         window.draw(back_ficha_naranja);
         window.draw(back_ficha_roja);
         window.draw(back_ficha_verde);
+        window.draw(back_nuevo_jugador);
         window.display();
     }
 }
