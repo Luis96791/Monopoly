@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <iostream>
 
+#include <SFML/Graphics.hpp>
+
 using namespace std;
 
 class Utility
@@ -11,6 +13,7 @@ class Utility
         string toString(int number);
         int dadoUno();
         int dadoDos();
+        bool clickSprite(sf::Sprite s, sf::Vector2f mouse);
 };
 
 #endif // UTILITY_H

@@ -5,17 +5,19 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "utility.h"
 
 using namespace std;
 
 class CrearJugador
 {
     public:
-        string nombre;
+        Utility utility;
+        string nombre,color;
         int capital;
-        CrearJugador(string n);
+        CrearJugador(string n,string c);
+        void nuevoJugador(string n,string c);
         vector <CrearJugador>jugadores_ingresados;
-        void nuevoJugador(string n);
         void ventanaCrearJugador();
         void removerJugadores();
         virtual ~CrearJugador();

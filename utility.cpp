@@ -33,3 +33,17 @@ int Utility::dadoDos(){
     }
     return num2;
 }
+
+bool Utility::clickSprite(sf::Sprite s, sf::Vector2f mouse)
+{
+    sf::FloatRect bounds = s.getGlobalBounds();
+
+    if(bounds.contains(mouse))
+    {
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        {
+            return true;
+        }
+    }
+    return false;
+}
