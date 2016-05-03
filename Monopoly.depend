@@ -347,17 +347,19 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1462212081 source:c:\users\user\desktop\monopoly\main.cpp
+1462295132 source:c:\users\user\desktop\monopoly\main.cpp
 	<SFML/Graphics.hpp>
 	"utility.h"
 	"CrearJugador.h"
+	"JugarMonopoly.h"
 	<iostream>
 
-1461689975 c:\users\user\desktop\monopoly\utility.h
+1462291517 c:\users\user\desktop\monopoly\utility.h
 	<stdlib.h>
 	<iostream>
+	<SFML/Graphics.hpp>
 
-1461689975 source:c:\users\user\desktop\monopoly\utility.cpp
+1462291517 source:c:\users\user\desktop\monopoly\utility.cpp
 	"utility.h"
 
 1429780453 c:\users\user\documents\sfml-2.3.2\include\sfml\graphics.hpp
@@ -738,14 +740,15 @@
 	<string>
 	<vector>
 
-1462211547 source:c:\users\user\desktop\monopoly\crearjugador.cpp
+1462298206 source:c:\users\user\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
-1462211207 c:\users\user\desktop\monopoly\crearjugador.h
+1462298083 c:\users\user\desktop\monopoly\crearjugador.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<fstream>
 	<vector>
+	"utility.h"
 
 1462205637 source:c:\users\user\desktop\monopoly\banco.cpp
 	"Banco.h"
@@ -761,4 +764,22 @@
 	<fstream>
 	<vector>
 	"utility.h"
+
+1462297403 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+	"JugarMonopoly.h"
+
+1462297166 c:\users\user\desktop\monopoly\jugarmonopoly.h
+	<iostream>
+	<vector>
+	"utility.h"
+	"CrearJugador.h"
+	<SFML/Graphics.hpp>
+
+1462297275 source:c:\users\user\desktop\monopoly\jugadores.cpp
+	"Jugadores.h"
+
+1462297910 c:\users\user\desktop\monopoly\jugadores.h
+	<vector>
+	<iostream>
+	"CrearJugador.h"
 

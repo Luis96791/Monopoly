@@ -25,26 +25,29 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-DSFML_STATIC" />
-			<Add directory="C:/SFML-2.1/include" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/include" />
 		</Compiler>
 		<Linker>
 			<Add library="sfml-graphics" />
 			<Add library="sfml-window" />
 			<Add library="sfml-system" />
-			<Add directory="C:/SFML-2.1/lib" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/lib" />
 		</Linker>
 		<Unit filename="Banco.cpp" />
 		<Unit filename="Banco.h" />
 		<Unit filename="CrearJugador.cpp" />
 		<Unit filename="CrearJugador.h" />
+		<Unit filename="JugarMonopoly.cpp" />
+		<Unit filename="JugarMonopoly.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="utility.cpp" />
 		<Unit filename="utility.h" />
