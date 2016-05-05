@@ -12,7 +12,6 @@ using namespace std;
 class JugarMonopoly
 {
     public:
-        vector<CrearJugador>jugador;
         Utility utility;
         JugarMonopoly();
         void ventanaTablero();

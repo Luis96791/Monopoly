@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include "utility.h"
+#include "JugarMonopoly.h"
 
 using namespace std;
 
