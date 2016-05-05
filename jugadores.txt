@@ -1,0 +1,4 @@
+luis
+ficha_amarilla
+casa
+ficha_azul

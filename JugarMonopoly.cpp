@@ -5,6 +5,18 @@ JugarMonopoly::JugarMonopoly()
     //ctor
 }
 
+vector<CrearJugador> JugarMonopoly::cargarJugadores()
+{
+    ifstream leer(nombre_archivo.c_str());
+    string nombre, color;
+    while(leer>>nombre&&leer>>color){
+        cout<<nombre<<" , "<<color<<endl;
+        jugadores.push_back(CrearJugador(nombre,color));
+    }
+    leer.close();
+    return jugadores;
+}
+
 
 void JugarMonopoly::ventanaTablero()
 {
