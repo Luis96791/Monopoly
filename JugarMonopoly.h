@@ -18,6 +18,7 @@ class JugarMonopoly
         JugarMonopoly();
         vector<CrearJugador>jugadores;
         vector<CrearJugador>cargarJugadores();
+        sf::Sprite moverFichaPorDados(sf::Sprite sprite,int suma_dados);
         void ventanaTablero();
         virtual ~JugarMonopoly();
 

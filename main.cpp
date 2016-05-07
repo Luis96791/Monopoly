@@ -79,9 +79,9 @@ int main()
 //    }
 
 //    CrearJugador crearJugador("","");
-    JugarMonopoly jugarMonopoly;
+   JugarMonopoly jugarMonopoly;
 //    crearJugador.ventanaCrearJugador();
-    jugarMonopoly.cargarJugadores();
+   jugarMonopoly.ventanaTablero();
 
     return 0;
 }
