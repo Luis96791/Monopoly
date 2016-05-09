@@ -789,15 +789,16 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1462582984 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1462830892 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1462576341 c:\users\luis\desktop\monopoly\jugarmonopoly.h
+1462817423 c:\users\luis\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"
 	"CrearJugador.h"
 	<SFML/Graphics.hpp>
+	<fstream>
 
 1462481253 c:\users\luis\desktop\monopoly\jugadores.h
 	<iostream>

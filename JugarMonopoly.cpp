@@ -49,7 +49,9 @@ void JugarMonopoly::ventanaTablero()
     sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_1,back_ficha_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
     sf::Vector2f mouse;
     sf::Mouse mouse_position;
-    int suma_dados,guardar_dado_1,guardar_dado_2;
+    int suma_dados,guardar_dado_1,guardar_dado_2,dado_prueba;
+
+    int getPositionX, getPositionY, dado_file, setPositionX, setPositionY;
 
     cargarJugadores();
 
@@ -69,7 +71,11 @@ void JugarMonopoly::ventanaTablero()
 
     text_ficha_1.loadFromFile("fichas_tablero/ficha_azul.png");
     back_ficha_1.setTexture(text_ficha_1);
-    back_ficha_1.setPosition(640,640);
+    back_ficha_1.setPosition(20,20);
+
+    text_ficha_2.loadFromFile("fichas_tablero/ficha_roja.png");
+    back_ficha_2.setTexture(text_ficha_2);
+    back_ficha_2.setPosition(640,640);
     //cout<<suma_dados<<endl;
 
     back_dado_1.setPosition(1140,580);
@@ -96,313 +102,28 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_1.setTexture(text_dado_1);
                 text_dado_2.loadFromFile("dados/"+utility.toString(guardar_dado_2)+".png");
                 back_dado_2.setTexture(text_dado_2);
+
                 //cout<<suma_dados<<endl;
             }
+
             //PROBANDO TABLERO
-
-            if(back_ficha_1.getPosition().x==640&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(495,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(440,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(385,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(325,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(270,640);}
-                if(suma_dados==7){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==8){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==9){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,555);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,495);}
+            ifstream out("setPositions.txt");
+            while(out>>getPositionX&&out>>getPositionY&&out>>dado_file&&out>>setPositionX&&out>>setPositionY){
+                if(back_ficha_1.getPosition().x==getPositionX&&back_ficha_1.getPosition().y==getPositionY&&suma_dados==dado_file){
+                    cout<<"entrando..."<<endl;
+                    cout<<suma_dados<<endl;
+                    back_ficha_1.setPosition(setPositionX,setPositionY);
+                    suma_dados=0;
+                }
             }
-            if(back_ficha_1.getPosition().x==555&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(440,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(385,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(325,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(270,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==7){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==8){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==10){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(440,20);}
-            }
-            if(back_ficha_1.getPosition().x==495&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(385,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(325,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(270,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==7){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==9){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(385,20);}
-            }
-            if(back_ficha_1.getPosition().x==440&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(325,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(270,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==8){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(325,20);}
-            }
-            if(back_ficha_1.getPosition().x==385&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(270,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==7){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(270,20);}
-            }
-            if(back_ficha_1.getPosition().x==325&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(215,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==6){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(215,20);}
-            }
-            if(back_ficha_1.getPosition().x==270&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(160,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==5){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(160,20);}
-            }
-            if(back_ficha_1.getPosition().x==215&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==4){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(105,20);}
-            }
-            if(back_ficha_1.getPosition().x==160&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==3){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,20);}
-            }
-            if(back_ficha_1.getPosition().x==105&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(555,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,105);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==640)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(495,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,160);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==555)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(440,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,215);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==495)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(385,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,270);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==440)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(325,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,325);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==385)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(270,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,385);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==325)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(215,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,440);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==270)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(160,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,440);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,495);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==215)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(105,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,440);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,495);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,555);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==160)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(20,20);}
-                if(suma_dados==3){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,440);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,495);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,555);}
-                if(suma_dados==12){back_ficha_1.setPosition(20,640);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==105)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(20,105);}
-                if(suma_dados==3){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,440);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,495);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,555);}
-                if(suma_dados==11){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==12){back_ficha_1.setPosition(105,640);}
-            }
-            if(back_ficha_1.getPosition().x==20&&back_ficha_1.getPosition().y==20)
-            {
-                if(suma_dados==2){back_ficha_1.setPosition(20,160);}
-                if(suma_dados==3){back_ficha_1.setPosition(20,215);}
-                if(suma_dados==4){back_ficha_1.setPosition(20,270);}
-                if(suma_dados==5){back_ficha_1.setPosition(20,325);}
-                if(suma_dados==6){back_ficha_1.setPosition(20,385);}
-                if(suma_dados==7){back_ficha_1.setPosition(20,440);}
-                if(suma_dados==8){back_ficha_1.setPosition(20,495);}
-                if(suma_dados==9){back_ficha_1.setPosition(20,555);}
-                if(suma_dados==10){back_ficha_1.setPosition(20,640);}
-                if(suma_dados==11){back_ficha_1.setPosition(105,640);}
-                if(suma_dados==12){back_ficha_1.setPosition(160,640);}
-            }
-
+            out.close();
         }
-
-
 
         window.draw(back_tablero);
         window.draw(back_dado_1);
         window.draw(back_dado_2);
         window.draw(back_ficha_1);
+        window.draw(back_ficha_2);
         window.display();
     }
 }

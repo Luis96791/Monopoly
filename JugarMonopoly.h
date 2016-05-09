@@ -6,6 +6,7 @@
 #include "utility.h"
 #include "CrearJugador.h"
 #include <SFML/Graphics.hpp>
+#include <fstream>
 
 using namespace std;
 
