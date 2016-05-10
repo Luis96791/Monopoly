@@ -348,7 +348,7 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1462895627 source:c:\users\user\desktop\monopoly\main.cpp
+1462897606 source:c:\users\user\desktop\monopoly\main.cpp
 	<SFML/Graphics.hpp>
 	"utility.h"
 	"CrearJugador.h"
@@ -741,10 +741,10 @@
 	<string>
 	<vector>
 
-1462895627 source:c:\users\user\desktop\monopoly\crearjugador.cpp
+1462897323 source:c:\users\user\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
-1462895627 c:\users\user\desktop\monopoly\crearjugador.h
+1462897323 c:\users\user\desktop\monopoly\crearjugador.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<fstream>
@@ -766,10 +766,10 @@
 	<vector>
 	"utility.h"
 
-1462895627 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+1462897585 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1462895627 c:\users\user\desktop\monopoly\jugarmonopoly.h
+1462897323 c:\users\user\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"

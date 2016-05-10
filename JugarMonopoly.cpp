@@ -71,7 +71,7 @@ void JugarMonopoly::ventanaTablero()
 
     text_ficha_1.loadFromFile("fichas_tablero/ficha_azul.png");
     back_ficha_1.setTexture(text_ficha_1);
-    back_ficha_1.setPosition(20,20);
+    back_ficha_1.setPosition(270,20);
 
     text_ficha_2.loadFromFile("fichas_tablero/ficha_roja.png");
     back_ficha_2.setTexture(text_ficha_2);

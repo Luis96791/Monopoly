@@ -78,16 +78,9 @@ int main()
 //        window.display();
 //    }
 
-    CrearJugador crearJugador("","");
-    crearJugador.ventanaCrearJugador();
-    int opx;
-    cin>>opx;
-    if(opx==1){
-        for(unsigned int c=0;c<crearJugador.jugadores;c++){
-            cout<<crearJugador.jugadores[c].nombre<<endl;
-            cout<<crearJugador.jugadores[c].color<<endl;
-        }
-    }
+//    CrearJugador crearJugador("","");
+//    crearJugador.ventanaCrearJugador();
+
 //    JugarMonopoly jugar;
 //    jugar.ventanaTablero();
 //    CrearJugador crearJugador("","");
