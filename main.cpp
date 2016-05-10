@@ -78,17 +78,17 @@ int main()
 //        window.display();
 //    }
 
-//    CrearJugador crearJugador("","");
-//    crearJugador.ventanaCrearJugador();
-//    int opx;
-//    cin>>opx;
-//    if(opx==1){
-//        for(unsigned int c=0;c<crearJugador.jugadores_ingresados.size();c++){
-//            cout<<crearJugador.jugadores_ingresados[c].nombre<<endl;
-//            cout<<crearJugador.jugadores_ingresados[c].color<<endl;
-//        }
-//    }
-    JugarMonopoly jugar;
-    jugar.ventanaTablero();
+    CrearJugador crearJugador("","");
+    crearJugador.ventanaCrearJugador();
+    int opx;
+    cin>>opx;
+    if(opx==1){
+        for(unsigned int c=0;c<crearJugador.jugadores_ingresados.size();c++){
+            cout<<crearJugador.jugadores_ingresados[c].nombre<<endl;
+            cout<<crearJugador.jugadores_ingresados[c].color<<endl;
+        }
+    }
+//    JugarMonopoly jugar;
+//    jugar.ventanaTablero();
     return 0;
 }
