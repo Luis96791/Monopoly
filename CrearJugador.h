@@ -12,12 +12,15 @@ using namespace std;
 class CrearJugador
 {
     public:
+        string nombre_archivo = "jugadores.txt";
         Utility utility;
-        string nombre,color;
         int capital;
-        CrearJugador(string n,string c);
+        string nombre, color;
+        CrearJugador(string n, string c);
+        vector<CrearJugador>jugadores;
         void nuevoJugador(string n,string c);
-        vector <CrearJugador>jugadores_ingresados;
+        void escribirArchivo();
+
         void ventanaCrearJugador();
         void removerJugadores();
         virtual ~CrearJugador();

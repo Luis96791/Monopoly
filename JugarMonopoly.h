@@ -6,15 +6,20 @@
 #include "utility.h"
 #include "CrearJugador.h"
 #include <SFML/Graphics.hpp>
+#include <fstream>
 
 using namespace std;
 
 class JugarMonopoly
 {
     public:
-        vector<CrearJugador>jugador;
+        string nombre_archivo = "jugadores.txt";
+        CrearJugador crearJugador();
         Utility utility;
         JugarMonopoly();
+        vector<CrearJugador>jugadores;
+        vector<CrearJugador>cargarJugadores();
+        sf::Sprite moverFichaPorDados(sf::Sprite sprite,int suma_dados);
         void ventanaTablero();
         virtual ~JugarMonopoly();
 

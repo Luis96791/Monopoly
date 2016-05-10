@@ -35,12 +35,14 @@
 			<Add option="-Wall" />
 			<Add option="-DSFML_STATIC" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/include" />
+			<Add directory="C:/SFML-2.1/include" />
 		</Compiler>
 		<Linker>
 			<Add library="sfml-graphics" />
 			<Add library="sfml-window" />
 			<Add library="sfml-system" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/lib" />
+			<Add directory="C:/SFML-2.1/lib" />
 		</Linker>
 		<Unit filename="Banco.cpp" />
 		<Unit filename="Banco.h" />

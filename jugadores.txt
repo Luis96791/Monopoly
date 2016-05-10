@@ -1,0 +1,12 @@
+luis
+ficha_amarilla
+ luis2
+ficha_azul
+ luis3
+ficha_blanca
+ luis4
+ficha_naranja
+ ñuis5
+ficha_roja
+ luis6
+ficha_verde

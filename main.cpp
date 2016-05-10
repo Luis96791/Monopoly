@@ -83,12 +83,17 @@ int main()
     int opx;
     cin>>opx;
     if(opx==1){
-        for(unsigned int c=0;c<crearJugador.jugadores_ingresados.size();c++){
-            cout<<crearJugador.jugadores_ingresados[c].nombre<<endl;
-            cout<<crearJugador.jugadores_ingresados[c].color<<endl;
+        for(unsigned int c=0;c<crearJugador.jugadores;c++){
+            cout<<crearJugador.jugadores[c].nombre<<endl;
+            cout<<crearJugador.jugadores[c].color<<endl;
         }
     }
 //    JugarMonopoly jugar;
 //    jugar.ventanaTablero();
+//    CrearJugador crearJugador("","");
+   JugarMonopoly jugarMonopoly;
+//    crearJugador.ventanaCrearJugador();
+   jugarMonopoly.ventanaTablero();
+
     return 0;
 }

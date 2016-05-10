@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="ventanas.svg">
+   sodipodi:docname="ventanas.svg"
+   inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50933034"
-     inkscape:cx="287.91104"
-     inkscape:cy="57.632168"
+     inkscape:zoom="0.36015094"
+     inkscape:cx="296.50684"
+     inkscape:cy="-271.57673"
      inkscape:document-units="px"
-     inkscape:current-layer="g3396"
+     inkscape:current-layer="g4379"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -44,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,72 +72,21 @@
            inkscape:export-xdpi="90"
            inkscape:export-ydpi="90">
           <g
-             id="g3412"
-             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
-             inkscape:export-xdpi="90"
-             inkscape:export-ydpi="90"
-             transform="translate(0.00975616,0.00847285)">
-            <rect
-               style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
-               id="rect3336"
-               width="594.15479"
-               height="471.4761"
-               x="64.351158"
-               y="250.99907" />
-            <flowRoot
-               xml:space="preserve"
-               id="flowRoot3338"
-               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               transform="matrix(1,0,0,1.3226213,-7.1428568,-63.133889)"><flowRegion
-                 id="flowRegion3340"><rect
-                   id="rect3342"
-                   width="222.85715"
-                   height="68.571426"
-                   x="107.14286"
-                   y="298.07648"
-                   style="fill:#ffffff" /></flowRegion><flowPara
-                 id="flowPara3344">Nombre: </flowPara></flowRoot>            <flowRoot
-               xml:space="preserve"
-               id="flowRoot3346"
-               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               transform="matrix(0.78501569,0,0,1,40.345534,-18)"><flowRegion
-                 id="flowRegion3348"><rect
-                   id="rect3350"
-                   width="549.75513"
-                   height="58.571442"
-                   x="140"
-                   y="278.07648"
-                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9" /></flowRegion><flowPara
-                 id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>            <rect
-               style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.48425117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
-               id="rect3354"
-               width="220.5387"
-               height="118.23917"
-               x="100.29157"
-               y="454.8934"
-               inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+             id="g4238">
+            <g
+               transform="translate(0.00975616,0.00847285)"
+               inkscape:export-ydpi="90"
                inkscape:export-xdpi="90"
-               inkscape:export-ydpi="90" />
-            <flowRoot
-               xml:space="preserve"
-               id="flowRoot3356"
-               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               transform="matrix(0.55699835,0,0,0.67410327,39.909507,143.97146)"><flowRegion
-                 id="flowRegion3358"><rect
-                   id="rect3360"
-                   width="531.34027"
-                   height="60.609158"
-                   x="101.01525"
-                   y="399.80365"
-                   style="fill:#ffffff" /></flowRegion><flowPara
-                 id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>          </g>
+               inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+               id="g3412" />
+          </g>
           <rect
              style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.13979363;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
              id="rect3428"
              width="64.107651"
              height="50.89616"
-             x="-327.4205"
-             y="536.25256"
+             x="99.784706"
+             y="84.031845"
              inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\enabled.png"
              inkscape:export-xdpi="90"
              inkscape:export-ydpi="90" />
@@ -175,6 +127,209 @@
                  id="flowPara4277">Nuevo </flowPara><flowPara
                  style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
                  id="flowPara4281">Jugador</flowPara></flowRoot>          </g>
+          <g
+             id="g4524">
+            <g
+               id="g4491">
+              <g
+                 id="g4459">
+                <g
+                   id="g4286">
+                  <g
+                     id="g4269"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90">
+                    <g
+                       inkscape:export-ydpi="90"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                       id="g4379">
+                      <rect
+                         transform="translate(0.00975627,0.00847058)"
+                         y="250.99907"
+                         x="64.351158"
+                         height="471.4761"
+                         width="594.15479"
+                         id="rect3336"
+                         style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                      <flowRoot
+                         transform="matrix(1,0,0,1.3226213,-7.1331005,-63.125416)"
+                         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         id="flowRoot3338"
+                         xml:space="preserve"><flowRegion
+                           id="flowRegion3340"><rect
+                             style="fill:#ffffff"
+                             y="298.07648"
+                             x="107.14286"
+                             height="68.571426"
+                             width="222.85715"
+                             id="rect3342" /></flowRegion><flowPara
+                           id="flowPara3344">Nombre: </flowPara></flowRoot>                      <flowRoot
+                         transform="matrix(0.78501569,0,0,1,40.35529,-17.991524)"
+                         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         id="flowRoot3346"
+                         xml:space="preserve"><flowRegion
+                           id="flowRegion3348"><rect
+                             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9"
+                             y="278.07648"
+                             x="140"
+                             height="58.571442"
+                             width="549.75513"
+                             id="rect3350" /></flowRegion><flowPara
+                           id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>                      <flowRoot
+                         transform="matrix(0.55699835,0,0,0.67410327,39.919263,143.97993)"
+                         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         id="flowRoot3356"
+                         xml:space="preserve"><flowRegion
+                           id="flowRegion3358"><rect
+                             style="fill:#ffffff"
+                             y="399.80365"
+                             x="101.01525"
+                             height="60.609158"
+                             width="531.34027"
+                             id="rect3360" /></flowRegion><flowPara
+                           id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>                      <g
+                         id="g4668"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\1.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <rect
+                           style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.47801962;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+                           id="rect3354"
+                           width="219.31963"
+                           height="115.85606"
+                           x="-508.72351"
+                           y="189.79146"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-ydpi="90" />
+                        <rect
+                           inkscape:export-ydpi="90"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\seleccionador.png"
+                           y="192.10753"
+                           x="-506.33569"
+                           height="53.817024"
+                           width="68.915855"
+                           id="rect3428-6-4-3"
+                           style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                      </g>
+                      <g
+                         id="g4663"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\2.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <g
+                           id="g4660">
+                          <rect
+                             inkscape:export-ydpi="90"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                             y="332.85977"
+                             x="-511.45145"
+                             height="115.85606"
+                             width="219.31963"
+                             id="rect3354-0"
+                             style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.4780196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                        </g>
+                        <rect
+                           inkscape:export-ydpi="90"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                           y="334.89853"
+                           x="-435.92377"
+                           height="53.817024"
+                           width="68.915855"
+                           id="rect3428-6-4-3-0-6"
+                           style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                      </g>
+                      <rect
+                         inkscape:export-ydpi="90"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\3.png"
+                         y="488.31064"
+                         x="-516.53723"
+                         height="115.85606"
+                         width="219.31963"
+                         id="rect3354-0-1"
+                         style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.4780196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                      <rect
+                         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3428-6-4-3-0-0-6-5"
+                         width="68.915855"
+                         height="53.817024"
+                         x="-367.87421"
+                         y="490.66101"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\3.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90" />
+                      <rect
+                         inkscape:export-ydpi="90"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\6.png"
+                         y="633.6673"
+                         x="-511.45145"
+                         height="115.85606"
+                         width="219.31963"
+                         id="rect3354-0-1-3"
+                         style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.4780196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                      <rect
+                         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3428-6-4-3-0-0-2-8-4-3-3"
+                         width="68.915855"
+                         height="53.817024"
+                         x="-363.3244"
+                         y="693.75385"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\6.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90" />
+                      <rect
+                         inkscape:export-ydpi="90"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\4.png"
+                         y="785.08051"
+                         x="-506.36569"
+                         height="115.85606"
+                         width="219.31963"
+                         id="rect3354-0-1-2"
+                         style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.4780196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                      <rect
+                         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3428-6-4-9-8-7"
+                         width="68.915855"
+                         height="53.817024"
+                         x="-504.06241"
+                         y="845.03455"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\4.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90" />
+                      <rect
+                         inkscape:export-ydpi="90"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\5.png"
+                         y="948.60675"
+                         x="-501.27991"
+                         height="115.85606"
+                         width="219.31963"
+                         id="rect3354-0-1-4"
+                         style="opacity:0.98999999;fill:#d5e5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.4780196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                      <rect
+                         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:4.35002089;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3428-6-4-3-0-0-2-4-3-1"
+                         width="68.915855"
+                         height="53.817024"
+                         x="-425.75748"
+                         y="1008.6067"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\5.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
         </g>
       </g>
     </g>

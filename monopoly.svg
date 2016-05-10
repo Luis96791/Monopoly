@@ -24,7 +24,6 @@
   <defs
      id="defs4">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient26764"
        osb:paint="gradient">
       <stop
@@ -44,11 +43,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-5159.316"
-     inkscape:cy="-920.14835"
+     inkscape:zoom="1"
+     inkscape:cx="-3882.0893"
+     inkscape:cy="956.37315"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6250-3-7"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -1481,6 +1480,49 @@
           </g>
         </g>
       </g>
+      <g
+         transform="matrix(0.5,0,0,0.5,-750.60077,1206.3698)"
+         id="g6242-0-4"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_blanca.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g6119-0-8"
+           transform="translate(-467.85938,-18.047988)">
+          <ellipse
+             ry="63.167957"
+             rx="61.779655"
+             cy="1148.186"
+             cx="-861.86816"
+             id="path6080-1-0-8"
+             style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <ellipse
+             ry="60.738422"
+             rx="58.65596"
+             cy="1148.1859"
+             cx="-861.09167"
+             id="path6080-9-50"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <g
+             transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)"
+             id="g6115-7-3">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-7-0-8"
+               cx="-1009.299"
+               cy="931.23248"
+               rx="45.119976"
+               ry="43.384586" />
+            <ellipse
+               style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-3-2-0"
+               cx="-1008.732"
+               cy="931.23248"
+               rx="42.838623"
+               ry="41.71595" />
+          </g>
+        </g>
+      </g>
     </g>
     <g
        id="g6250-3-7"
@@ -1659,6 +1701,183 @@
                  id="path6080-3-2-2-7"
                  style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
             </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g6242-0-7-21-3"
+         transform="matrix(0.28326474,0,0,0.27703917,-2320.7796,309.02296)"
+         inkscape:transform-center-x="-177.70331"
+         inkscape:transform-center-y="-90.239939"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_naranja.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g6119-0-2-5-4"
+           transform="translate(-467.85938,-18.047988)">
+          <g
+             id="g3685-2">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-0-5-3-2"
+               cx="-861.86816"
+               cy="1148.186"
+               rx="61.779655"
+               ry="63.167957" />
+            <ellipse
+               style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-9-5-6-1"
+               cx="-861.09167"
+               cy="1148.1859"
+               rx="58.65596"
+               ry="60.738422" />
+            <g
+               id="g6115-7-4-8-9"
+               transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)">
+              <ellipse
+                 ry="43.384586"
+                 rx="45.119976"
+                 cy="931.23248"
+                 cx="-1009.299"
+                 id="path6080-1-7-0-6-7-0"
+                 style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+              <ellipse
+                 ry="41.71595"
+                 rx="42.838623"
+                 cy="931.23248"
+                 cx="-1008.732"
+                 id="path6080-3-2-2-7-4"
+                 style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g6242-0-7-2-6"
+         transform="matrix(0.28326475,0,0,0.27703916,-2604.7796,319.02296)"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_verde.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g6119-0-2-9-1"
+           transform="translate(-467.85938,-18.047988)">
+          <ellipse
+             ry="63.167957"
+             rx="61.779655"
+             cy="1148.186"
+             cx="-861.86816"
+             id="path6080-1-0-5-0-7"
+             style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <ellipse
+             ry="60.738422"
+             rx="58.65596"
+             cy="1148.1859"
+             cx="-861.09167"
+             id="path6080-9-5-3-3"
+             style="opacity:1;fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <g
+             transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)"
+             id="g6115-7-4-00-9">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-7-0-6-9-7"
+               cx="-1009.299"
+               cy="931.23248"
+               rx="45.119976"
+               ry="43.384586" />
+            <ellipse
+               style="opacity:1;fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-3-2-2-6-2"
+               cx="-1008.732"
+               cy="931.23248"
+               rx="42.838623"
+               ry="41.71595" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g6242-0-7-0"
+         transform="matrix(0.28326475,0,0,0.27703916,-2457.7796,255.02296)"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_roja.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g6119-0-2-4"
+           transform="translate(-467.85938,-18.047988)">
+          <ellipse
+             ry="63.167957"
+             rx="61.779655"
+             cy="1148.186"
+             cx="-861.86816"
+             id="path6080-1-0-5-32"
+             style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <ellipse
+             ry="60.738422"
+             rx="58.65596"
+             cy="1148.1859"
+             cx="-861.09167"
+             id="path6080-9-5-9"
+             style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <g
+             transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)"
+             id="g6115-7-4-9">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-7-0-6-6"
+               cx="-1009.299"
+               cy="931.23248"
+               rx="45.119976"
+               ry="43.384586" />
+            <ellipse
+               style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-3-2-2-0"
+               cx="-1008.732"
+               cy="931.23248"
+               rx="42.838623"
+               ry="41.71595" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g6242-0-7-9-7"
+         transform="matrix(0.28326475,0,0,0.27703916,-2376.7796,255.02296)"
+         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_amarilla.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g6119-0-2-6-1"
+           transform="translate(-467.85938,-18.047988)">
+          <ellipse
+             ry="63.167957"
+             rx="61.779655"
+             cy="1148.186"
+             cx="-861.86816"
+             id="path6080-1-0-5-2-0"
+             style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <ellipse
+             ry="60.738422"
+             rx="58.65596"
+             cy="1148.1859"
+             cx="-861.09167"
+             id="path6080-9-5-7-6"
+             style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <g
+             transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)"
+             id="g6115-7-4-0-8">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-7-0-6-8-1"
+               cx="-1009.299"
+               cy="931.23248"
+               rx="45.119976"
+               ry="43.384586" />
+            <ellipse
+               style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-3-2-2-9-7"
+               cx="-1008.732"
+               cy="931.23248"
+               rx="42.838623"
+               ry="41.71595" />
           </g>
         </g>
       </g>
@@ -5543,11 +5762,57 @@
            x="-5404.8911"
            y="2622.3157"
            style="font-size:5px;" /></flowRegion><flowPara
-         id="flowPara26273"></flowPara></flowRoot>    <g
+         id="flowPara26273" /></flowRoot>    <g
        id="g27401"
        transform="translate(-28,-92)"
        inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\arca_comunal\1.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <g
+       id="g6250-7"
+       transform="matrix(0.28326475,0,0,0.27703916,-3717.835,-80.230296)"
+       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\fichas_tablero\ficha_azul.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g6242-6">
+        <g
+           id="g6119-8"
+           transform="translate(-467.85938,-18.047988)">
+          <ellipse
+             ry="63.167957"
+             rx="61.779655"
+             cy="1148.186"
+             cx="-861.86816"
+             id="path6080-1-3"
+             style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <ellipse
+             ry="60.738422"
+             rx="58.65596"
+             cy="1148.1859"
+             cx="-861.09167"
+             id="path6080-0"
+             style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+          <g
+             transform="matrix(1.0230769,0,0,1.056,170.72232,164.45749)"
+             id="g6115-9">
+            <ellipse
+               style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-1-7-6"
+               cx="-1009.299"
+               cy="931.23248"
+               rx="45.119976"
+               ry="43.384586" />
+            <ellipse
+               style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
+               id="path6080-3-1"
+               cx="-1008.732"
+               cy="931.23248"
+               rx="42.838623"
+               ry="41.71595" />
+          </g>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
