@@ -17,29 +17,13 @@ vector<CrearJugador> JugarMonopoly::cargarJugadores()
     return jugadores;
 }
 
-sf::Sprite JugarMonopoly::moverFichaPorDados(sf::Sprite back_ficha_1,int suma_dados)
+bool JugarMonopoly::mover(sf::Sprite ficha,int suma_dados)
 {
-//    if(suma_dados==2){
-//        back_ficha_1.setPosition(495,640);
-//        return back_ficha_1;
-//    }
-//    if(suma_dados==3){
-//        back_ficha_1.setPosition(440,640);
-//        return back_ficha_1;
-//    }
-//    if(suma_dados==4){
-//        back_ficha_1.setPosition(385,640);
-//        return back_ficha_1;
-//    }
-//    if(suma_dados==5){
-//        back_ficha_1.setPosition(325,640);
-//        return back_ficha_1;
-//    }
-//    if(suma_dados==6){
-//        back_ficha_1.setPosition(270,640);
-//        cout<<"Validado..."<<endl;
-//        return back_ficha_1;
-//    }
+    if(ficha.getPosition().y==640){
+        if(suma_dados>0){
+            return mover(ficha,suma_dados-1);
+        }
+    }
 }
 
 void JugarMonopoly::ventanaTablero()
@@ -49,7 +33,7 @@ void JugarMonopoly::ventanaTablero()
     sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_1,back_ficha_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
     sf::Vector2f mouse;
     sf::Mouse mouse_position;
-    int suma_dados,guardar_dado_1,guardar_dado_2,dado_prueba;
+    int suma_dados,guardar_dado_1,guardar_dado_2,dado_prueba,m;
 
     int getPositionX, getPositionY, dado_file, setPositionX, setPositionY;
 
@@ -57,10 +41,6 @@ void JugarMonopoly::ventanaTablero()
 
     window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Default);
     window.setVerticalSyncEnabled(true);
-
-    guardar_dado_1=utility.dadoUno();
-    guardar_dado_2=utility.dadoDos();
-    suma_dados=guardar_dado_1+guardar_dado_2;
 
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
@@ -107,6 +87,7 @@ void JugarMonopoly::ventanaTablero()
             }
 
             //PROBANDO TABLERO
+
             ifstream out("setPositions.txt");
             while(out>>getPositionX&&out>>getPositionY&&out>>dado_file&&out>>setPositionX&&out>>setPositionY){
                 if(back_ficha_1.getPosition().x==getPositionX&&back_ficha_1.getPosition().y==getPositionY&&suma_dados==dado_file){
@@ -118,6 +99,12 @@ void JugarMonopoly::ventanaTablero()
             }
             out.close();
         }
+
+//        if(mover(back_ficha_2,5)){
+//            m=back_ficha_2.getPosition().x;
+//            back_ficha_2.setPosition(m-85,640);
+//            cout<<back_ficha_2.getPosition().x<<endl;
+//        }
 
         window.draw(back_tablero);
         window.draw(back_dado_1);
