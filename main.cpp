@@ -78,8 +78,8 @@ int main()
 //        window.display();
 //    }
 
-//    CrearJugador crearJugador("","");
-//    crearJugador.ventanaCrearJugador();
+    CrearJugador crearJugador("","");
+    crearJugador.ventanaCrearJugador();
 
 //    JugarMonopoly jugar;
 //    jugar.ventanaTablero();

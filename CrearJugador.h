@@ -19,6 +19,12 @@ class CrearJugador
         CrearJugador(string n, string c);
         vector<CrearJugador>jugadores;
         void nuevoJugador(string n,string c);
+        string getNombre();
+        string getColor();
+        int getCapital();
+        void setCapital(int c);
+        void deposito(int cant);
+        int retiro(int cant);
         void escribirArchivo();
 
         void ventanaCrearJugador();
