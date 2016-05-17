@@ -18,48 +18,70 @@ vector<CrearJugador> JugarMonopoly::cargarJugadores()
 }
 
 /**
-*   Esta es una Prueba en busca de optimizar la funcion movimiento
+*   Esta es una Prueba en busca de optimizar la funcion movimiento :|
 */
 
-Mover JugarMonopoly::movimiento(sf::Sprite ficha,int suma_dados)
+sf::Sprite JugarMonopoly::movimiento(sf::Sprite* ficha,int suma_dados)
 {
     int getPositionX, getPositionY, dado_file, setPositionX, setPositionY;
-    cout<<"entrando..."<<endl;
-    cout<<ficha.getPosition().x<<endl;
-    cout<<ficha.getPosition().y<<endl;
 
      ifstream out1("setPositions.txt");
         while(out1>>getPositionX&&out1>>getPositionY&&out1>>dado_file&&out1>>setPositionX&&out1>>setPositionY){
-            if(ficha.getPosition().x==getPositionX&&ficha.getPosition().y==getPositionY&&suma_dados==dado_file){
+            if(ficha->getPosition().x==getPositionX&&ficha->getPosition().y==getPositionY&&suma_dados==dado_file){
                 cout<<"entrando..."<<endl;
-                cout<<suma_dados<<endl;
-                ficha.setPosition(setPositionX,setPositionY);
-                return Mover(setPositionX,setPositionY);
-                suma_dados=0;
+                ficha->setPosition(setPositionX,setPositionY);
+                return *ficha;
             }
         }
         out1.close();
+        return *ficha;
 }
 /**
-*   Esta es una Prueba en busca de optimizar la funcion movimiento
+*   Esta es una Prueba en busca de optimizar la funcion movimiento ;)
 */
 
 void JugarMonopoly::ventanaTablero()
 {
     sf::RenderWindow window;
-    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6;
-    sf::Texture text_ficha_1;
-    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
-    sf::Sprite back_ficha_1;
+
+    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6;
+    sf::Texture ref_text_ficha_1,ref_text_ficha_2;
+    sf::Texture *text_ficha_1, *text_ficha_2;
+
+    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
+    sf::Sprite ref_back_ficha_1,ref_back_ficha_2;
+    sf::Sprite *back_ficha_1, *back_ficha_2;
+
     sf::Vector2f mouse;
-    sf::Mouse mouse_position;
-    int suma_dados,guardar_dado_1,guardar_dado_2,dado_prueba,clicks=0;
-    int getPositionX, getPositionY, dado_file, setPositionX, setPositionY;
+    sf::Font font;
+    sf::Text txt_jugador_1, txt_jugador_2;
+    int suma_dados,guardar_dado_1,guardar_dado_2,clicks=0;
+    string nombre_jugador_1, nombre_jugador_2;
+    int capital_jugador_1;
+
+    nombre_archivo = "jugadores.txt";
 
     cargarJugadores();
 
     window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Default);
     window.setVerticalSyncEnabled(true);
+
+    text_ficha_1 = &ref_text_ficha_1;
+    text_ficha_2 = &ref_text_ficha_2;
+
+    back_ficha_1 = &ref_back_ficha_1;
+    back_ficha_2 = &ref_back_ficha_2;
+
+    if(!font.loadFromFile("arial.ttf")){}
+    txt_jugador_1.setFont(font);
+    txt_jugador_1.setCharacterSize(24);
+    txt_jugador_1.setColor(sf::Color::Blue);
+    txt_jugador_1.setPosition(1000,10);
+
+    txt_jugador_2.setFont(font);
+    txt_jugador_2.setCharacterSize(24);
+    txt_jugador_2.setColor(sf::Color::Red);
+    txt_jugador_2.setPosition(1000,40);
 
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
@@ -70,19 +92,19 @@ void JugarMonopoly::ventanaTablero()
 
     ifstream cargar("jugadores.txt");
     string n, f;
-    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6,turno;
+    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6;
     while(cargar>>n&&cargar>>f){
             cout<<f<<endl;
         if(f=="ficha_azul"){
-            text_ficha_1.loadFromFile("fichas_tablero/ficha_azul.png");
-            back_ficha_1.setTexture(text_ficha_1);
-            back_ficha_1.setPosition(640,640);
+            text_ficha_1->loadFromFile("fichas_tablero/ficha_azul.png");
+            back_ficha_1->setTexture(*text_ficha_1);
+            back_ficha_1->setPosition(640,640);
             ficha1=true;
         }
         if(f=="ficha_roja"){
-            text_ficha_2.loadFromFile("fichas_tablero/ficha_roja.png");
-            back_ficha_2.setTexture(text_ficha_2);
-            back_ficha_2.setPosition(640,640);
+            text_ficha_2->loadFromFile("fichas_tablero/ficha_roja.png");
+            back_ficha_2->setTexture(*text_ficha_2);
+            back_ficha_2->setPosition(640,640);
             ficha2=true;
         }
         if(f=="ficha_verde"){
@@ -137,43 +159,36 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_1.setTexture(text_dado_1);
                 text_dado_2.loadFromFile("dados/"+utility.toString(guardar_dado_2)+".png");
                 back_dado_2.setTexture(text_dado_2);
+                cout<<suma_dados<<endl;
 
                 //cout<<suma_dados<<endl;
             }
 
             //PROBANDO TABLERO
-
         }
+        txt_jugador_1.setString(jugadores[0].getNombre()+"     "+utility.toString(jugadores[0].getCapital()));
+        txt_jugador_2.setString(jugadores[1].getNombre()+"     "+utility.toString(jugadores[1].getCapital()));
+//        nombre_jugador_1 = jugadores[0].getNombre();
+//        capital_jugador_1 = jugadores[0].getCapital();
+//        cout<<nombre_jugador_1<<endl;
+//        cout<<capital_jugador_1<<endl;
 
         if(clicks%2==0){
-            ifstream out1("setPositions.txt");
-            while(out1>>getPositionX&&out1>>getPositionY&&out1>>dado_file&&out1>>setPositionX&&out1>>setPositionY){
-                if(back_ficha_1.getPosition().x==getPositionX&&back_ficha_1.getPosition().y==getPositionY&&suma_dados==dado_file){
-                    cout<<"entrando..."<<endl;
-                    cout<<suma_dados<<endl;
-                    back_ficha_1.setPosition(setPositionX,setPositionY);
-                    suma_dados=0;
-                }
-            }
-            out1.close();
+            movimiento(back_ficha_1,suma_dados);
+            suma_dados=0;
         }else{
-            ifstream out2("setPositions.txt");
-            while(out2>>getPositionX&&out2>>getPositionY&&out2>>dado_file&&out2>>setPositionX&&out2>>setPositionY){
-                if(back_ficha_2.getPosition().x==getPositionX&&back_ficha_2.getPosition().y==getPositionY&&suma_dados==dado_file){
-                    cout<<"entrando..."<<endl;
-                    cout<<suma_dados<<endl;
-                    back_ficha_2.setPosition(setPositionX,setPositionY);
-                    suma_dados=0;
-                }
-            }
-            out2.close();
+            movimiento(back_ficha_2,suma_dados);
+            suma_dados=0;
         }
 
         window.draw(back_tablero);
         window.draw(back_dado_1);
         window.draw(back_dado_2);
-        if(ficha1){window.draw(back_ficha_1);}
-        if(ficha2){window.draw(back_ficha_2);}
+        window.draw(txt_jugador_1);
+        window.draw(txt_jugador_2);
+
+        if(ficha1){window.draw(*back_ficha_1);}
+        if(ficha2){window.draw(*back_ficha_2);}
         if(ficha3){window.draw(back_ficha_3);}
         if(ficha4){window.draw(back_ficha_4);}
         if(ficha5){window.draw(back_ficha_5);}

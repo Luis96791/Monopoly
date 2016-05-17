@@ -4,6 +4,7 @@ CrearJugador::CrearJugador(string n, string c)
 {
     nombre = n;
     color = c;
+    capital = 1500;
 }
 
 string CrearJugador::getNombre()
@@ -52,7 +53,7 @@ void CrearJugador::nuevoJugador(string n,string color)
 void CrearJugador::escribirArchivo()
 {
     ofstream out(nombre_archivo.c_str());
-    for(int i =0;i< jugadores.size();i++){
+    for(unsigned int i =0;i< jugadores.size();i++){
         out<<jugadores[i].nombre<<endl;
         out<<jugadores[i].color<<endl;
     }
@@ -70,6 +71,8 @@ void CrearJugador::ventanaCrearJugador(){
     sf::Font fuente;
     sf::String nombre_jugador;
     sf::Text txt_nombre_jugador;
+    nombre_archivo= "jugadores.txt";
+
 
     int pos=0;
 

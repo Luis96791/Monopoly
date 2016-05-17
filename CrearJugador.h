@@ -12,7 +12,7 @@ using namespace std;
 class CrearJugador
 {
     public:
-        string nombre_archivo = "jugadores.txt";
+        string nombre_archivo;
         Utility utility;
         int capital;
         string nombre, color;

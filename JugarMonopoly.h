@@ -14,14 +14,14 @@ using namespace std;
 class JugarMonopoly
 {
     public:
-        string nombre_archivo = "jugadores.txt";
+        string nombre_archivo;
         CrearJugador crearJugador();
         Utility utility;
         JugarMonopoly();
         vector<CrearJugador>jugadores;
         vector<CrearJugador>cargarJugadores();
         Mover mover();
-        Mover movimiento(sf::Sprite sprite,int suma_dados);
+        sf::Sprite movimiento(sf::Sprite* sprite,int suma_dados);
         void ventanaTablero();
         virtual ~JugarMonopoly();
 

@@ -9,16 +9,17 @@ class Ventana{
 public:
     sf::Texture texture;
     sf::Texture* texture1;
+    sf::Sprite sprite;
     sf::Sprite* sprite1;
-    sf::Sprite sprite2;
     void miVentana(){
 
         sf::RenderWindow window(sf::VideoMode(600,600), "SFML works!");
 
+        texture1 = &texture;
+        sprite1 = &sprite;
+
         texture1->loadFromFile("ficha_azul.png");
         sprite1->setTexture(*texture1);
-        texture.loadFromFile("ficha_naranja.png");
-        sprite2.setTexture(texture);
         int dados;
 
         while (window.isOpen())
@@ -31,11 +32,14 @@ public:
             }
 
 
+            cout<<sprite1->getPosition().x<<endl;
+            cout<<sprite1->getPosition().y<<endl;
+
+
             sprite1->setPosition(20,100);
             movimiento(sprite1);
 
             window.draw(*sprite1);
-            window.draw(sprite2);
             window.display();
         }
     }
