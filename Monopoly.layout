@@ -2,19 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="utility.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CrearJugador.h" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="823" topLine="23" />
+			<Cursor1 position="645" topLine="8" />
 		</Cursor>
 	</File>
-	<File name="CrearJugador.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="JugarMonopoly.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="224" topLine="132" />
-		</Cursor>
-	</File>
-	<File name="CrearJugador.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="232" topLine="0" />
+			<Cursor1 position="386" topLine="9" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -22,14 +17,32 @@
 			<Cursor1 position="2736" topLine="66" />
 		</Cursor>
 	</File>
-	<File name="JugarMonopoly.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="JugarMonopoly.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4625" topLine="103" />
+			<Cursor1 position="118" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="24" />
+		</Folding>
+	</File>
+	<File name="Banco.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="217" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="JugarMonopoly.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="utility.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="480" topLine="5" />
+			<Cursor1 position="823" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="Banco.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="CrearJugador.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="111" topLine="9" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

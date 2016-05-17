@@ -17,21 +17,40 @@ vector<CrearJugador> JugarMonopoly::cargarJugadores()
     return jugadores;
 }
 
-bool JugarMonopoly::mover(sf::Sprite ficha,int suma_dados)
-{
-//    if(ficha.getPosition().y==640){
-//        if(suma_dados>0){
-//            return mover(ficha,suma_dados-1);
-//        }
-//    }
+/**
+*   Esta es una Prueba en busca de optimizar la funcion movimiento
+*/
 
+Mover JugarMonopoly::movimiento(sf::Sprite ficha,int suma_dados)
+{
+    int getPositionX, getPositionY, dado_file, setPositionX, setPositionY;
+    cout<<"entrando..."<<endl;
+    cout<<ficha.getPosition().x<<endl;
+    cout<<ficha.getPosition().y<<endl;
+
+     ifstream out1("setPositions.txt");
+        while(out1>>getPositionX&&out1>>getPositionY&&out1>>dado_file&&out1>>setPositionX&&out1>>setPositionY){
+            if(ficha.getPosition().x==getPositionX&&ficha.getPosition().y==getPositionY&&suma_dados==dado_file){
+                cout<<"entrando..."<<endl;
+                cout<<suma_dados<<endl;
+                ficha.setPosition(setPositionX,setPositionY);
+                return Mover(setPositionX,setPositionY);
+                suma_dados=0;
+            }
+        }
+        out1.close();
 }
+/**
+*   Esta es una Prueba en busca de optimizar la funcion movimiento
+*/
 
 void JugarMonopoly::ventanaTablero()
 {
     sf::RenderWindow window;
-    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_1,text_ficha_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6;
-    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_1,back_ficha_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
+    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6;
+    sf::Texture text_ficha_1;
+    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
+    sf::Sprite back_ficha_1;
     sf::Vector2f mouse;
     sf::Mouse mouse_position;
     int suma_dados,guardar_dado_1,guardar_dado_2,dado_prueba,clicks=0;
@@ -126,11 +145,6 @@ void JugarMonopoly::ventanaTablero()
 
         }
 
-//        if(mover(back_ficha_2,5)){
-//            m=back_ficha_2.getPosition().x;
-//            back_ficha_2.setPosition(m-85,640);
-//            cout<<back_ficha_2.getPosition().x<<endl;
-//        }
         if(clicks%2==0){
             ifstream out1("setPositions.txt");
             while(out1>>getPositionX&&out1>>getPositionY&&out1>>dado_file&&out1>>setPositionX&&out1>>setPositionY){

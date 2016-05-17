@@ -5,6 +5,7 @@
 #include <vector>
 #include "utility.h"
 #include "CrearJugador.h"
+#include "Mover.h"
 #include <SFML/Graphics.hpp>
 #include <fstream>
 
@@ -19,7 +20,8 @@ class JugarMonopoly
         JugarMonopoly();
         vector<CrearJugador>jugadores;
         vector<CrearJugador>cargarJugadores();
-        bool mover(sf::Sprite sprite,int suma_dados);
+        Mover mover();
+        Mover movimiento(sf::Sprite sprite,int suma_dados);
         void ventanaTablero();
         virtual ~JugarMonopoly();
 

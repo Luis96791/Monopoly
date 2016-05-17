@@ -6,6 +6,43 @@ CrearJugador::CrearJugador(string n, string c)
     color = c;
 }
 
+string CrearJugador::getNombre()
+{
+    return nombre;
+}
+
+string CrearJugador::getColor()
+{
+    return color;
+}
+
+int CrearJugador::getCapital()
+{
+    return capital;
+}
+
+void CrearJugador::setCapital(int c)
+{
+    capital = c;
+}
+
+void CrearJugador::deposito(int cant)
+{
+    int c = getCapital();
+    setCapital(c+cant);
+}
+
+int CrearJugador::retiro(int cant)
+{
+    int c= getCapital();
+    if(getCapital()>cant)
+    {
+        setCapital(c-cant);
+        return cant;
+    }
+    return 0;
+}
+
 void CrearJugador::nuevoJugador(string n,string color)
 {
     jugadores.push_back(CrearJugador(n,color));
