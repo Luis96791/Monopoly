@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1463160984 source:c:\users\luis\desktop\monopoly\main.cpp
+1463532697 source:c:\users\luis\desktop\monopoly\main.cpp
 	<SFML/Graphics.hpp>
 	"utility.h"
 	"CrearJugador.h"
@@ -348,12 +348,14 @@
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1463494569 source:c:\users\user\desktop\monopoly\main.cpp
+1463592728 source:c:\users\user\desktop\monopoly\main.cpp
 	<SFML/Graphics.hpp>
 	"utility.h"
 	"CrearJugador.h"
 	"JugarMonopoly.h"
+	"Propiedad.h"
 	<iostream>
+	<vector>
 
 1462291517 c:\users\user\desktop\monopoly\utility.h
 	<stdlib.h>
@@ -741,7 +743,7 @@
 	<string>
 	<vector>
 
-1463507559 source:c:\users\user\desktop\monopoly\crearjugador.cpp
+1463581531 source:c:\users\user\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
 1463501888 c:\users\user\desktop\monopoly\crearjugador.h
@@ -756,17 +758,17 @@
 
 1462205644 c:\users\user\desktop\monopoly\banco.h
 
-1463440734 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
+1463535122 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
-1463440566 c:\users\luis\desktop\monopoly\crearjugador.h
+1463529679 c:\users\luis\desktop\monopoly\crearjugador.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<fstream>
 	<vector>
 	"utility.h"
 
-1463509111 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+1463513246 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
 1463502064 c:\users\user\desktop\monopoly\jugarmonopoly.h
@@ -791,10 +793,10 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1463439046 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1463529679 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1463437312 c:\users\luis\desktop\monopoly\jugarmonopoly.h
+1463529679 c:\users\luis\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"
@@ -828,4 +830,29 @@
 
 1463494569 source:c:\users\user\desktop\monopoly\mover.cpp
 	"Mover.h"
+
+1463537669 source:c:\users\luis\desktop\monopoly\posesion.cpp
+	"Posesion.h"
+
+1463537672 c:\users\luis\desktop\monopoly\posesion.h
+	<iostream>
+
+1463589438 source:c:\users\user\desktop\monopoly\posesion.cpp
+	"Posesion.h"
+
+1463590368 c:\users\user\desktop\monopoly\posesion.h
+	<iostream>
+
+1463592767 source:c:\users\user\desktop\monopoly\propiedad.cpp
+	"Propiedad.h"
+
+1463591893 c:\users\user\desktop\monopoly\propiedad.h
+	<iostream>
+
+1463586444 source:c:\users\user\desktop\monopoly\servicio.cpp
+	"Servicio.h"
+
+1463585290 c:\users\user\desktop\monopoly\servicio.h
+	"posesion.h"
+	<iostream>
 

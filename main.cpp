@@ -2,7 +2,9 @@
 #include "utility.h"
 #include "CrearJugador.h"
 #include "JugarMonopoly.h"
+#include "Propiedad.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -78,15 +80,31 @@ int main()
 //        window.display();
 //    }
 
-    CrearJugador crearJugador("","");
-    crearJugador.ventanaCrearJugador();
+/**
+    AQUI SE HACEN LAS PRUEBAS (CLASES, FUNCIONES Y VENTANAS)
+*/
 
+    vector<Propiedad*>propiedad;
+    propiedad.push_back(new Propiedad("Avenida Ventor","Banco",20,200,"amarillo"));
+    propiedad.push_back(new Propiedad("Avenida Connecticut","Banco",50,250,"amarillo"));
+
+    for(int c = 0;c < propiedad.size();c++){
+       propiedad[c]->print();
+    }
+
+//    CrearJugador crearJugador("","");
+//    crearJugador.ventanaCrearJugador();
+//
 //    JugarMonopoly jugar;
 //    jugar.ventanaTablero();
 //    CrearJugador crearJugador("","");
-   JugarMonopoly jugarMonopoly;
+//   JugarMonopoly jugarMonopoly;
 //    crearJugador.ventanaCrearJugador();
-   jugarMonopoly.ventanaTablero();
+//   jugarMonopoly.ventanaTablero();
+
+/**
+    AQUI SE HACEN LAS PRUEBAS (CLASES, FUNCIONES Y VENTANAS)
+*/
 
     return 0;
 }
