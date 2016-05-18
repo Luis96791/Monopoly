@@ -84,9 +84,9 @@ int main()
 //    JugarMonopoly jugar;
 //    jugar.ventanaTablero();
 //    CrearJugador crearJugador("","");
-   JugarMonopoly jugarMonopoly;
+//   JugarMonopoly jugarMonopoly;
 //    crearJugador.ventanaCrearJugador();
-   jugarMonopoly.ventanaTablero();
+//   jugarMonopoly.ventanaTablero();
 
     return 0;
 }

@@ -63,11 +63,11 @@ void CrearJugador::escribirArchivo()
 void CrearJugador::ventanaCrearJugador(){
     sf::RenderWindow window;
     sf::Texture text_registrar,text_ficha_amarilla,text_ficha_azul,text_ficha_blanca,
-                text_ficha_naranja,text_ficha_roja,text_ficha_verde, text_nuevo_jugador,
-                text_seleccionador;
+                text_ficha_naranja,text_ficha_roja,text_ficha_verde,
+                text_seleccionador, text_warning,text_aceptar;
     sf::Sprite back_registrar,back_ficha_amarilla,back_ficha_azul,back_ficha_blanca,
-                back_ficha_naranja,back_ficha_roja,back_ficha_verde, back_nuevo_jugador,
-                back_seleccionador;
+                back_ficha_naranja,back_ficha_roja,back_ficha_verde,
+                back_seleccionador, back_warning,back_aceptar;
     sf::Font fuente;
     sf::String nombre_jugador;
     sf::Text txt_nombre_jugador;
@@ -75,6 +75,7 @@ void CrearJugador::ventanaCrearJugador(){
 
 
     int pos=0;
+    bool mensaje = false;
 
     window.create(sf::VideoMode(650,500,32),"Registrar Jugadores",sf::Style::Close);
     window.setVerticalSyncEnabled(true);
@@ -105,8 +106,11 @@ void CrearJugador::ventanaCrearJugador(){
     text_ficha_verde.loadFromFile("fichas/ficha_verde.png");
     back_ficha_verde.setTexture(text_ficha_verde);
 
-    text_nuevo_jugador.loadFromFile("ventanas/nuevo_jugador.png");
-    back_nuevo_jugador.setTexture(text_nuevo_jugador);
+    text_warning.loadFromFile("ventanas/warning.png");
+    back_warning.setTexture(text_warning);
+
+    text_aceptar.loadFromFile("ventanas/btn_aceptar.png");
+    back_aceptar.setTexture(text_aceptar);
 
     back_seleccionador.setPosition(40,285);
     back_ficha_amarilla.setPosition(44,290);
@@ -115,7 +119,8 @@ void CrearJugador::ventanaCrearJugador(){
     back_ficha_naranja.setPosition(44,370);
     back_ficha_roja.setPosition(125,370);
     back_ficha_verde.setPosition(205,370);
-    back_nuevo_jugador.setPosition(400,400);
+    back_warning.setPosition(150,200);
+    back_aceptar.setPosition(250,320);
 
     if(!fuente.loadFromFile("arial.ttf")){}
 
@@ -130,8 +135,10 @@ void CrearJugador::ventanaCrearJugador(){
         sf::Event event;
         while(window.pollEvent(event))
         {
-            if(event.type==sf::Event::Closed)
+            if(event.type==sf::Event::Closed&&jugadores.size()==1)
             {
+                mensaje = true;
+            }else if(event.type==sf::Event::Closed&&jugadores.size()>1){
                 window.close();
             }
 
@@ -215,6 +222,8 @@ void CrearJugador::ventanaCrearJugador(){
             }
         }
 
+        if(utility.clickSprite(back_aceptar,mouse)){mensaje=false;}
+
         window.draw(back_registrar);
         window.draw(back_seleccionador);
         window.draw(txt_nombre_jugador);
@@ -224,7 +233,8 @@ void CrearJugador::ventanaCrearJugador(){
         window.draw(back_ficha_naranja);
         window.draw(back_ficha_roja);
         window.draw(back_ficha_verde);
-        window.draw(back_nuevo_jugador);
+        if(mensaje){window.draw(back_warning);}
+        if(mensaje){window.draw(back_aceptar);}
         window.display();
     }
 }
