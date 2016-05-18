@@ -166,8 +166,8 @@ void JugarMonopoly::ventanaTablero()
 
             //PROBANDO TABLERO
         }
-        txt_jugador_1.setString(jugadores[0].getNombre()+"     "+utility.toString(jugadores[0].getCapital()));
-        txt_jugador_2.setString(jugadores[1].getNombre()+"     "+utility.toString(jugadores[1].getCapital()));
+        txt_jugador_1.setString(jugadores[0].getNombre()+"\t\t\t"+utility.toString(jugadores[0].getCapital()));
+        txt_jugador_2.setString(jugadores[1].getNombre()+"\t\t\t"+utility.toString(jugadores[1].getCapital()));
 //        nombre_jugador_1 = jugadores[0].getNombre();
 //        capital_jugador_1 = jugadores[0].getCapital();
 //        cout<<nombre_jugador_1<<endl;
