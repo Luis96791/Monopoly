@@ -84,19 +84,19 @@ int main()
     AQUI SE HACEN LAS PRUEBAS (CLASES, FUNCIONES Y VENTANAS)
 */
 
-    vector<Propiedad*>propiedad;
-    propiedad.push_back(new Propiedad("Avenida Ventor","Banco",20,200,"amarillo"));
-    propiedad.push_back(new Propiedad("Avenida Connecticut","Banco",50,250,"amarillo"));
-
-    for(int c = 0;c < propiedad.size();c++){
-       propiedad[c]->print();
-    }
-
-//    CrearJugador crearJugador("","");
-//    crearJugador.ventanaCrearJugador();
+//    vector<Propiedad*>propiedad;
+//    propiedad.push_back(new Propiedad("Avenida Ventor","Banco",20,200,"amarillo"));
+//    propiedad.push_back(new Propiedad("Avenida Connecticut","Banco",50,250,"amarillo"));
 //
-//    JugarMonopoly jugar;
-//    jugar.ventanaTablero();
+//    for(int c = 0;c < propiedad.size();c++){
+//       propiedad[c]->print();
+//    }
+
+    CrearJugador crearJugador("","");
+    crearJugador.ventanaCrearJugador();
+//
+    JugarMonopoly jugar;
+    jugar.ventanaTablero();
 //    CrearJugador crearJugador("","");
 //   JugarMonopoly jugarMonopoly;
 //    crearJugador.ventanaCrearJugador();

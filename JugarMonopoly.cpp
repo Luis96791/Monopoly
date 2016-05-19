@@ -44,11 +44,13 @@ void JugarMonopoly::ventanaTablero()
 {
     sf::RenderWindow window;
 
-    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6;
+    sf::Texture text_tablero,text_dado_1,text_dado_2,text_ficha_3,text_ficha_4,text_ficha_5,text_ficha_6,
+        text_carta_arca, text_carta_fortuna;
     sf::Texture ref_text_ficha_1,ref_text_ficha_2;
     sf::Texture *text_ficha_1, *text_ficha_2;
 
-    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6;
+    sf::Sprite back_tablero,back_dado_1,back_dado_2,back_ficha_3,back_ficha_4,back_ficha_5,back_ficha_6,
+        back_carta_arca, back_carta_fortuna;
     sf::Sprite ref_back_ficha_1,ref_back_ficha_2;
     sf::Sprite *back_ficha_1, *back_ficha_2;
 
@@ -76,12 +78,12 @@ void JugarMonopoly::ventanaTablero()
     txt_jugador_1.setFont(font);
     txt_jugador_1.setCharacterSize(24);
     txt_jugador_1.setColor(sf::Color::Blue);
-    txt_jugador_1.setPosition(1000,10);
+    txt_jugador_1.setPosition(1055,10);
 
     txt_jugador_2.setFont(font);
     txt_jugador_2.setCharacterSize(24);
     txt_jugador_2.setColor(sf::Color::Red);
-    txt_jugador_2.setPosition(1000,40);
+    txt_jugador_2.setPosition(1055,40);
 
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
@@ -89,6 +91,10 @@ void JugarMonopoly::ventanaTablero()
     back_dado_1.setTexture(text_dado_1);
     text_dado_2.loadFromFile("dados/1.png");
     back_dado_2.setTexture(text_dado_2);
+    text_carta_arca.loadFromFile("arca_comunal/16.png");
+    back_carta_arca.setTexture(text_carta_arca);
+    text_carta_fortuna.loadFromFile("fortuna/14.png");
+    back_carta_fortuna.setTexture(text_carta_fortuna);
 
     ifstream cargar("jugadores.txt");
     string n, f;
@@ -136,6 +142,8 @@ void JugarMonopoly::ventanaTablero()
 
     back_dado_1.setPosition(1140,580);
     back_dado_2.setPosition(1250,580);
+    back_carta_arca.setPosition(691,2);
+    back_carta_fortuna.setPosition(872,2);
 
      while (window.isOpen())
     {
@@ -186,6 +194,8 @@ void JugarMonopoly::ventanaTablero()
         window.draw(back_dado_2);
         window.draw(txt_jugador_1);
         window.draw(txt_jugador_2);
+        window.draw(back_carta_arca);
+        window.draw(back_carta_fortuna);
 
         if(ficha1){window.draw(*back_ficha_1);}
         if(ficha2){window.draw(*back_ficha_2);}

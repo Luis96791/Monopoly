@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1463676860 source:c:\users\user\desktop\pruebavectores\main.cpp
+	<iostream>
+	"Prueba.h"
+	"Mi_vector.h"
+	<list>
+
+1463675829 source:c:\users\user\desktop\pruebavectores\mi_vector.cpp
+	"Mi_vector.h"
+
+1463676676 c:\users\user\desktop\pruebavectores\mi_vector.h
+	<vector>
+	<iostream>
+
+1463679180 source:c:\users\user\desktop\pruebavectores\prueba.cpp
+	"Prueba.h"
+
+1463677712 c:\users\user\desktop\pruebavectores\prueba.h
+	<vector>
+	"Mi_vector.h"
+	<iostream>
+	<fstream>
+

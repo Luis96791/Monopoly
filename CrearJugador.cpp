@@ -54,8 +54,8 @@ void CrearJugador::escribirArchivo()
 {
     ofstream out(nombre_archivo.c_str());
     for(unsigned int i =0;i< jugadores.size();i++){
-        out<<jugadores[i].nombre<<endl;
-        out<<jugadores[i].color<<endl;
+        out<<jugadores[i].getNombre()<<endl;
+        out<<jugadores[i].getColor()<<endl;
     }
     out.close();
 }
