@@ -1,13 +1,8 @@
 #include "Propiedad.h"
 
-Propiedad::Propiedad(string np, string nd, int r, int v,string cp)
+Propiedad::Propiedad()
 {
-    np = nombre_posesion;
-    nd = nombre_duenio;
-    r = renta;
-    v = valor_hipoteca;
-    cp = color_propiedad;
-    estado_hipoteca = false;
+    //ctor
 }
 
 string Propiedad::getNombrePosesion()
@@ -18,6 +13,15 @@ string Propiedad::getNombrePosesion()
 string Propiedad::getNombreDuenio()
 {
     return nombre_duenio;
+}
+
+string Propiedad::getColorPropiedad(){
+    return color_propiedad;
+}
+
+int Propiedad::getValorPropiedad()
+{
+    return valor_propiedad;
 }
 
 int Propiedad::getRenta()
@@ -35,8 +39,9 @@ bool Propiedad::getEstadoHipoteca()
     return estado_hipoteca;
 }
 
-string Propiedad::getColorPropiedad(){
-    return color_propiedad;
+void Propiedad::setNombrePosesion(string np)
+{
+    nombre_posesion = np;
 }
 
 void Propiedad::setNombreDuenio(string nd)
@@ -44,13 +49,29 @@ void Propiedad::setNombreDuenio(string nd)
     nombre_duenio = nd;
 }
 
+void Propiedad::setColorPropiedad(string c)
+{
+    color_propiedad = c;
+}
+
+void Propiedad::setValorPropiedad(int v)
+{
+    valor_propiedad = v;
+}
+
+void Propiedad::setRenta(int r)
+{
+    renta = r;
+}
+
+void Propiedad::setValorHipoteca(int vh)
+{
+    valor_hipoteca = vh;
+}
+
 void Propiedad::setEstadoHipoteca(bool eh)
 {
     estado_hipoteca = eh;
-}
-
-void Propiedad::print(){
-    cout<<nombre_posesion<<" , "<<nombre_duenio<<" , "<<renta<<endl;
 }
 
 Propiedad::~Propiedad()

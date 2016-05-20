@@ -8,24 +8,30 @@ using namespace std;
 class Propiedad
 {
     public:
-        string nombre_posesion, nombre_duenio, color_propiedad;
-        int valor_hipoteca, renta;
-        bool estado_hipoteca;
-        Propiedad(string np, string nd, int r, int v,string cp);
+        Propiedad();
         string getNombrePosesion();
         string getNombreDuenio();
-        int getRenta();
-        bool getEstadoHipoteca();
-        int getValorHipoteca();
         string getColorPropiedad();
+        int getValorPropiedad();
+        int getRenta();
+        int getValorHipoteca();
+        bool getEstadoHipoteca();
+        void setNombrePosesion(string n);
         void setNombreDuenio(string nd);
+        void setColorPropiedad(string c);
+        void setValorPropiedad(int v);
+        void setRenta(int r);
+        void setValorHipoteca(int vh);
         void setEstadoHipoteca(bool eh);
-        void print();
+
         virtual ~Propiedad();
 
     protected:
 
     private:
+        string nombre_posesion, nombre_duenio, color_propiedad;
+        int  valor_propiedad, valor_hipoteca, renta;
+        bool estado_hipoteca;
 };
 
 #endif // PROPIEDAD_H

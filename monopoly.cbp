@@ -50,6 +50,8 @@
 		<Unit filename="CrearJugador.h" />
 		<Unit filename="JugarMonopoly.cpp" />
 		<Unit filename="JugarMonopoly.h" />
+		<Unit filename="ManejoPropiedades.cpp" />
+		<Unit filename="ManejoPropiedades.h" />
 		<Unit filename="Propiedad.cpp" />
 		<Unit filename="Propiedad.h" />
 		<Unit filename="main.cpp" />
