@@ -64,10 +64,10 @@ void CrearJugador::ventanaCrearJugador(){
     sf::RenderWindow window;
     sf::Texture text_registrar,text_ficha_amarilla,text_ficha_azul,text_ficha_blanca,
                 text_ficha_naranja,text_ficha_roja,text_ficha_verde,
-                text_seleccionador, text_warning,text_aceptar;
+                text_seleccionador, text_warning,text_aceptar, text_jugar;
     sf::Sprite back_registrar,back_ficha_amarilla,back_ficha_azul,back_ficha_blanca,
                 back_ficha_naranja,back_ficha_roja,back_ficha_verde,
-                back_seleccionador, back_warning,back_aceptar;
+                back_seleccionador, back_warning,back_aceptar, back_jugar;
     sf::Font fuente;
     sf::String nombre_jugador;
     sf::Text txt_nombre_jugador;
@@ -112,6 +112,9 @@ void CrearJugador::ventanaCrearJugador(){
     text_aceptar.loadFromFile("ventanas/btn_aceptar.png");
     back_aceptar.setTexture(text_aceptar);
 
+    text_jugar.loadFromFile("ventanas/jugar.png");
+    back_jugar.setTexture(text_jugar);
+
     back_seleccionador.setPosition(40,285);
     back_ficha_amarilla.setPosition(44,290);
     back_ficha_azul.setPosition(125,290);
@@ -121,6 +124,7 @@ void CrearJugador::ventanaCrearJugador(){
     back_ficha_verde.setPosition(205,370);
     back_warning.setPosition(150,200);
     back_aceptar.setPosition(250,320);
+    back_jugar.setPosition(380,380);
 
     if(!fuente.loadFromFile("arial.ttf")){}
 
@@ -135,10 +139,11 @@ void CrearJugador::ventanaCrearJugador(){
         sf::Event event;
         while(window.pollEvent(event))
         {
-            if(event.type==sf::Event::Closed&&jugadores.size()==1)
+            if(utility.clickSprite(back_jugar,mouse)&&jugadores.size()==1)
             {
                 mensaje = true;
-            }else if(event.type==sf::Event::Closed&&jugadores.size()>1){
+            }
+            if(utility.clickSprite(back_jugar,mouse)&&jugadores.size()>1){
                 window.close();
             }
 
@@ -233,6 +238,7 @@ void CrearJugador::ventanaCrearJugador(){
         window.draw(back_ficha_naranja);
         window.draw(back_ficha_roja);
         window.draw(back_ficha_verde);
+        window.draw(back_jugar);
         if(mensaje){window.draw(back_warning);}
         if(mensaje){window.draw(back_aceptar);}
         window.display();
