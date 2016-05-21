@@ -173,7 +173,7 @@ void JugarMonopoly::ventanaTablero()
     back_comprar.setPosition(800,150);
     back_info.setPosition(700,250);
     back_btnAceptar.setPosition(800,380);
-    back_derecha_tablero.setPosition(691,0);
+    back_derecha_tablero.setPosition(690,0);
 
      while (window.isOpen())
     {
@@ -206,7 +206,7 @@ void JugarMonopoly::ventanaTablero()
                 movimiento(back_ficha_1,suma_dados);
                 suma_dados=0;
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
-                    propiedad.ventanaCompras();
+                    propiedad.ventanaCompras(back_ficha_1);
                 }
             }else{
                 movimiento(back_ficha_2,suma_dados);

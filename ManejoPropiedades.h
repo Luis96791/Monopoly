@@ -6,15 +6,17 @@
 #include <fstream>
 #include <iostream>
 #include "Propiedad.h"
+#include "utility.h"
 
 using namespace std;
 
 class ManejoPropiedades
 {
     public:
+        Utility utility;
         ManejoPropiedades();
         void setPropiedades(Propiedad propiedad);
-        void ventanaCompras();
+        void ventanaCompras(sf::Sprite* sprite);
         Propiedad getPropiedades(int pos);
         void llenarPropiedades();
         void mostrarPropiedades();

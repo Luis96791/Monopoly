@@ -796,7 +796,7 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1463714093 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1463789037 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
 1463708249 c:\users\luis\desktop\monopoly\jugarmonopoly.h
@@ -866,15 +866,16 @@
 1463700784 c:\users\luis\desktop\monopoly\propiedad.h
 	<iostream>
 
-1463711510 source:c:\users\luis\desktop\monopoly\manejopropiedades.cpp
+1463791459 source:c:\users\luis\desktop\monopoly\manejopropiedades.cpp
 	"ManejoPropiedades.h"
 
-1463702978 c:\users\luis\desktop\monopoly\manejopropiedades.h
+1463791639 c:\users\luis\desktop\monopoly\manejopropiedades.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<fstream>
 	<iostream>
 	"Propiedad.h"
+	"utility.h"
 
 1463750078 c:\users\user\desktop\monopoly\manejopropiedades.h
 	<SFML/Graphics.hpp>
