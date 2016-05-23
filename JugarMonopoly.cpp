@@ -206,22 +206,29 @@ void JugarMonopoly::ventanaTablero()
                 movimiento(back_ficha_1,suma_dados);
                 suma_dados=0;
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
-                    propiedad.ventanaCompras(back_ficha_1);
+                    if(propiedad.ventanaCompras(jugadores[0].nombre, back_ficha_1)){
+                        if(jugadores[0].capital > propiedad.getPrecio()){
+
+                                cout<<propiedad.getDuenio()<<endl;
+                                cout<<propiedad.getPrecio()<<endl;
+                                cout<<"puedes comprarla"<<endl;
+                                jugadores[0].capital-=propiedad.getPrecio();
+
+                        }
+                    }
                 }
             }else{
                 movimiento(back_ficha_2,suma_dados);
                 suma_dados=0;
             }
             if(!validarCompra(back_ficha_1)){
-                    if(utility.clickSprite(back_comprar,mouse)){
-                        mensaje = true;
-                    }
+                if(utility.clickSprite(back_comprar,mouse)){
+                    mensaje = true;
+                }
             }
 
             //PROBANDO TABLERO
-            if(utility.clickSprite(back_btnAceptar,mouse)){
-                mensaje = false;
-            }
+            if(utility.clickSprite(back_btnAceptar,mouse)){mensaje = false;}
         }
         txt_jugador_1.setString(jugadores[0].getNombre()+"\t\t\t"+utility.toString(jugadores[0].getCapital()));
         txt_jugador_2.setString(jugadores[1].getNombre()+"\t\t\t"+utility.toString(jugadores[1].getCapital()));
