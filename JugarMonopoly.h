@@ -5,7 +5,7 @@
 #include <vector>
 #include "utility.h"
 #include "CrearJugador.h"
-#include "ManejoPropiedades.h"
+#include "Propiedad.h"
 #include "Mover.h"
 #include <SFML/Graphics.hpp>
 #include <fstream>
@@ -15,6 +15,7 @@ using namespace std;
 class JugarMonopoly
 {
     public:
+        vector<Propiedad>propiedades;
         string nombre_archivo;
         CrearJugador crearJugador();
         Utility utility;
@@ -25,6 +26,12 @@ class JugarMonopoly
         sf::Sprite movimiento(sf::Sprite* sprite,int suma_dados);
         bool validarCompra(sf::Sprite* sprite);
         void ventanaTablero();
+        Propiedad getPropiedades(int pos);
+        void setPropiedades(Propiedad propiedad);
+        void llenarPropiedades();
+        void mostrarPropiedades();
+        void ventanaCompras(sf::Sprite* sprite, string nombre);
+        int infoPropiedad(sf::Sprite* sprite);
         virtual ~JugarMonopoly();
 
     protected:
