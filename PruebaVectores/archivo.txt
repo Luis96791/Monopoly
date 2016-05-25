@@ -1,5 +1,0 @@
-luis 20
-luis1 30
-luis2 40
-luis3 55
-luis4 60

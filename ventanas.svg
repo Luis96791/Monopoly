@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4406038"
-     inkscape:cx="857.45739"
-     inkscape:cy="-966.14888"
+     inkscape:zoom="0.50933036"
+     inkscape:cx="418.04266"
+     inkscape:cy="1009.5784"
      inkscape:document-units="px"
      inkscape:current-layer="g4206"
      showgrid="false"
@@ -746,6 +746,47 @@
                            y="1741.9932" /></flowRegion><flowPara
                          id="flowPara3462"
                          style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99993515px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0000ff">ACEPTAR</flowPara></flowRoot>                  </g>
+                </g>
+                <g
+                   id="g4303"
+                   transform="translate(-12.586244,-38.49641)">
+                  <ellipse
+                     ry="32.436794"
+                     rx="38.208225"
+                     cy="185.42279"
+                     cx="1118.9296"
+                     id="path4263"
+                     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                  <ellipse
+                     ry="32.436794"
+                     rx="38.208221"
+                     cy="185.80586"
+                     cx="1253.7159"
+                     id="path4263-3"
+                     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                  <path
+                     sodipodi:nodetypes="ccccc"
+                     inkscape:connector-curvature="0"
+                     id="path4280"
+                     d="m 1016.6858,58.514863 c -45.8604,30.956211 -32.6176,75.393357 0,101.855917 l 288.5558,0.74047 c -30.629,-26.35673 -45.2789,-67.579284 -0.8989,-103.363109 z"
+                     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.83582568px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                  <path
+                     inkscape:connector-curvature="0"
+                     id="path4282"
+                     d="m 1041.6908,150.45359 -54.4995,64.82738 65.5705,0 30.2916,-62.42636 z"
+                     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.86369264px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                  <path
+                     sodipodi:nodetypes="ccccccc"
+                     inkscape:connector-curvature="0"
+                     id="path4284"
+                     d="m 1012.166,-43.730487 23.2566,105.769764 56.6882,-1.652651 26.1639,-106.596091 -13.0819,-16.526525 -77.7647,0.826327 z"
+                     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.78941309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                  <path
+                     sodipodi:nodetypes="ccccc"
+                     inkscape:connector-curvature="0"
+                     id="path4301"
+                     d="m 1340.1825,-58.611942 -104.7207,1.473146 c -33.8812,11.951134 -51.047,87.246125 20.9385,118.0344 5.1954,35.847281 1.122,98.756566 75.8498,105.084496 -35.4937,-64.30313 -35.2476,-161.1941417 7.9324,-224.592042 z"
+                     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.98695236px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
                 </g>
               </g>
             </g>

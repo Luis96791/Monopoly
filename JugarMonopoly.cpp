@@ -297,8 +297,16 @@ void JugarMonopoly::ventanaTablero()
             }else{
                 movimiento(back_ficha_2,suma_dados);
                 suma_dados=0;
+                if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)&&ventanaCompras(back_ficha_2,jugadores[1].nombre)){
+                    validarInfoDeCompra(back_ficha_2, 1);
+                }
             }
+
             if(!validarCompra(back_ficha_1)){
+                if(utility.clickSprite(back_comprar,mouse)){
+                    mensaje = true;
+                }
+            }else if(!validarCompra(back_ficha_2)){
                 if(utility.clickSprite(back_comprar,mouse)){
                     mensaje = true;
                 }
@@ -438,6 +446,18 @@ bool JugarMonopoly::ventanaCompras(sf::Sprite* sprite, string nombre)
     else if(sprite->getPosition().x==640&&sprite->getPosition().y==555){
         text_titulo.loadFromFile("propiedades/estadio_olimpico.png");
     }
+    else if(sprite->getPosition().x==325&&sprite->getPosition().y==640){
+        text_titulo.loadFromFile("propiedades/ferrocarril_sur.png");
+    }
+    else if(sprite->getPosition().x==20&&sprite->getPosition().y==325){
+        text_titulo.loadFromFile("propiedades/ferrocarril_oeste.png");
+    }
+    else if(sprite->getPosition().x==325&&sprite->getPosition().y==20){
+        text_titulo.loadFromFile("propiedades/ferrocarril_norte.png");
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==325){
+        text_titulo.loadFromFile("propiedades/ferrocarril_este.png");
+    }
 
     back_titulo.setTexture(text_titulo);
 
@@ -507,7 +527,7 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
         return 1;
     }
     else if(sprite->getPosition().x==270&&sprite->getPosition().y==640){
-        return 2;
+        return 3;
     }
     else if(sprite->getPosition().x==160&&sprite->getPosition().y==640){
         return 4;
@@ -566,6 +586,18 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
     else if(sprite->getPosition().x==640&&sprite->getPosition().y==555){
         return 27;
     }
+    else if(sprite->getPosition().x==325&&sprite->getPosition().y==640){
+        return 2;
+    }
+    else if(sprite->getPosition().x==20&&sprite->getPosition().y==325){
+        return 10;
+    }
+    else if(sprite->getPosition().x==325&&sprite->getPosition().y==20){
+        return 17;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==325){
+        return 25;
+    }
 }
 
 /**
@@ -582,6 +614,7 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
 
 void JugarMonopoly::validarInfoDeCompra(sf::Sprite* sprite, int posJugador)
 {
+    cout<<posJugador<<endl;
     if(propiedades[infoPropiedad(sprite)].getNombreDuenio()=="banco"){
         if(jugadores[posJugador].capital > propiedades[infoPropiedad(sprite)].getValorPropiedad()){
             ventanaCompras(sprite,jugadores[posJugador].nombre);
