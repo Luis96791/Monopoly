@@ -27,13 +27,13 @@ void CrearJugador::setCapital(int c)
     capital = c;
 }
 
-void CrearJugador::deposito(int cant)
+void CrearJugador::depositar(int cant)
 {
     int c = getCapital();
     setCapital(c+cant);
 }
 
-int CrearJugador::retiro(int cant)
+int CrearJugador::retirar(int cant)
 {
     int c= getCapital();
     if(getCapital()>cant)

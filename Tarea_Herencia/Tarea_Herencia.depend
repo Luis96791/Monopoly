@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1464134903 source:c:\users\luis\desktop\tarea_herencia\carta.cpp
+	"Carta.h"
+
+1464134911 c:\users\luis\desktop\tarea_herencia\carta.h
+	<iostream>
+
+1464139638 source:c:\users\luis\desktop\tarea_herencia\main.cpp
+	<iostream>
+	"Carta.h"
+	"Propiedad.h"
+	"Estaciones.h"
+	"Servicios.h"
+
+1464134831 source:c:\users\luis\desktop\tarea_herencia\propiedad.cpp
+	"Propiedad.h"
+
+1464134848 c:\users\luis\desktop\tarea_herencia\propiedad.h
+	<iostream>
+	"Carta.h"
+
+1464134983 source:c:\users\luis\desktop\tarea_herencia\estaciones.cpp
+	"Estaciones.h"
+
+1464134962 c:\users\luis\desktop\tarea_herencia\estaciones.h
+	"Carta.h"
+	<iostream>
+
+1464134944 source:c:\users\luis\desktop\tarea_herencia\servicios.cpp
+	"Servicios.h"
+
+1464134952 c:\users\luis\desktop\tarea_herencia\servicios.h
+	"Carta.h"
+	<iostream>
+

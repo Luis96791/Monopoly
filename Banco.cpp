@@ -2,7 +2,7 @@
 
 Banco::Banco()
 {
-    capital_bancario = 2000000;
+    capital_bancario = 200000;
 }
 
 void Banco::depositar(int cantidad)

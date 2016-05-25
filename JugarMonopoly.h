@@ -6,6 +6,7 @@
 #include "utility.h"
 #include "CrearJugador.h"
 #include "Propiedad.h"
+#include "Banco.h"
 #include "Mover.h"
 #include <SFML/Graphics.hpp>
 #include <fstream>
@@ -19,6 +20,7 @@ class JugarMonopoly
         string nombre_archivo;
         CrearJugador crearJugador();
         Utility utility;
+        Banco banco;
         JugarMonopoly();
         vector<CrearJugador>jugadores;
         vector<CrearJugador>cargarJugadores();
@@ -31,6 +33,7 @@ class JugarMonopoly
         void setPropiedades(Propiedad propiedad);
         void llenarPropiedades();
         void mostrarPropiedades();
+        void cobrarImpuestos(sf::Sprite* sprite, int posJugador);
         bool ventanaCompras(sf::Sprite* sprite, string nombre);
         int infoPropiedad(sf::Sprite* sprite);
         virtual ~JugarMonopoly();

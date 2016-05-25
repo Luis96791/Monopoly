@@ -23,8 +23,8 @@ class CrearJugador
         string getColor();
         int getCapital();
         void setCapital(int c);
-        void deposito(int cant);
-        int retiro(int cant);
+        void depositar(int cant);
+        int retirar(int cant);
         void escribirArchivo();
 
         void ventanaCrearJugador();
