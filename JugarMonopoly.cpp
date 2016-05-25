@@ -17,6 +17,11 @@ Propiedad JugarMonopoly::getPropiedades(int pos)
     return propiedades[pos];
 }
 
+/**
+    Esta funcion llena el vector propiedades a partir de
+    un archivo de texto con los valores por default
+*/
+
 void JugarMonopoly::llenarPropiedades()
 {
     string archivo = "propiedades.txt";
