@@ -301,7 +301,6 @@ void JugarMonopoly::ventanaTablero()
 
             if(clicks%2==0){
                 movimiento(back_ficha_1,suma_dados);
-                suma_dados=0;
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_1, 0);
                 }
@@ -314,9 +313,12 @@ void JugarMonopoly::ventanaTablero()
                     cobrarImpuestos(back_ficha_1,0);
                     cobrar_impuesto = false;
                 }
+                if(verificarSalida(back_ficha_1,suma_dados)){
+                    cobrarSalida(0);
+                }
+                suma_dados=0;
             }else if(clicks%1==0){
                 movimiento(back_ficha_2,suma_dados);
-                suma_dados=0;
                 if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_2, 1);
                 }
@@ -329,15 +331,21 @@ void JugarMonopoly::ventanaTablero()
                     cobrarImpuestos(back_ficha_2,1);
                     cobrar_impuesto = false;
                 }
+                if(verificarSalida(back_ficha_2,suma_dados)){
+                    cobrarSalida(1);
+                }
+                cout<<"pos x: "<<back_ficha_2->getPosition().x<<endl;
+                cout<<"pos y: "<<back_ficha_2->getPosition().y<<endl;
+                cout<<"suma: "<<suma_dados<<endl;
+                suma_dados=0;
             }
-
-
 
             //PROBANDO TABLERO
             if(utility.clickSprite(back_btnAceptar,mouse)){mensaje = false;}
             if(utility.clickSprite(back_btnCapital_insuf,mouse)){msj_capital_insuf = false;}
             if(utility.clickSprite(back_btnPropiedad_comprada,mouse)){msj_propiedad_comprada = false;}
         }
+
         txt_jugador_1.setString(jugadores[0].getNombre()+"\t"+utility.toString(jugadores[0].getCapital()));
         txt_jugador_2.setString(jugadores[1].getNombre()+"\t"+utility.toString(jugadores[1].getCapital()));
         txt_banco.setString("Banco:\t"+utility.toString(banco.capital_bancario));
@@ -562,7 +570,7 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
         return 6;
     }
     else if(sprite->getPosition().x==20&&sprite->getPosition().y==440){
-        return 7;
+        return 8;
     }
     else if(sprite->getPosition().x==20&&sprite->getPosition().y==385){
         return 9;
@@ -620,9 +628,11 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
     }
     else if(sprite->getPosition().x==640&&sprite->getPosition().y==325){
         return 25;
-    }else if(sprite->getPosition().x ==640&&sprite->getPosition().y==495){
+    }
+    else if(sprite->getPosition().x ==640&&sprite->getPosition().y==495){
         return -1;
-    }else if(sprite->getPosition().x ==385&&sprite->getPosition().y==640){
+    }
+    else if(sprite->getPosition().x ==385&&sprite->getPosition().y==640){
         return -1;
     }
 }
@@ -668,6 +678,50 @@ void JugarMonopoly::cobrarImpuestos(sf::Sprite* sprite, int posJugador)
         jugadores[posJugador].retirar(200);
         banco.depositar(200);
     }
+}
+
+bool JugarMonopoly::verificarSalida(sf::Sprite* sprite, int dados)
+{
+    if(sprite->getPosition().x==495&&sprite->getPosition().y==20&&dados==12){
+        return true;
+    }
+    else if(sprite->getPosition().x==555&&sprite->getPosition().y==20&&dados==11){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==105&&dados==9){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==160&&dados==8){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==215&&dados==7){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==270&&dados==6){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==325&&dados==5){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==385&&dados==4){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==440&&dados==3){
+        return true;
+    }
+    else if(sprite->getPosition().x==640&&sprite->getPosition().y==495&&dados==2){
+        return true;
+    }
+//    else if(sprite->getPosition().x==640&&sprite->getPosition().y==555&&dados==1){
+//        return true;
+//    }
+    return false;
+}
+
+void JugarMonopoly::cobrarSalida(int posJugador)
+{
+    jugadores[posJugador].depositar(200);
+    banco.retirar(200);
 }
 
 JugarMonopoly::~JugarMonopoly()

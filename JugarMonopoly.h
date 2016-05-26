@@ -35,6 +35,8 @@ class JugarMonopoly
         void mostrarPropiedades();
         void cobrarImpuestos(sf::Sprite* sprite, int posJugador);
         bool ventanaCompras(sf::Sprite* sprite, string nombre);
+        bool verificarSalida(sf::Sprite* sprite, int dados);
+        void cobrarSalida(int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
         virtual ~JugarMonopoly();
 
