@@ -5,6 +5,8 @@ CrearJugador::CrearJugador(string n, string c)
     nombre = n;
     color = c;
     capital = 1500;
+    isPreso = false;
+    acumular_turnos = 0;
 }
 
 string CrearJugador::getNombre()
@@ -15,6 +17,15 @@ string CrearJugador::getNombre()
 string CrearJugador::getColor()
 {
     return color;
+}
+
+bool CrearJugador::getIsPreso(){
+    return isPreso;
+}
+
+void CrearJugador::setIsPreso(bool p)
+{
+    isPreso = p;
 }
 
 int CrearJugador::getCapital()

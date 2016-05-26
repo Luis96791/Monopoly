@@ -218,7 +218,7 @@ void JugarMonopoly::ventanaTablero()
 
     ifstream cargar("jugadores.txt");
     string n, f;
-    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6, cobrar_impuesto;
+    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6, cobrar_impuesto, salir_carcel = false;
     while(cargar>>n&&cargar>>f){
             cout<<f<<endl;
         if(f=="ficha_azul"){
@@ -301,6 +301,10 @@ void JugarMonopoly::ventanaTablero()
 
             if(clicks%2==0){
                 movimiento(back_ficha_1,suma_dados);
+                if(aLaCarcel(back_ficha_1)){
+                    ventanaSalirCarcel(0);
+                }
+
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_1, 0);
                 }
@@ -316,9 +320,14 @@ void JugarMonopoly::ventanaTablero()
                 if(verificarSalida(back_ficha_1,suma_dados)){
                     cobrarSalida(0);
                 }
+
                 suma_dados=0;
             }else if(clicks%1==0){
                 movimiento(back_ficha_2,suma_dados);
+                if(aLaCarcel(back_ficha_2)){
+                    ventanaSalirCarcel(1);
+                }
+
                 if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_2, 1);
                 }
@@ -723,6 +732,83 @@ void JugarMonopoly::cobrarSalida(int posJugador)
     jugadores[posJugador].depositar(200);
     banco.retirar(200);
 }
+
+void JugarMonopoly::ventanaSalirCarcel(int posJugador)
+{
+    sf::RenderWindow window;
+    sf::Vector2f mouse;
+    sf::Texture texture, text_pagar, text_esperar;
+    sf::Sprite background, back_pagar, back_esperar;
+
+    window.create(sf::VideoMode(500,500),"Salir de la Carcel",sf::Style::Close);
+
+    texture.loadFromFile("ventanas/info_carcel.png");
+    background.setTexture(texture);
+    text_pagar.loadFromFile("ventanas/btn_pagar.png");
+    back_pagar.setTexture(text_pagar);
+    text_esperar.loadFromFile("ventanas/btn_esperar.png");
+    back_esperar.setTexture(text_esperar);
+
+    back_esperar.setPosition(370,150);
+    back_pagar.setPosition(370,230);
+
+    while(window.isOpen())
+    {
+        mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+        sf::Event event;
+        while(window.pollEvent(event))
+        {
+            if(event.type==sf::Event::Closed)
+            {
+                window.close();
+            }
+        }
+
+        if(utility.clickSprite(back_pagar,mouse)){
+            jugadores[posJugador].retirar(50);
+            banco.depositar(50);
+            window.close();
+        }
+
+        if(utility.clickSprite(back_esperar,mouse)){
+            jugadores[posJugador].setIsPreso(true);
+            window.close();
+        }
+
+        window.draw(background);
+        window.draw(back_esperar);
+        window.draw(back_pagar);
+        window.display();
+    }
+}
+
+bool JugarMonopoly::aLaCarcel(sf::Sprite* sprite)
+{
+    if(sprite->getPosition().x==640&&sprite->getPosition().y==20)
+    {
+        sprite->setPosition(20,640);
+        return true;
+    }
+    return false;
+}
+
+//bool JugarMonopoly::esperarTresTurnos(int acum, int dado1, int dado2, int posJugador)
+//{
+//    if(acum <= 3){
+//        if(dado1 == dado2){
+//            jugadores[posJugador].setIsPreso(false);
+//            return true;
+//        }
+//    }
+//
+//    if(acum == 3){
+//        if(dado1 != dado2){
+//            jugadores[posJugador].retirar(50);
+//            banco.depositar(50);
+//            jugadores[posJugador].setIsPreso(false);
+//        }
+//    }
+//}
 
 JugarMonopoly::~JugarMonopoly()
 {

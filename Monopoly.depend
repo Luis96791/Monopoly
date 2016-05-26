@@ -745,17 +745,17 @@
 	<string>
 	<vector>
 
-1464190917 source:c:\users\user\desktop\monopoly\crearjugador.cpp
+1464285579 source:c:\users\user\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
-1464190862 c:\users\user\desktop\monopoly\crearjugador.h
+1464285569 c:\users\user\desktop\monopoly\crearjugador.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<fstream>
 	<vector>
 	"utility.h"
 
-1462205637 source:c:\users\user\desktop\monopoly\banco.cpp
+1464196875 source:c:\users\user\desktop\monopoly\banco.cpp
 	"Banco.h"
 
 1462205644 c:\users\user\desktop\monopoly\banco.h
@@ -770,10 +770,10 @@
 	<vector>
 	"utility.h"
 
-1464195476 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+1464286494 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1464194951 c:\users\user\desktop\monopoly\jugarmonopoly.h
+1464284310 c:\users\user\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"

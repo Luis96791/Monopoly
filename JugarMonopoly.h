@@ -29,6 +29,7 @@ class JugarMonopoly
         bool validarCompra(sf::Sprite* sprite);
         void validarInfoDeCompra(sf::Sprite* sprite, int posJugador);
         void ventanaTablero();
+        void ventanaSalirCarcel(int posJugador);
         Propiedad getPropiedades(int pos);
         void setPropiedades(Propiedad propiedad);
         void llenarPropiedades();
@@ -36,6 +37,8 @@ class JugarMonopoly
         void cobrarImpuestos(sf::Sprite* sprite, int posJugador);
         bool ventanaCompras(sf::Sprite* sprite, string nombre);
         bool verificarSalida(sf::Sprite* sprite, int dados);
+        bool aLaCarcel(sf::Sprite* sprite);
+        bool esperarTresTurnos(int acum, int dado1, int dado2, int posJugador);
         void cobrarSalida(int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
         virtual ~JugarMonopoly();

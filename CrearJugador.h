@@ -14,13 +14,16 @@ class CrearJugador
     public:
         string nombre_archivo;
         Utility utility;
-        int capital;
+        int capital, acumular_turnos;
         string nombre, color;
+        bool isPreso;
         CrearJugador(string n, string c);
         vector<CrearJugador>jugadores;
         void nuevoJugador(string n,string c);
         string getNombre();
         string getColor();
+        bool getIsPreso();
+        void setIsPreso(bool p);
         int getCapital();
         void setCapital(int c);
         void depositar(int cant);
