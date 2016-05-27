@@ -39,8 +39,10 @@ class JugarMonopoly
         bool verificarSalida(sf::Sprite* sprite, int dados);
         bool aLaCarcel(sf::Sprite* sprite);
         bool esperarTresTurnos(int acum, int dado1, int dado2, int posJugador);
+        bool cobrarRentaPropiedades(sf::Sprite* sprite,int posJugador);
         void cobrarSalida(int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
+        int buscarJugador(string nombre);
         virtual ~JugarMonopoly();
 
     protected:

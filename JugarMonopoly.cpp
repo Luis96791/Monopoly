@@ -218,7 +218,7 @@ void JugarMonopoly::ventanaTablero()
 
     ifstream cargar("jugadores.txt");
     string n, f;
-    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6, cobrar_impuesto, salir_carcel = false;
+    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6, cobrar_impuesto, pagar_renta;
     while(cargar>>n&&cargar>>f){
             cout<<f<<endl;
         if(f=="ficha_azul"){
@@ -288,6 +288,7 @@ void JugarMonopoly::ventanaTablero()
             if(utility.clickSprite(back_dado_1,mouse)||utility.clickSprite(back_dado_2,mouse))
             {
                 cobrar_impuesto = true;
+                pagar_renta = true;
                 cout<<clicks++<<endl;
                 guardar_dado_1=utility.dadoUno();
                 guardar_dado_2=utility.dadoDos();
@@ -301,13 +302,24 @@ void JugarMonopoly::ventanaTablero()
 
             if(clicks%2==0){
                 movimiento(back_ficha_1,suma_dados);
+                cout<<"funcion movimiento ejecutada"<<endl;
+
+                if(pagar_renta){
+                    cobrarRentaPropiedades(back_ficha_1,0);
+                    pagar_renta = false;
+                }
+
+                cout<<"funcion cobrar renta ejecutada"<<endl;
+
                 if(aLaCarcel(back_ficha_1)){
                     ventanaSalirCarcel(0);
                 }
+                cout<<"a la carcel ejecutada"<<endl;
 
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_1, 0);
                 }
+                cout<<"funcion validdar info de compra ejecutada"<<endl;
                 if(!validarCompra(back_ficha_1)){
                     if(utility.clickSprite(back_comprar,mouse)){
                         mensaje = true;
@@ -317,13 +329,19 @@ void JugarMonopoly::ventanaTablero()
                     cobrarImpuestos(back_ficha_1,0);
                     cobrar_impuesto = false;
                 }
-                if(verificarSalida(back_ficha_1,suma_dados)){
-                    cobrarSalida(0);
-                }
-
+                cout<<"funcion cobrar impuesto ejecutada"<<endl;
+//                if(verificarSalida(back_ficha_1,suma_dados)){
+//                    cobrarSalida(0);
+//                }
                 suma_dados=0;
             }else if(clicks%1==0){
                 movimiento(back_ficha_2,suma_dados);
+
+                if(pagar_renta){
+                    cobrarRentaPropiedades(back_ficha_2,1);
+                    pagar_renta = false;
+                }
+
                 if(aLaCarcel(back_ficha_2)){
                     ventanaSalirCarcel(1);
                 }
@@ -340,9 +358,9 @@ void JugarMonopoly::ventanaTablero()
                     cobrarImpuestos(back_ficha_2,1);
                     cobrar_impuesto = false;
                 }
-                if(verificarSalida(back_ficha_2,suma_dados)){
-                    cobrarSalida(1);
-                }
+//                if(verificarSalida(back_ficha_2,suma_dados)){
+//                    cobrarSalida(1);
+//                }
                 cout<<"pos x: "<<back_ficha_2->getPosition().x<<endl;
                 cout<<"pos y: "<<back_ficha_2->getPosition().y<<endl;
                 cout<<"suma: "<<suma_dados<<endl;
@@ -809,6 +827,34 @@ bool JugarMonopoly::aLaCarcel(sf::Sprite* sprite)
 //        }
 //    }
 //}
+
+bool JugarMonopoly::cobrarRentaPropiedades(sf::Sprite* sprite, int posJugador)
+{
+    if(sprite->getPosition().x !=640&&sprite->getPosition().y!=495){
+        if(sprite->getPosition().x !=385&&sprite->getPosition().y!=640){
+            Propiedad propiedad = propiedades[infoPropiedad(sprite)];
+            if(propiedad.getNombreDuenio()!=jugadores[posJugador].getNombre()&&propiedad.getNombreDuenio()!="banco"){
+                if(!propiedad.getEstadoHipoteca()){
+                    jugadores[posJugador].retirar(propiedad.getRenta());
+                    jugadores[buscarJugador(propiedad.getNombreDuenio())].depositar(propiedad.getRenta());
+                    cout<<propiedad.getRenta()<<endl;
+                    return true;
+                }
+            }
+        }
+    }
+}
+
+int JugarMonopoly::buscarJugador(string nombre)
+{
+    for(int c = 0;c < jugadores.size();c++)
+    {
+        if(jugadores[c].getNombre() == nombre){
+            return c;
+        }
+    }
+    return -1;
+}
 
 JugarMonopoly::~JugarMonopoly()
 {

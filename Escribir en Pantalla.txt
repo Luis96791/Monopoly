@@ -32,7 +32,8 @@ Lo que falta
 ** Dejar en la carcel
 ** Cobrar al pasar por la salida
 *Cobrar rentas
-Cobrar rentas a partir del numero que retornen los dados
+	por servicios
+	cobrar por colores
 Hipotecas
 Cartas de Fortuna
 Cartas de Arca Comunal
