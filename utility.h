@@ -14,6 +14,7 @@ class Utility
         int dadoUno();
         int dadoDos();
         bool clickSprite(sf::Sprite s, sf::Vector2f mouse);
+        bool clickText(sf::Text s, sf::Vector2f mouse);
 };
 
 #endif // UTILITY_H
