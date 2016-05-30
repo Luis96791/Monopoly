@@ -73,12 +73,13 @@ void CrearJugador::escribirArchivo()
 
 void CrearJugador::ventanaCrearJugador(){
     sf::RenderWindow window;
+    sf::View pointer;
     sf::Texture text_registrar,text_ficha_amarilla,text_ficha_azul,text_ficha_blanca,
                 text_ficha_naranja,text_ficha_roja,text_ficha_verde,
-                text_seleccionador, text_warning,text_aceptar, text_jugar;
+                text_seleccionador, text_warning,text_aceptar, text_jugar, text_pointer;
     sf::Sprite back_registrar,back_ficha_amarilla,back_ficha_azul,back_ficha_blanca,
                 back_ficha_naranja,back_ficha_roja,back_ficha_verde,
-                back_seleccionador, back_warning,back_aceptar, back_jugar;
+                back_seleccionador, back_warning,back_aceptar, back_jugar, back_pointer;
     sf::Font fuente;
     sf::String nombre_jugador;
     sf::Text txt_nombre_jugador;
@@ -89,9 +90,13 @@ void CrearJugador::ventanaCrearJugador(){
     bool mensaje = false;
 
     window.create(sf::VideoMode(650,500,32),"Registrar Jugadores",sf::Style::Close);
-    window.setVerticalSyncEnabled(true);
+    window.setMouseCursorVisible(false);
+    pointer = window.getView();
 
     sf::Vector2f mouse;
+
+    text_pointer.loadFromFile("punteros/pointer.png");
+    back_pointer.setTexture(text_pointer);
 
     text_seleccionador.loadFromFile("ventanas/1.png");
     back_seleccionador.setTexture(text_seleccionador);
@@ -238,7 +243,9 @@ void CrearJugador::ventanaCrearJugador(){
             }
         }
 
+        back_pointer.setPosition(static_cast<sf::Vector2f>(sf::Mouse::getPosition(window)));
         if(utility.clickSprite(back_aceptar,mouse)){mensaje=false;}
+
 
         window.draw(back_registrar);
         window.draw(back_seleccionador);
@@ -252,6 +259,8 @@ void CrearJugador::ventanaCrearJugador(){
         window.draw(back_jugar);
         if(mensaje){window.draw(back_warning);}
         if(mensaje){window.draw(back_aceptar);}
+        window.setView(pointer);
+        window.draw(back_pointer);
         window.display();
     }
 }

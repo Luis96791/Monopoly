@@ -29,11 +29,11 @@ bool clickSprite(sf::Sprite a){
 
 Lo que falta
 
-** Dejar en la carcel
-** Cobrar al pasar por la salida
-*Cobrar rentas
-	por servicios
-	cobrar por colores
-Hipotecas
+falta cobrar rentas a partir del color
+falta cobrar servicios si es dueño de los dos
+falta Dejar en la carcel
+falta Cobrar al pasar por la salida
+falta Hipotecas
+
 Cartas de Fortuna
 Cartas de Arca Comunal
