@@ -34,6 +34,4 @@ falta cobrar servicios si es dueño de los dos
 falta Dejar en la carcel
 falta Cobrar al pasar por la salida
 falta Hipotecas
-
-Cartas de Fortuna
-Cartas de Arca Comunal
+falta carta "Salga de la carcel gratis en fortuna y arca"
