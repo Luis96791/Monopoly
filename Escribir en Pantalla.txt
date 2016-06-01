@@ -35,3 +35,4 @@ falta Dejar en la carcel
 falta Cobrar al pasar por la salida
 falta Hipotecas
 falta carta "Salga de la carcel gratis en fortuna y arca"
+Opcional "Subastar"

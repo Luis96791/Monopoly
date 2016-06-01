@@ -43,7 +43,7 @@ class JugarMonopoly
         bool rentaPorColor(string duenio, string color);
         int numeroDePropiedadesPorColor(string color);
         void rentaServicios(sf::Sprite* sprite, int dados, int posJugador);
-        void ventanaHipotecar(string nombre);
+        void ventanaHipotecar(string nombre,int posJugador);
         void cobrarSalida(int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
         int buscarJugador(string nombre);
