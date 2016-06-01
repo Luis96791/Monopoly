@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1464809727 source:c:\users\user\desktop\trabajoclase\main.cpp
+	<iostream>
+	"Padre.h"
+	"Mayorista.h"
+	"Sumador.h"
+
+1464809985 source:c:\users\user\desktop\trabajoclase\padre.cpp
+	"Padre.h"
+
+1464809967 c:\users\user\desktop\trabajoclase\padre.h
+
+1464809676 source:c:\users\user\desktop\trabajoclase\mayorista.cpp
+	"Mayorista.h"
+
+1464808246 c:\users\user\desktop\trabajoclase\mayorista.h
+	"Padre.h"
+	<iostream>
+
+1464809157 source:c:\users\user\desktop\trabajoclase\sumador.cpp
+	"Sumador.h"
+
+1464808525 c:\users\user\desktop\trabajoclase\sumador.h
+	"Padre.h"
+	<iostream>
+

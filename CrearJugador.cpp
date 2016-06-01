@@ -7,6 +7,7 @@ CrearJugador::CrearJugador(string n, string c)
     capital = 1500;
     isPreso = false;
     acumular_turnos = 0;
+    vector<sf::Text>nombre_propiedades;
 }
 
 string CrearJugador::getNombre()

@@ -19,6 +19,7 @@ class CrearJugador
         bool isPreso;
         CrearJugador(string n, string c);
         vector<CrearJugador>jugadores;
+        vector<sf::Text>nombre_propiedades;
         void nuevoJugador(string n,string c);
         string getNombre();
         string getColor();
