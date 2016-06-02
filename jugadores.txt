@@ -1,0 +1,4 @@
+luis
+ficha_azul
+ casa
+ficha_roja

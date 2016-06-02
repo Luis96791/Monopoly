@@ -51,6 +51,7 @@ class JugarMonopoly
         bool mostrarCartaFortuna(sf::Sprite* sprite);
         void ejecutarCartaArca(sf::Sprite* sprite, int posJugador);
         void ejecutarCartaFortuna(sf::Sprite* sprite, int posJugador, int dados);
+        void ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados,sf::Vector2f mouse);
         virtual ~JugarMonopoly();
 
     protected:

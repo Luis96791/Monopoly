@@ -26,3 +26,5 @@ campo_agas banco verde 320 28 160
 ferrocarril_este banco negro 200 25 100
 parque_central banco azul 350 35 175
 estadio_olimpico banco azul 400 50 200
+salir_gratis banco arca 0 0 0
+salir_gratis banco fortuna 0 0 0

@@ -77,10 +77,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1315767"
-     inkscape:cx="-844.40612"
-     inkscape:cy="-2178.3002"
+     inkscape:cx="1001.3205"
+     inkscape:cy="1103.4646"
      inkscape:document-units="px"
-     inkscape:current-layer="g4366"
+     inkscape:current-layer="g4445"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -140,7 +140,7 @@
              inkscape:export-ydpi="90" />
           <g
              id="g4524"
-             transform="translate(-16.939533,-186.28867)">
+             transform="translate(-21.39087,-186.28867)">
             <g
                id="g4459">
               <g
@@ -433,6 +433,49 @@
                        x="-2203.6665"
                        y="-1033.4526" />
                   </g>
+                  <g
+                     id="g4397-7"
+                     transform="translate(-211.27008,-841.33088)"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\info_de_carta.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90"
+                     style="fill:#1a1a1a">
+                    <rect
+                       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                       id="rect4453"
+                       width="331.01773"
+                       height="147.78517"
+                       x="1096.5493"
+                       y="720.66986"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\info_de_carta.png"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-ydpi="90" />
+                    <g
+                       id="g4445"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\info_de_carta.png"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-ydpi="90"
+                       transform="translate(-31.564027,138.147)">
+                      <flowRoot
+                         transform="matrix(0.58479241,0,0,1.0011038,573.10723,757.64225)"
+                         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         id="flowRoot3635"
+                         xml:space="preserve"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\info_de_carta.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90"><flowRegion
+                           id="flowRegion3637"><rect
+                             style="fill:#ffffff"
+                             y="-165.40765"
+                             x="896.09479"
+                             height="123.72118"
+                             width="671.62921"
+                             id="rect3639" /></flowRegion><flowPara
+                           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.16687012px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
+                           id="flowPara3641">NO POSEES UNA CARTA </flowPara><flowPara
+                           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.52400398px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
+                           id="flowPara3643">&quot;SALGA DE LA CARCEL GRATIS&quot;</flowPara></flowRoot>                    </g>
+                  </g>
                 </g>
                 <g
                    inkscape:export-ydpi="90"
@@ -574,6 +617,39 @@
                            id="rect4218" /></flowRegion><flowPara
                          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99968338px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start"
                          id="flowPara4220">Aceptar</flowPara></flowRoot>                  </g>
+                </g>
+                <g
+                   transform="translate(0.48754276,49.174499)"
+                   inkscape:export-ydpi="90"
+                   inkscape:export-xdpi="90"
+                   inkscape:export-filename="C:\Users\user\Desktop\Monopoly\ventanas\btn_pagar.png"
+                   id="g4308-3">
+                  <g
+                     id="g3586"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btn_canjear.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90">
+                    <rect
+                       style="opacity:0.8;fill:#ff0000"
+                       id="rect4209-1-5"
+                       width="109.89883"
+                       height="43.625282"
+                       x="92.268005"
+                       y="-945.06458"
+                       ry="5.542551" />
+                    <flowRoot
+                       transform="matrix(0.43334751,0,0,0.39539915,119.56085,-506.12679)"
+                       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                       id="flowRoot4266-0-5"
+                       xml:space="preserve"><flowRegion
+                         id="flowRegion4268-0-7"><rect
+                           y="-1104.3912"
+                           x="-81.47953"
+                           height="108.96657"
+                           width="286.65088"
+                           id="rect4270-6-9" /></flowRegion><flowPara
+                         id="flowPara3582"
+                         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99959564px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff">Canjear Carta</flowPara></flowRoot>                  </g>
                 </g>
               </g>
             </g>
@@ -1143,7 +1219,7 @@
                 </g>
                 <g
                    id="g4303"
-                   transform="translate(-12.586244,-38.49641)">
+                   transform="translate(-415.46204,-267.20771)">
                   <ellipse
                      ry="32.436794"
                      rx="38.208225"
