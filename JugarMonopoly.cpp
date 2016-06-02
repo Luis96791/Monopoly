@@ -345,48 +345,113 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_2.setTexture(text_dado_2);
             }
 
-//            if(turno){
-//                if(clicks%2==0){
-//                    ejecutarFunciones(back_ficha_1,0,suma_dados,mouse);
-//                }
-//                else if(clicks%1==0){
-//                    ejecutarFunciones(back_ficha_2,0,suma_dados,mouse);
-//                }
-//                turno = false;
-//            }
+            if(clicks%2==0){
+                movimiento(back_ficha_1,suma_dados);
+                cout<<"funcion movimiento ejecutada"<<endl;
 
-            //CONSTRUYENDO TURNOS
 
-            if(turno){
-                turno = false;
-                cout<<"entrando al turno"<<endl;
-                if(jugadores.size()%cant_jugadores==3||jugadores.size()%cant_jugadores==2||
-                   jugadores.size()%cant_jugadores==1||jugadores.size()%cant_jugadores==0){
-                    if(cant_jugadores==6){
-                        ejecutarFunciones(back_ficha_6,cant_jugadores-1,suma_dados,mouse);
-                    }else
-                    if(cant_jugadores==5){
-                        ejecutarFunciones(back_ficha_5,cant_jugadores-1,suma_dados,mouse);
-                    }else
-                    if(cant_jugadores==4){
-                        ejecutarFunciones(back_ficha_4,cant_jugadores-1,suma_dados,mouse);
-                    }else
-                    if(cant_jugadores==3){
-                        ejecutarFunciones(back_ficha_3,cant_jugadores-1,suma_dados,mouse);
-                    }else
-                    if(cant_jugadores==2){
-                        ejecutarFunciones(back_ficha_2,cant_jugadores-1,suma_dados,mouse);
-                    }else
-                    if(cant_jugadores==1){
-                        ejecutarFunciones(back_ficha_1,cant_jugadores-1,suma_dados,mouse);
+                if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_1,0);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_1)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_1,0,suma_dados);
+                }
+
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[0].getNombre(),0);
+                }
+
+                if(pagar_renta){
+                    cobrarRentaPropiedades(back_ficha_1,0);
+                    rentaServicios(back_ficha_1,suma_dados,0);
+                    pagar_renta = false;
+                }
+
+                cout<<"funcion cobrar renta ejecutada"<<endl;
+                if(back_ficha_1->getPosition().x==640&&back_ficha_1->getPosition().y==20){
+                    msj_mostrar_accion = true;
+                    aLaCarcel(back_ficha_1,0);
+                }
+
+                cout<<"a la carcel ejecutada"<<endl;
+
+                if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_1, 0);
+                }
+                cout<<"funcion validdar info de compra ejecutada"<<endl;
+                if(!validarCompra(back_ficha_1)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
                     }
-                    cout<<"entrando al residuo"<<endl;
-                    cout<<cant_jugadores<<endl;
-                    cant_jugadores--;
                 }
-                if(cant_jugadores==0){
-                    cant_jugadores = jugadores.size();
+                if(cobrar_impuesto&&infoPropiedad(back_ficha_1)==-1){
+                    cobrarImpuestos(back_ficha_1,0);
+                    cobrar_impuesto = false;
                 }
+                cout<<"funcion cobrar impuesto ejecutada"<<endl;
+
+                cobrarSalida(back_ficha_1,0);
+
+                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+                suma_dados=0;
+            }else if(clicks%1==0){
+                movimiento(back_ficha_2,suma_dados);
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[1].getNombre(),1);
+                }
+
+                if(mostrarCartaArca(back_ficha_2)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_2,1);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_2)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_2,1,suma_dados);
+                }
+
+                if(pagar_renta){
+                    cobrarRentaPropiedades(back_ficha_2,1);
+                    rentaServicios(back_ficha_2,suma_dados,1);
+                    pagar_renta = false;
+                }
+
+                if(back_ficha_2->getPosition().x==640&&back_ficha_2->getPosition().x==20){
+                    msj_mostrar_accion = true;
+                    aLaCarcel(back_ficha_2,1);
+                }
+
+                if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_2, 1);
+                }
+                if(!validarCompra(back_ficha_2)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+                if(cobrar_impuesto&&infoPropiedad(back_ficha_2)==-1){
+                    cobrarImpuestos(back_ficha_2,1);
+                    cobrar_impuesto = false;
+                }
+
+                cobrarSalida(back_ficha_2,1);
+
+                cout<<"pos x: "<<back_ficha_2->getPosition().x<<endl;
+                cout<<"pos y: "<<back_ficha_2->getPosition().y<<endl;
+                cout<<"suma: "<<suma_dados<<endl;
+                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
+                suma_dados=0;
             }
 
 
@@ -441,57 +506,57 @@ void JugarMonopoly::ventanaTablero()
     }
 }
 
-void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados, sf::Vector2f mouse)
-{
-    movimiento(sprite,suma_dados);
-
-    if(mostrarCartaArca(sprite)&&carta_arca_activa){
-        carta_arca_activa = false;
-        text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-        ejecutarCartaArca(sprite,posJugador);
-    }
-
-    if(mostrarCartaFortuna(sprite)&&carta_fortuna_activa){
-        carta_fortuna_activa = false;
-        text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
-        ejecutarCartaFortuna(sprite,posJugador,suma_dados);
-    }
-
-
-    if(utility.clickSprite(back_btnHipotecar,mouse)){
-        ventanaHipotecar(jugadores[0].getNombre(),0);
-    }
-
-    if(pagar_renta){
-        cobrarRentaPropiedades(sprite,posJugador);
-        rentaServicios(sprite,suma_dados,posJugador);
-        pagar_renta = false;
-    }
-
-    if(sprite->getPosition().x==640&&sprite->getPosition().y==20){
-        msj_mostrar_accion = true;
-        aLaCarcel(sprite,posJugador);
-    }
-
-    if(validarCompra(sprite)&&utility.clickSprite(back_comprar,mouse)){
-        validarInfoDeCompra(sprite, posJugador);
-    }
-
-    if(!validarCompra(sprite)){
-        if(utility.clickSprite(back_comprar,mouse)){
-            mensaje = true;
-        }
-    }
-    if(cobrar_impuesto&&infoPropiedad(sprite)==-1){
-        cobrarImpuestos(sprite,posJugador);
-        cobrar_impuesto = false;
-    }
-
-    cobrarSalida(sprite,posJugador);
-
-    txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
-    suma_dados=0;
-}
+//void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados, sf::Vector2f mouse)
+//{
+//    movimiento(sprite,suma_dados);
+//
+//    if(mostrarCartaArca(sprite)&&carta_arca_activa){
+//        carta_arca_activa = false;
+//        text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+//        ejecutarCartaArca(sprite,posJugador);
+//    }
+//
+//    if(mostrarCartaFortuna(sprite)&&carta_fortuna_activa){
+//        carta_fortuna_activa = false;
+//        text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+//        ejecutarCartaFortuna(sprite,posJugador,suma_dados);
+//    }
+//
+//
+//    if(utility.clickSprite(back_btnHipotecar,mouse)){
+//        ventanaHipotecar(jugadores[0].getNombre(),0);
+//    }
+//
+//    if(pagar_renta){
+//        cobrarRentaPropiedades(sprite,posJugador);
+//        rentaServicios(sprite,suma_dados,posJugador);
+//        pagar_renta = false;
+//    }
+//
+//    if(sprite->getPosition().x==640&&sprite->getPosition().y==20){
+//        msj_mostrar_accion = true;
+//        aLaCarcel(sprite,posJugador);
+//    }
+//
+//    if(validarCompra(sprite)&&utility.clickSprite(back_comprar,mouse)){
+//        validarInfoDeCompra(sprite, posJugador);
+//    }
+//
+//    if(!validarCompra(sprite)){
+//        if(utility.clickSprite(back_comprar,mouse)){
+//            mensaje = true;
+//        }
+//    }
+//    if(cobrar_impuesto&&infoPropiedad(sprite)==-1){
+//        cobrarImpuestos(sprite,posJugador);
+//        cobrar_impuesto = false;
+//    }
+//
+//    cobrarSalida(sprite,posJugador);
+//
+//    txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+//    suma_dados=0;
+//}
 
 
 /**
