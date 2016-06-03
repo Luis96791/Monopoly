@@ -7,7 +7,7 @@ JugarMonopoly::JugarMonopoly()
 
 bool mensaje, msj_capital_insuf,msj_propiedad_comprada, cobrar_salida=false,
     msj_ejecutar_accion,msj_mostrar_accion, carta_arca_activa, carta_fortuna_activa,
-     cobrar_impuesto, pagar_renta;
+     cobrar_impuesto, pagar_renta,carcel_tres_turnos;
 int aumentar_arca=0, aumentar_fortuna=0;
 
 sf::Texture text_carta_arca, text_carta_fortuna, text_comprar,text_btnHipotecar;
@@ -56,17 +56,6 @@ void JugarMonopoly::llenarPropiedades()
     Esta funcion solo es para verificar el buen funcionamiento de los get's y set's del
     vector propiedades...
 */
-
-void JugarMonopoly::mostrarPropiedades()
-{
-    for(unsigned int c =0;c < propiedades.size();c++)
-    {
-        cout<<getPropiedades(c).getNombrePosesion()<<" , "<<getPropiedades(c).getNombreDuenio()<<" , "<<
-        getPropiedades(c).getColorPropiedad()<<" , "<<getPropiedades(c).getValorPropiedad()<<" , "<<
-        getPropiedades(c).getRenta()<<" , "<<getPropiedades(c).getValorHipoteca()<<" , "<<
-        getPropiedades(c).getValorHipoteca()<<" , "<<getPropiedades(c).getEstadoHipoteca()<<endl;
-    }
-}
 
 vector<CrearJugador> JugarMonopoly::cargarJugadores()
 {
@@ -255,7 +244,7 @@ void JugarMonopoly::ventanaTablero()
     string n, f;
     bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6,turno;
     while(cargar>>n&&cargar>>f){
-            cout<<f<<endl;
+        cout<<f<<endl;
         if(f=="ficha_azul"){
             text_ficha_1->loadFromFile("fichas_tablero/ficha_azul.png");
             back_ficha_1->setTexture(*text_ficha_1);
@@ -345,50 +334,6 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_2.setTexture(text_dado_2);
             }
 
-//            if(turno){
-//                if(clicks%2==0){
-//                    ejecutarFunciones(back_ficha_1,0,suma_dados,mouse);
-//                }
-//                else if(clicks%1==0){
-//                    ejecutarFunciones(back_ficha_2,0,suma_dados,mouse);
-//                }
-//                turno = false;
-//            }
-
-            //CONSTRUYENDO TURNOS
-
-//            if(turno){
-//                turno = false;
-//                cout<<"entrando al turno"<<endl;
-//                if(jugadores.size()%cant_jugadores==3||jugadores.size()%cant_jugadores==2||
-//                   jugadores.size()%cant_jugadores==1||jugadores.size()%cant_jugadores==0){
-//                    if(cant_jugadores==6){
-//                        ejecutarFunciones(back_ficha_6,cant_jugadores-1,suma_dados,mouse);
-//                    }else
-//                    if(cant_jugadores==5){
-//                        ejecutarFunciones(back_ficha_5,cant_jugadores-1,suma_dados,mouse);
-//                    }else
-//                    if(cant_jugadores==4){
-//                        ejecutarFunciones(back_ficha_4,cant_jugadores-1,suma_dados,mouse);
-//                    }else
-//                    if(cant_jugadores==3){
-//                        ejecutarFunciones(back_ficha_3,cant_jugadores-1,suma_dados,mouse);
-//                    }else
-//                    if(cant_jugadores==2){
-//                        ejecutarFunciones(back_ficha_2,cant_jugadores-1,suma_dados,mouse);
-//                    }else
-//                    if(cant_jugadores==1){
-//                        ejecutarFunciones(back_ficha_1,cant_jugadores-1,suma_dados,mouse);
-//                    }
-//                    cout<<"entrando al residuo"<<endl;
-//                    cout<<cant_jugadores<<endl;
-//                    cant_jugadores--;
-//                }
-//                if(cant_jugadores==0){
-//                    cant_jugadores = jugadores.size();
-//                }
-//            }
-
             if(clicks%2==0){
                 movimiento(back_ficha_1,suma_dados);
                 cout<<"funcion movimiento ejecutada"<<endl;
@@ -424,6 +369,23 @@ void JugarMonopoly::ventanaTablero()
                     aLaCarcel(back_ficha_1,0);
                 }
 
+//*******************************************************
+                if(carcel_tres_turnos&&guardar_dado_1!=guardar_dado_2){
+                    back_ficha_1->setPosition(20,640);
+                    jugadores[0].acumular_turnos+=1;
+                }else
+                if(guardar_dado_1==guardar_dado_2){
+                    carcel_tres_turnos = false;
+                    jugadores[0].acumular_turnos = 0;
+                }
+
+                if(jugadores[0].acumular_turnos ==3){
+                    jugadores[0].retirar(50);
+                    banco.depositar(50);
+                    carcel_tres_turnos = false;
+                }
+
+//*******************************************************
                 cout<<"a la carcel ejecutada"<<endl;
 
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
@@ -986,7 +948,7 @@ void JugarMonopoly::ventanaSalirCarcel(int posJugador)
         }
 
         if(utility.clickSprite(back_esperar,mouse)){
-            jugadores[posJugador].setIsPreso(true);
+            carcel_tres_turnos = true;
             window.close();
         }
 
