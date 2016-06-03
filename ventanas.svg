@@ -76,9 +76,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.2631534"
-     inkscape:cx="991.11944"
-     inkscape:cy="708.3419"
+     inkscape:zoom="0.80014556"
+     inkscape:cx="-1374.3113"
+     inkscape:cy="1143.3852"
      inkscape:document-units="px"
      inkscape:current-layer="g4381"
      showgrid="false"
@@ -332,7 +332,7 @@
                    inkscape:export-ydpi="90"
                    inkscape:export-xdpi="90"
                    inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\warning.png"
-                   transform="translate(5.3942803,-9.9927609)"
+                   transform="translate(95.815403,-64.514442)"
                    id="g4204">
                   <rect
                      style="opacity:0.83999999;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:#ef0000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -482,59 +482,140 @@
                            id="g4381"
                            transform="matrix(0.23949872,2.3886637e-4,3.7896919e-4,0.1940478,339.0297,844.13587)"
                            style="opacity:1">
-                          <rect
-                             style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                             id="rect4367"
-                             width="75.268417"
-                             height="66.18174"
-                             x="-1008.1824"
-                             y="-635.76892"
-                             transform="matrix(-0.99999862,0.00165956,-0.00172845,-0.99999851,0,0)"
-                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
+                          <flowRoot
+                             xml:space="preserve"
+                             id="flowRoot4380"
+                             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                             transform="matrix(-0.03124033,3.7469095,-3.8238028,-0.02009501,2184.8562,-3342.4182)"><flowRegion
+                               id="flowRegion4382"><rect
+                                 id="rect4384"
+                                 width="233.30284"
+                                 height="117.53512"
+                                 x="1002.5834"
+                                 y="294.57001" /></flowRegion><flowPara
+                               id="flowPara4386" /></flowRoot>                          <g
+                             id="g4398"
+                             transform="matrix(0.55782964,-0.00121733,-0.00193135,0.78946192,2994.5686,-10777.253)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btnVer.png"
                              inkscape:export-xdpi="90"
-                             inkscape:export-ydpi="90" />
-                          <path
-                             style="fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                             d="m 1048.186,623.63938 -152.96463,1.05101 81.8294,92.98845 z"
-                             id="path4373"
-                             inkscape:connector-curvature="0"
-                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
+                             inkscape:export-ydpi="90">
+                            <rect
+                               transform="matrix(-0.00833734,0.99996524,-0.99998619,-0.00525517,0,0)"
+                               y="-1071.0812"
+                               x="353.17996"
+                               height="239.92519"
+                               width="569.55121"
+                               id="rect4378"
+                               style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <flowRoot
+                               transform="matrix(-0.05000763,5.9978257,-5.1101528,-0.02685509,2657.4296,-5589.0974)"
+                               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                               id="flowRoot4388"
+                               xml:space="preserve"><flowRegion
+                                 id="flowRegion4390"><rect
+                                   y="299.87234"
+                                   x="1003.909"
+                                   height="45.069855"
+                                   width="86.403816"
+                                   id="rect4392" /></flowRegion><flowPara
+                                 style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start"
+                                 id="flowPara4394">Ver</flowPara></flowRoot>                          </g>
+                          <flowRoot
+                             xml:space="preserve"
+                             id="flowRoot4407"
+                             style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+                               id="flowRegion4409"><rect
+                                 id="rect4411"
+                                 width="362.43405"
+                                 height="164.96999"
+                                 x="-1704.6898"
+                                 y="-292.39313" /></flowRegion><flowPara
+                               id="flowPara4413"></flowPara></flowRoot>                          <g
+                             id="g4456"
+                             transform="matrix(0.82412917,-2.8420006e-4,-4.5089115e-4,0.87820615,-422.88423,-30.647104)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\informacion.png"
                              inkscape:export-xdpi="90"
-                             inkscape:export-ydpi="90" />
-                          <rect
-                             style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                             id="rect4367-7"
-                             width="75.266739"
-                             height="66.18322"
-                             x="730.43829"
-                             y="217.16083"
-                             transform="matrix(0.99998256,0.00590621,-0.00615115,0.99998108,0,0)"
-                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_izq.png"
+                             inkscape:export-ydpi="90">
+                            <rect
+                               transform="matrix(-0.00833734,0.99996524,-0.99998619,-0.00525517,0,0)"
+                               y="-3212.8665"
+                               x="-10558.585"
+                               height="927.97748"
+                               width="1536.0068"
+                               id="rect4415"
+                               style="opacity:1;fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <rect
+                               transform="matrix(-0.00833734,0.99996524,-0.99998619,-0.00525517,0,0)"
+                               y="-3074.2769"
+                               x="-10542.194"
+                               height="764.91339"
+                               width="1498.5433"
+                               id="rect4405"
+                               style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <flowRoot
+                               transform="matrix(-0.0082978,0.99522379,-1.4992082,-0.0078787,2716.7835,-8702.1378)"
+                               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                               id="flowRoot4417"
+                               xml:space="preserve"><flowRegion
+                                 id="flowRegion4419"><rect
+                                   y="-347.38312"
+                                   x="-1811.5454"
+                                   height="128.1017"
+                                   width="271.20068"
+                                   id="rect4421" /></flowRegion><flowPara
+                                 id="flowPara4423">Información</flowPara></flowRoot>                            <flowRoot
+                               transform="matrix(-0.01728642,2.0733034,-3.2064466,-0.01685065,2106.7021,-6716.6027)"
+                               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                               id="flowRoot4444"
+                               xml:space="preserve"><flowRegion
+                                 id="flowRegion4446"><rect
+                                   style="text-align:start;text-anchor:start"
+                                   y="-303.2684"
+                                   x="-1813.3989"
+                                   height="290.74475"
+                                   width="659.2572"
+                                   id="rect4448" /></flowRegion><flowPara
+                                 style="text-align:justify;text-anchor:start"
+                                 id="flowPara4452">Escribe los nombres de las propiedades tal como aparecen en pantalla luego presiona &quot;Espacio&quot; para hipotecar.</flowPara></flowRoot>                          </g>
+                          <g
+                             id="g4437"
+                             transform="matrix(0.83125246,-2.9559444e-4,-4.6897098e-4,0.88749754,4.2133448,-812.91205)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btn_close.png"
                              inkscape:export-xdpi="90"
-                             inkscape:export-ydpi="90" />
-                          <path
-                             style="opacity:1;fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                             d="m 690.10329,231.63186 152.96501,0.10618 -81.09247,-93.60673 z"
-                             id="path4373-42"
-                             inkscape:connector-curvature="0"
-                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_izq.png"
-                             inkscape:export-xdpi="90"
-                             inkscape:export-ydpi="90" />
+                             inkscape:export-ydpi="90">
+                            <rect
+                               transform="matrix(-0.00833734,0.99996524,-0.99998619,-0.00525517,0,0)"
+                               y="-3212.3196"
+                               x="-9221.4814"
+                               height="135.16911"
+                               width="198.68065"
+                               id="rect4427"
+                               style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <flowRoot
+                               transform="matrix(-0.03124033,3.7469095,-3.8238028,-0.02009501,1963.5085,-3687.8744)"
+                               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                               id="flowRoot4429"
+                               xml:space="preserve"><flowRegion
+                                 id="flowRegion4431"><rect
+                                   y="-347.23361"
+                                   x="-1459.2471"
+                                   height="48.825684"
+                                   width="70.255959"
+                                   id="rect4433" /></flowRegion><flowPara
+                                 id="flowPara4435">x</flowPara></flowRoot>                          </g>
                         </g>
                         <g
-                           style="fill:#ff0000;opacity:1"
+                           style="opacity:1;fill:#ff0000"
                            id="g4381-4"
                            transform="matrix(-0.23946378,-0.00233426,0.00372436,-0.1939685,816.36897,1235.7274)"
                            inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
                            inkscape:export-xdpi="89.300003"
                            inkscape:export-ydpi="89.300003">
                           <g
-                             id="g4414"
-                             style="">
+                             id="g4414">
                             <g
                                id="g4418"
-                               transform="matrix(0.99999975,-5.5599909e-4,8.82112e-4,0.99999975,-1.5955979,-116.39992)"
-                               style="">
+                               transform="matrix(0.99999975,-5.5599909e-4,8.82112e-4,0.99999975,-1.5955979,-116.39992)">
                               <rect
                                  style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                  id="rect4367-0"

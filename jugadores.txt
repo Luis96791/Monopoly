@@ -1,6 +1,0 @@
-luis
-ficha_azul
- casa
-ficha_naranja
- aad
-ficha_roja
