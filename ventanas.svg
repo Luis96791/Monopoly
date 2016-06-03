@@ -76,11 +76,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1315767"
-     inkscape:cx="1001.3205"
-     inkscape:cy="1103.4646"
+     inkscape:zoom="2.2631534"
+     inkscape:cx="991.11944"
+     inkscape:cy="708.3419"
      inkscape:document-units="px"
-     inkscape:current-layer="g4445"
+     inkscape:current-layer="g4381"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -474,7 +474,84 @@
                            style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.16687012px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
                            id="flowPara3641">NO POSEES UNA CARTA </flowPara><flowPara
                            style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.52400398px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
-                           id="flowPara3643">&quot;SALGA DE LA CARCEL GRATIS&quot;</flowPara></flowRoot>                    </g>
+                           id="flowPara3643">&quot;SALGA DE LA CARCEL GRATIS&quot;</flowPara></flowRoot>                      <g
+                         id="g4375"
+                         transform="matrix(-0.00661924,-0.79389976,1.2595497,-0.00661924,116.36834,1426.8559)"
+                         style="fill:#ff0000">
+                        <g
+                           id="g4381"
+                           transform="matrix(0.23949872,2.3886637e-4,3.7896919e-4,0.1940478,339.0297,844.13587)"
+                           style="opacity:1">
+                          <rect
+                             style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                             id="rect4367"
+                             width="75.268417"
+                             height="66.18174"
+                             x="-1008.1824"
+                             y="-635.76892"
+                             transform="matrix(-0.99999862,0.00165956,-0.00172845,-0.99999851,0,0)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-ydpi="90" />
+                          <path
+                             style="fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                             d="m 1048.186,623.63938 -152.96463,1.05101 81.8294,92.98845 z"
+                             id="path4373"
+                             inkscape:connector-curvature="0"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-ydpi="90" />
+                          <rect
+                             style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                             id="rect4367-7"
+                             width="75.266739"
+                             height="66.18322"
+                             x="730.43829"
+                             y="217.16083"
+                             transform="matrix(0.99998256,0.00590621,-0.00615115,0.99998108,0,0)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_izq.png"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-ydpi="90" />
+                          <path
+                             style="opacity:1;fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                             d="m 690.10329,231.63186 152.96501,0.10618 -81.09247,-93.60673 z"
+                             id="path4373-42"
+                             inkscape:connector-curvature="0"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_izq.png"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-ydpi="90" />
+                        </g>
+                        <g
+                           style="fill:#ff0000;opacity:1"
+                           id="g4381-4"
+                           transform="matrix(-0.23946378,-0.00233426,0.00372436,-0.1939685,816.36897,1235.7274)"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\flecha_der.png"
+                           inkscape:export-xdpi="89.300003"
+                           inkscape:export-ydpi="89.300003">
+                          <g
+                             id="g4414"
+                             style="">
+                            <g
+                               id="g4418"
+                               transform="matrix(0.99999975,-5.5599909e-4,8.82112e-4,0.99999975,-1.5955979,-116.39992)"
+                               style="">
+                              <rect
+                                 style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                 id="rect4367-0"
+                                 width="75.268066"
+                                 height="66.182053"
+                                 x="933.87329"
+                                 y="651.27509" />
+                              <path
+                                 style="fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                                 d="M 895.02523,652.56015 1047.9894,651.9176 966.24663,567.74432 Z"
+                                 id="path4373-4"
+                                 inkscape:connector-curvature="0" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
                   </g>
                 </g>
                 <g

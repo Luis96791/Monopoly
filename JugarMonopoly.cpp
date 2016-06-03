@@ -334,7 +334,7 @@ void JugarMonopoly::ventanaTablero()
                 pagar_renta = true;
                 carta_arca_activa = true;
                 carta_fortuna_activa = true;
-//                cout<<clicks++<<endl;
+                cout<<clicks++<<endl;
                 guardar_dado_1=utility.dadoUno();
                 guardar_dado_2=utility.dadoDos();
                 suma_dados=guardar_dado_1+guardar_dado_2;
@@ -838,12 +838,7 @@ int JugarMonopoly::infoPropiedad(sf::Sprite* sprite)
 
 void JugarMonopoly::validarInfoDeCompra(sf::Sprite* sprite, int posJugador)
 {
-//    sf::Font font;
-    sf::Text text;
-//    if(!font.loadFromFile("arial.ttf")){}
-//    text.setFont(font);
-//    text.setCharacterSize(24);
-//    text.setColor(sf::Color::Blue);
+    string nombre_propiedad;
     cout<<posJugador<<endl;
     if(propiedades[infoPropiedad(sprite)].getNombreDuenio()=="banco"){
         if(jugadores[posJugador].capital > propiedades[infoPropiedad(sprite)].getValorPropiedad()){
@@ -851,8 +846,8 @@ void JugarMonopoly::validarInfoDeCompra(sf::Sprite* sprite, int posJugador)
                 jugadores[posJugador].retirar(propiedades[infoPropiedad(sprite)].getValorPropiedad());
                 banco.depositar(propiedades[infoPropiedad(sprite)].getValorPropiedad());
                 propiedades[infoPropiedad(sprite)].setNombreDuenio(jugadores[posJugador].nombre);
-                text.setString(propiedades[infoPropiedad(sprite)].getNombrePosesion());
-                jugadores[posJugador].nombre_propiedades.push_back(text);
+                nombre_propiedad=propiedades[infoPropiedad(sprite)].getNombrePosesion();
+                jugadores[posJugador].nombre_propiedades.push_back(nombre_propiedad);
             }
         }else{
             msj_capital_insuf = true;
@@ -1073,11 +1068,11 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
 {
     sf::RenderWindow window;
     sf::View view;
-    sf::Texture texture, text_pointer;
-    sf::Sprite background, back_pointer;
+    sf::Texture texture, text_pointer, text_flecha_der, text_flecha_izq;
+    sf::Sprite background, back_pointer, back_flecha_der, back_flecha_izq;
     sf::Font font;
     sf::Vector2f mouse;
-    sf::Text txt1,txt2,txt3,txt4,txt5,txt6;
+    sf::Text txt1,txt2,txt3,txt4,txt5,txt6,txt_nombre;
 
     window.create(sf::VideoMode(500,400),"Hipotecas",sf::Style::Close);
     window.setMouseCursorVisible(false);
@@ -1089,13 +1084,18 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
     back_pointer.setTexture(text_pointer);
     texture.loadFromFile("ventanas/back_hipoteca.png");
     background.setTexture(texture);
+    text_flecha_der.loadFromFile("ventanas/flecha_der.png");
+    back_flecha_der.setTexture(text_flecha_der);
+    text_flecha_izq.loadFromFile("ventanas/flecha_izq.png");
+    back_flecha_izq.setTexture(text_flecha_izq);
 
-    txt1.setFont(font);txt1.setCharacterSize(24);txt1.setColor(sf::Color::Blue);txt1.setPosition(100,50);
-    txt2.setFont(font);txt2.setCharacterSize(24);txt2.setColor(sf::Color::Blue);txt2.setPosition(100,100);
-    txt3.setFont(font);txt3.setCharacterSize(24);txt3.setColor(sf::Color::Blue);txt3.setPosition(100,150);
-    txt4.setFont(font);txt4.setCharacterSize(24);txt4.setColor(sf::Color::Blue);txt4.setPosition(100,200);
-    txt5.setFont(font);txt5.setCharacterSize(24);txt5.setColor(sf::Color::Blue);txt5.setPosition(100,250);
-    txt6.setFont(font);txt6.setCharacterSize(24);txt6.setColor(sf::Color::Blue);txt6.setPosition(100,300);
+    back_flecha_der.setPosition(440,90);
+    back_flecha_izq.setPosition(10,90);
+
+    int ac=0;
+
+    txt_nombre.setFont(font);txt_nombre.setCharacterSize(24);txt_nombre.setColor(sf::Color::Red);
+    txt1.setFont(font);txt1.setCharacterSize(24);txt1.setColor(sf::Color::Blue);txt1.setPosition(120,100);
 
     while(window.isOpen())
     {
@@ -1114,24 +1114,25 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
             }
         }
 
-        int x=50, y=20;
-
         back_pointer.setPosition(static_cast<sf::Vector2f>(sf::Mouse::getPosition(window)));
 
         window.draw(background);
 //        for(int c = 0;c <jugadores[posJugador].nombre_propiedades.size();c++){
-            jugadores[posJugador].nombre_propiedades[0].setFont(font);
-            txt1 = jugadores[posJugador].nombre_propiedades[0];
-            jugadores[posJugador].nombre_propiedades[1].setFont(font);
-            txt2 = jugadores[posJugador].nombre_propiedades[1];
+        txt_nombre.setString("Propietario: "+nombre);
+        txt1.setString(jugadores[posJugador].nombre_propiedades[0]);
+        if(utility.clickSprite(back_flecha_der,mouse)&&ac <= jugadores[posJugador].nombre_propiedades.size()){
+            txt1.setString("");
+            txt1.setString(jugadores[posJugador].nombre_propiedades.at(ac+=1));
+        }
+
 //        }
 
+        txt_nombre.setPosition(50,50);
+
+        window.draw(txt_nombre);
         window.draw(txt1);
-        window.draw(txt2);
-        window.draw(txt3);
-        window.draw(txt4);
-        window.draw(txt5);
-        window.draw(txt6);
+        window.draw(back_flecha_der);
+        window.draw(back_flecha_izq);
         window.setView(view);
         window.draw(back_pointer);
         window.display();
