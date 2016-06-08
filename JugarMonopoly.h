@@ -51,6 +51,7 @@ class JugarMonopoly
         void ejecutarCartaArca(sf::Sprite* sprite, int posJugador);
         void ejecutarCartaFortuna(sf::Sprite* sprite, int posJugador, int dados);
         void ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados,sf::Vector2f mouse);
+        bool hipotecar(sf::String nombre_propiedad,int posJugador);
         virtual ~JugarMonopoly();
 
     protected:
