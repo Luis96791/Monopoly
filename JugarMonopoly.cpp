@@ -1133,6 +1133,11 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
             {
                 nombre_propiedad.insert(nombre_propiedad.getSize(),event.text.unicode);
                 txt_nombre_propiedad.setString(nombre_propiedad);
+                if(event.text.unicode==8){
+                nombre_propiedad.erase(nombre_propiedad.getSize()-1,1);
+                cout<<nombre_propiedad.getSize()<<endl;
+            }
+
             }
 
             if(event.type==sf::Event::Closed)
@@ -1140,7 +1145,7 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
                 window.close();
             }
 
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)){
                 hipotecar(nombre_propiedad,posJugador);
                 txt_nombre_propiedad.setString("");
             }
@@ -1262,7 +1267,7 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
                 window.close();
             }
 
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)){
                 deshipotecar(nombre_propiedad,posJugador);
                 txt_nombre_propiedad.setString("");
             }
