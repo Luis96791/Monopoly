@@ -1080,8 +1080,8 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
 {
     sf::RenderWindow window;
     sf::View view;
-    sf::Texture texture, text_pointer,text_btnVer,text_info,text_btnClose;
-    sf::Sprite background, back_pointer,back_btnVer,back_info,back_btnClose;
+    sf::Texture texture, text_pointer,text_btnVer,text_info,text_btnClose, text_btnErase,text_btnHipotecar,text_btnSalir;
+    sf::Sprite background, back_pointer,back_btnVer,back_info,back_btnClose, back_btnErase,back_btnHipotecar,back_btnSalir;
     sf::Font font;
     sf::Vector2f mouse;
     sf::Text txt1,txt_nombre,txt_ingreso,txt_nombre_propiedad;
@@ -1089,7 +1089,7 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
 
     bool dispose_info = true;
 
-    window.create(sf::VideoMode(500,400),"Hipotecas",sf::Style::Close);
+    window.create(sf::VideoMode(500,450),"Hipotecas",sf::Style::Close);
     window.setMouseCursorVisible(false);
     view = window.getView();
 
@@ -1105,7 +1105,12 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
     back_info.setTexture(text_info);
     text_btnClose.loadFromFile("ventanas/btn_close.png");
     back_btnClose.setTexture(text_btnClose);
-
+    text_btnErase.loadFromFile("ventanas/backspace.png");
+    back_btnErase.setTexture(text_btnErase);
+    text_btnHipotecar.loadFromFile("botones/hipotecar.png");
+    back_btnHipotecar.setTexture(text_btnHipotecar);
+    text_btnSalir.loadFromFile("botones/salir.png");
+    back_btnSalir.setTexture(text_btnSalir);
 
     txt_nombre.setFont(font);txt_nombre.setCharacterSize(24);txt_nombre.setColor(sf::Color::Red);
     txt1.setFont(font);txt1.setCharacterSize(16);txt1.setColor(sf::Color::Blue);txt1.setPosition(10,80);
@@ -1116,7 +1121,9 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
 
     back_info.setPosition(50,100);
     back_btnClose.setPosition(365,100);
-
+    back_btnErase.setPosition(380,330);
+    back_btnHipotecar.setPosition(10,380);
+    back_btnSalir.setPosition(150,380);
 
     while(window.isOpen())
     {
@@ -1124,31 +1131,32 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
         mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
         while(window.pollEvent(event))
         {
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-            {
-                window.close();
-            }
-
             if(event.type==sf::Event::TextEntered)
             {
                 nombre_propiedad.insert(nombre_propiedad.getSize(),event.text.unicode);
                 txt_nombre_propiedad.setString(nombre_propiedad);
-                if(event.text.unicode==8){
-                nombre_propiedad.erase(nombre_propiedad.getSize()-1,1);
-                cout<<nombre_propiedad.getSize()<<endl;
-            }
-
             }
 
             if(event.type==sf::Event::Closed)
             {
                 window.close();
             }
+        }
 
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)){
-                hipotecar(nombre_propiedad,posJugador);
-                txt_nombre_propiedad.setString("");
-            }
+        if(utility.clickSprite(back_btnSalir,mouse))
+        {
+            window.close();
+        }
+
+        if(utility.clickSprite(back_btnHipotecar,mouse)){
+            hipotecar(nombre_propiedad,posJugador);
+            txt_nombre_propiedad.setString("");
+            nombre_propiedad.clear();
+        }
+
+        if(utility.clickSprite(back_btnErase,mouse)){
+            txt_nombre_propiedad.setString("");
+            nombre_propiedad.clear();
         }
 
         if(utility.clickSprite(back_btnClose,mouse)){dispose_info = false;}
@@ -1186,6 +1194,9 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
         window.draw(back_btnVer);
         if(dispose_info){window.draw(back_info);window.draw(back_btnClose);}
         window.setView(view);
+        window.draw(back_btnErase);
+        window.draw(back_btnHipotecar);
+        window.draw(back_btnSalir);
         window.draw(back_pointer);
         window.display();
     }
@@ -1207,8 +1218,8 @@ bool JugarMonopoly::hipotecar(sf::String nombre_propiedad,int posJugador)
 void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
     sf::RenderWindow window;
     sf::View view;
-    sf::Texture texture, text_pointer,text_btnVer,text_info,text_btnClose;
-    sf::Sprite background, back_pointer,back_btnVer,back_info,back_btnClose;
+    sf::Texture texture, text_pointer,text_btnVer,text_info,text_btnClose, text_btnErase,text_btnDeshipotecar,text_btnSalir;
+    sf::Sprite background, back_pointer,back_btnVer,back_info,back_btnClose, back_btnErase,back_btnDeshipotecar,back_btnSalir;
     sf::Font font;
     sf::Vector2f mouse;
     sf::Text txt1,txt_nombre,txt_ingreso,txt_nombre_propiedad;
@@ -1216,7 +1227,7 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
 
     bool dispose_info = true;
 
-    window.create(sf::VideoMode(500,400),"Deshipotecar",sf::Style::Close);
+    window.create(sf::VideoMode(500,450),"Deshipotecar",sf::Style::Close);
     window.setMouseCursorVisible(false);
     view = window.getView();
 
@@ -1232,6 +1243,12 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
     back_info.setTexture(text_info);
     text_btnClose.loadFromFile("ventanas/btn_close.png");
     back_btnClose.setTexture(text_btnClose);
+    text_btnErase.loadFromFile("ventanas/backspace.png");
+    back_btnErase.setTexture(text_btnErase);
+    text_btnDeshipotecar.loadFromFile("botones/deshipotecar.png");
+    back_btnDeshipotecar.setTexture(text_btnDeshipotecar);
+    text_btnSalir.loadFromFile("botones/salir.png");
+    back_btnSalir.setTexture(text_btnSalir);
 
 
     txt_nombre.setFont(font);txt_nombre.setCharacterSize(24);txt_nombre.setColor(sf::Color::Blue);
@@ -1243,7 +1260,9 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
 
     back_info.setPosition(50,100);
     back_btnClose.setPosition(365,100);
-
+    back_btnErase.setPosition(380,330);
+    back_btnDeshipotecar.setPosition(10,380);
+    back_btnSalir.setPosition(150,380);
 
     while(window.isOpen())
     {
@@ -1251,11 +1270,6 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
         mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
         while(window.pollEvent(event))
         {
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-            {
-                window.close();
-            }
-
             if(event.type==sf::Event::TextEntered)
             {
                 nombre_propiedad.insert(nombre_propiedad.getSize(),event.text.unicode);
@@ -1266,11 +1280,22 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
             {
                 window.close();
             }
+        }
 
-            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)){
-                deshipotecar(nombre_propiedad,posJugador);
-                txt_nombre_propiedad.setString("");
-            }
+         if(utility.clickSprite(back_btnSalir,mouse))
+         {
+            window.close();
+         }
+
+         if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+            deshipotecar(nombre_propiedad,posJugador);
+            txt_nombre_propiedad.setString("");
+            nombre_propiedad.clear();
+         }
+
+        if(utility.clickSprite(back_btnErase,mouse)){
+            txt_nombre_propiedad.setString("");
+            nombre_propiedad.clear();
         }
 
         if(utility.clickSprite(back_btnClose,mouse)){dispose_info = false;}
@@ -1308,6 +1333,9 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
         window.draw(back_btnVer);
         if(dispose_info){window.draw(back_info);window.draw(back_btnClose);}
         window.setView(view);
+        window.draw(back_btnErase);
+        window.draw(back_btnDeshipotecar);
+        window.draw(back_btnSalir);
         window.draw(back_pointer);
         window.display();
     }
