@@ -6,7 +6,7 @@ CrearJugador::CrearJugador(string n, string c)
     color = c;
     capital = 1500;
     isPreso = false;
-    acumular_turnos = 0;
+    acumular_turnos = 3;
     vector<string>nombre_propiedades;
 }
 
@@ -203,37 +203,37 @@ void CrearJugador::ventanaCrearJugador(){
         }
 
             if(event.type==sf::Event::KeyPressed){
-                if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==0){
+                if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==0){
                     text_ficha_amarilla.loadFromFile("ventanas/enabled.png");
                     back_ficha_amarilla.setTexture(text_ficha_amarilla);
                     nuevoJugador(nombre_jugador,"ficha_amarilla");
                     nombre_jugador ="";
                     txt_nombre_jugador.setString(nombre_jugador);
-                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==1){
+                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==1){
                     text_ficha_azul.loadFromFile("ventanas/enabled.png");
                     back_ficha_azul.setTexture(text_ficha_azul);
                     nuevoJugador(nombre_jugador,"ficha_azul");
                     nombre_jugador ="";
                     txt_nombre_jugador.setString(nombre_jugador);
-                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==2){
+                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==2){
                     text_ficha_blanca.loadFromFile("ventanas/enabled.png");
                     back_ficha_blanca.setTexture(text_ficha_blanca);
                     nuevoJugador(nombre_jugador,"ficha_blanca");
                     txt_nombre_jugador.setString(nombre_jugador);
                     nombre_jugador ="";
-                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==3){
+                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==3){
                     text_ficha_naranja.loadFromFile("ventanas/enabled.png");
                     back_ficha_naranja.setTexture(text_ficha_naranja);
                     nuevoJugador(nombre_jugador,"ficha_naranja");
                     txt_nombre_jugador.setString(nombre_jugador);
                     nombre_jugador ="";
-                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==4){
+                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==4){
                     text_ficha_roja.loadFromFile("ventanas/enabled.png");
                     back_ficha_roja.setTexture(text_ficha_roja);
                     nuevoJugador(nombre_jugador,"ficha_roja");
                     txt_nombre_jugador.setString(nombre_jugador);
                     nombre_jugador ="";
-                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&pos==5){
+                }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&pos==5){
                     !sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
                     text_ficha_verde.loadFromFile("ventanas/enabled.png");
                     back_ficha_verde.setTexture(text_ficha_verde);

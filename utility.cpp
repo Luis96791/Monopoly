@@ -61,3 +61,9 @@ bool Utility::clickText(sf::Text s, sf::Vector2f mouse)
     }
     return false;
 }
+
+int Utility::pressedDel(char tecla)
+{
+    tecla = getch();
+    return tecla;
+}

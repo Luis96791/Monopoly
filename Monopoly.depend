@@ -160,7 +160,7 @@
 1367997281 c:\sfml-2.1\include\sfml\window\joystick.hpp
 	<SFML/Window/Export.hpp>
 
-1367997281 c:\sfml-2.1\include\sfml\window\keyboard.hpp
+1465355986 c:\sfml-2.1\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 
 1367997281 c:\sfml-2.1\include\sfml\window\mouse.hpp
@@ -342,12 +342,13 @@
 	<string>
 	<vector>
 
-1464385781 source:c:\users\luis\desktop\monopoly\utility.cpp
+1465353841 source:c:\users\luis\desktop\monopoly\utility.cpp
 	"utility.h"
 
-1464385788 c:\users\luis\desktop\monopoly\utility.h
+1465353808 c:\users\luis\desktop\monopoly\utility.h
 	<stdlib.h>
 	<iostream>
+	<conio.h>
 	<SFML/Graphics.hpp>
 
 1464014045 source:c:\users\user\desktop\monopoly\main.cpp
@@ -359,12 +360,13 @@
 	<iostream>
 	<vector>
 
-1464619537 c:\users\user\desktop\monopoly\utility.h
+1465569993 c:\users\user\desktop\monopoly\utility.h
 	<stdlib.h>
 	<iostream>
+	<conio.h>
 	<SFML/Graphics.hpp>
 
-1464619537 source:c:\users\user\desktop\monopoly\utility.cpp
+1465569993 source:c:\users\user\desktop\monopoly\utility.cpp
 	"utility.h"
 
 1429780453 c:\users\user\documents\sfml-2.3.2\include\sfml\graphics.hpp
@@ -745,7 +747,7 @@
 	<string>
 	<vector>
 
-1465224672 source:c:\users\user\desktop\monopoly\crearjugador.cpp
+1465828522 source:c:\users\user\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
 1465224673 c:\users\user\desktop\monopoly\crearjugador.h
@@ -760,7 +762,7 @@
 
 1462205644 c:\users\user\desktop\monopoly\banco.h
 
-1464904166 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
+1465353341 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
 1464904009 c:\users\luis\desktop\monopoly\crearjugador.h
@@ -770,10 +772,10 @@
 	<vector>
 	"utility.h"
 
-1465225125 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+1465831862 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1465224678 c:\users\user\desktop\monopoly\jugarmonopoly.h
+1465828712 c:\users\user\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"
@@ -797,7 +799,7 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1465348011 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1465525899 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
 1465342454 c:\users\luis\desktop\monopoly\jugarmonopoly.h

@@ -76,11 +76,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.40007278"
-     inkscape:cx="-1143.6778"
-     inkscape:cy="-31.886087"
+     inkscape:zoom="2.5668224"
+     inkscape:cx="-2940.347"
+     inkscape:cy="1722.8616"
      inkscape:document-units="px"
-     inkscape:current-layer="g3396"
+     inkscape:current-layer="g4204"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -420,8 +420,8 @@
                   <g
                      inkscape:export-ydpi="90"
                      inkscape:export-xdpi="90"
-                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\pagar_renta.png"
-                     transform="matrix(0.34859114,0,0,0.31440143,-1008.9819,-392.17671)"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\back_hipoteca.png"
+                     transform="matrix(0.34859114,0,0,0.3930018,-1043.234,-796.08794)"
                      id="g4327">
                     <rect
                        inkscape:export-ydpi="90"
@@ -688,6 +688,99 @@
                         </g>
                       </g>
                     </g>
+                  </g>
+                  <g
+                     id="g3654"
+                     transform="matrix(0.15910056,0,0,0.17825155,-2287.0984,-358.88568)"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\hipotecar.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90">
+                    <rect
+                       ry="53.253605"
+                       y="-582.76477"
+                       x="-2732.9219"
+                       height="203.94998"
+                       width="690.75073"
+                       id="rect3642"
+                       style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                    <flowRoot
+                       transform="matrix(4.3495634,0,0,5.6622975,9637.4535,4258.1202)"
+                       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                       id="flowRoot3644"
+                       xml:space="preserve"><flowRegion
+                         id="flowRegion3646"><rect
+                           style="fill:#000000"
+                           y="-855.0545"
+                           x="-2829.9583"
+                           height="62.333893"
+                           width="177.65173"
+                           id="rect3648" /></flowRegion><flowPara
+                         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000"
+                         id="flowPara3650">HIPOTECAR</flowPara><flowPara
+                         id="flowPara3652" /></flowRoot>                  </g>
+                  <g
+                     id="g3654-0"
+                     transform="matrix(0.15910056,0,0,0.17825155,-2286.8646,-318.55566)"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\salir.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90">
+                    <rect
+                       ry="53.253605"
+                       y="-582.76477"
+                       x="-2732.9219"
+                       height="203.94998"
+                       width="690.75073"
+                       id="rect3642-0"
+                       style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                    <flowRoot
+                       transform="matrix(4.3495634,0,0,5.6622975,9784.9264,4263.7386)"
+                       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                       id="flowRoot3644-8"
+                       xml:space="preserve"><flowRegion
+                         id="flowRegion3646-9"><rect
+                           style="fill:#000000"
+                           y="-855.0545"
+                           x="-2829.9583"
+                           height="62.333893"
+                           width="177.65173"
+                           id="rect3648-0" /></flowRegion><flowPara
+                         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000"
+                         id="flowPara3650-5">SALIR</flowPara><flowPara
+                         id="flowPara3652-1" /></flowRoot>                  </g>
+                  <g
+                     id="g3654-1"
+                     transform="matrix(0.15910056,0,0,0.17825155,-2287.4595,-273.82701)"
+                     inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\deshipotecar.png"
+                     inkscape:export-xdpi="90"
+                     inkscape:export-ydpi="90">
+                    <g
+                       id="g3728"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\deshipotecar.png"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-ydpi="90">
+                      <rect
+                         style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3642-5"
+                         width="690.75073"
+                         height="203.94998"
+                         x="-2732.9219"
+                         y="-582.76477"
+                         ry="53.253605" />
+                      <flowRoot
+                         xml:space="preserve"
+                         id="flowRoot3644-5"
+                         style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         transform="matrix(3.2448537,0,0,5.6622975,6514.8692,4263.4173)"><flowRegion
+                           id="flowRegion3646-8"><rect
+                             id="rect3648-4"
+                             width="177.65173"
+                             height="62.333893"
+                             x="-2829.9583"
+                             y="-855.0545"
+                             style="fill:#000000" /></flowRegion><flowPara
+                           id="flowPara3650-0"
+                           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000">DESHIPOTECAR</flowPara><flowPara
+                           id="flowPara3652-19" /></flowRoot>                    </g>
                   </g>
                 </g>
                 <g
@@ -1534,6 +1627,31 @@
              inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\derecha_tablero.png"
              inkscape:export-xdpi="90"
              inkscape:export-ydpi="90" />
+          <g
+             id="g3635"
+             transform="matrix(1.4744235,0,0,1.9149759,869.27705,-647.24206)"
+             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\backspace.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90">
+            <path
+               sodipodi:nodetypes="cccccc"
+               inkscape:connector-curvature="0"
+               id="path4430"
+               d="m -1835.128,684.79081 -10.1747,7.38761 9.8712,7.24 19.8287,2e-5 0.012,-14.59433 z"
+               style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.81601733px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            <flowRoot
+               transform="matrix(0.91582354,0,0,0.72708802,-60.096789,-82.437328)"
+               style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               id="flowRoot3627"
+               xml:space="preserve"><flowRegion
+                 id="flowRegion3629"><rect
+                   y="1045.6447"
+                   x="-1935.1167"
+                   height="33.431416"
+                   width="25.932781"
+                   id="rect3631" /></flowRegion><flowPara
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start"
+                 id="flowPara3633">x</flowPara></flowRoot>          </g>
         </g>
       </g>
     </g>

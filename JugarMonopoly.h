@@ -37,7 +37,7 @@ class JugarMonopoly
         bool ventanaCompras(sf::Sprite* sprite, string nombre);
         bool verificarSalida(sf::Sprite* sprite);
         bool aLaCarcel(sf::Sprite* sprite,int posJugador);
-        bool esperarTresTurnos(int acum, int dado1, int dado2, int posJugador);
+        bool esperarTresTurnos(int dado1, int dado2, int posJugador);
         bool cobrarRentaPropiedades(sf::Sprite* sprite,int posJugador);
         bool rentaPorColor(string duenio, string color);
         int numeroDePropiedadesPorColor(string color);

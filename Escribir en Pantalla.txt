@@ -30,10 +30,7 @@ bool clickSprite(sf::Sprite a){
 Lo que falta
 
 falta Dejar en la carcel
-
-falta Hipotecas
 falta carta "Salga de la carcel gratis en fortuna y arca"
-Opcional "Subastar"
 
 
 
