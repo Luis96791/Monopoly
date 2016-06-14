@@ -762,7 +762,7 @@
 
 1462205644 c:\users\user\desktop\monopoly\banco.h
 
-1465353341 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
+1465871299 source:c:\users\luis\desktop\monopoly\crearjugador.cpp
 	"CrearJugador.h"
 
 1464904009 c:\users\luis\desktop\monopoly\crearjugador.h
@@ -799,10 +799,10 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1465525899 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1465871307 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1465342454 c:\users\luis\desktop\monopoly\jugarmonopoly.h
+1465870893 c:\users\luis\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"
