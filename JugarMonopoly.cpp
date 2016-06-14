@@ -150,7 +150,7 @@ void JugarMonopoly::ventanaTablero()
     sf::Vector2f mouse;
     sf::Font font;
 //    sf::View view;
-    sf::Text txt_jugador_1, txt_jugador_2, txt_banco;
+    sf::Text txt_jugador_1, txt_jugador_2, txt_jugador_3, txt_banco;
     int suma_dados,guardar_dado_1,guardar_dado_2,clicks=0;
     string nombre_jugador_1, nombre_jugador_2;
     int capital_jugador_1;
@@ -191,6 +191,11 @@ void JugarMonopoly::ventanaTablero()
     txt_jugador_2.setCharacterSize(24);
     txt_jugador_2.setColor(sf::Color::Red);
     txt_jugador_2.setPosition(1055,190);
+
+    txt_jugador_3.setFont(font);
+    txt_jugador_3.setCharacterSize(24);
+    txt_jugador_3.setColor(sf::Color::Green);
+    txt_jugador_3.setPosition(1055,220);
 
     txt_banco.setFont(font);
     txt_banco.setCharacterSize(24);
@@ -320,7 +325,7 @@ void JugarMonopoly::ventanaTablero()
                 pagar_renta = true;
                 carta_arca_activa = true;
                 carta_fortuna_activa = true;
-                cout<<clicks++<<endl;
+                clicks++;
                 guardar_dado_1=utility.dadoUno();
                 guardar_dado_2=utility.dadoDos();
                 suma_dados=guardar_dado_1+guardar_dado_2;
@@ -331,19 +336,47 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_2.setTexture(text_dado_2);
             }
 
-            if(clicks%2==0){
-
-                //condicionando la funcion getIsPreso()
-                if(!jugadores[0].getIsPreso()){
-                    movimiento(back_ficha_1,suma_dados);
-                }
-                cout<<"funcion movimiento ejecutada"<<endl;
-
-                if(back_ficha_1->getPosition().x==640&&back_ficha_1->getPosition().y==20){
-                    back_ficha_1->setPosition(20,640);
-                    ventanaSalirCarcel(0);
+            if(clicks%3==0){
+                if(back_ficha_3->getPosition().x==20&&back_ficha_3->getPosition().y==640){
+                    esperarTresTurnos(guardar_dado_1,guardar_dado_2, 2);
+                        back_ficha_3->setPosition(20,640);
                 }
 
+                if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_3,2);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_3)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_3,2,suma_dados);
+                }
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(validarCompra(back_ficha_3)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_3, 2);
+                }
+
+                if(!validarCompra(back_ficha_3)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+
+                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
+                ejecutarFunciones(back_ficha_3,2,suma_dados);
+                suma_dados=0;
+            }
+            else if(clicks%2==0){
                 if(back_ficha_1->getPosition().x==20&&back_ficha_1->getPosition().y==640){
                     esperarTresTurnos(guardar_dado_1,guardar_dado_2, 0);
                         back_ficha_1->setPosition(20,640);
@@ -351,7 +384,6 @@ void JugarMonopoly::ventanaTablero()
 
                 if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
                     carta_arca_activa = false;
-                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
                     text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
                     ejecutarCartaArca(back_ficha_1,0);
                 }
@@ -362,7 +394,6 @@ void JugarMonopoly::ventanaTablero()
                     ejecutarCartaFortuna(back_ficha_1,0,suma_dados);
                 }
 
-
                 if(utility.clickSprite(back_btnHipotecar,mouse)){
                     ventanaHipotecar(jugadores[0].getNombre(),0);
                 }
@@ -371,49 +402,20 @@ void JugarMonopoly::ventanaTablero()
                     ventanaDeshipotecar(jugadores[0].getNombre(),0);
                 }
 
-                if(pagar_renta){
-                    cobrarRentaPropiedades(back_ficha_1,0);
-                    rentaServicios(back_ficha_1,suma_dados,0);
-                    pagar_renta = false;
-                }
-
-                cout<<"funcion cobrar renta ejecutada"<<endl;
-
-//*******************************************************
-
-//*******************************************************
-                cout<<"a la carcel ejecutada"<<endl;
-
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_1, 0);
                 }
-                cout<<"funcion validdar info de compra ejecutada"<<endl;
+
                 if(!validarCompra(back_ficha_1)){
                     if(utility.clickSprite(back_comprar,mouse)){
                         mensaje = true;
                     }
                 }
-                if(cobrar_impuesto&&infoPropiedad(back_ficha_1)==-1){
-                    cobrarImpuestos(back_ficha_1,0);
-                    cobrar_impuesto = false;
-                }
-                cout<<"funcion cobrar impuesto ejecutada"<<endl;
-
-                cobrarSalida(back_ficha_1,0);
 
                 txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+                ejecutarFunciones(back_ficha_1,0,suma_dados);
                 suma_dados=0;
             }else if(clicks%1==0){
-
-                //condicionando la funcion getIsPreso()
-                if(!jugadores[1].getIsPreso()){
-                    movimiento(back_ficha_2,suma_dados);
-                }
-
-                if(back_ficha_2->getPosition().x==640&&back_ficha_2->getPosition().y==20){
-                    back_ficha_2->setPosition(20,640);
-                    ventanaSalirCarcel(1);
-                }
 
                 if(back_ficha_2->getPosition().x==20&&back_ficha_2->getPosition().y==640){
                     if(!esperarTresTurnos(guardar_dado_1,guardar_dado_2, 1)){
@@ -431,7 +433,6 @@ void JugarMonopoly::ventanaTablero()
 
                 if(mostrarCartaArca(back_ficha_2)&&carta_arca_activa){
                     carta_arca_activa = false;
-                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
                     text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
                     ejecutarCartaArca(back_ficha_2,1);
                 }
@@ -442,12 +443,6 @@ void JugarMonopoly::ventanaTablero()
                     ejecutarCartaFortuna(back_ficha_2,1,suma_dados);
                 }
 
-                if(pagar_renta){
-                    cobrarRentaPropiedades(back_ficha_2,1);
-                    rentaServicios(back_ficha_2,suma_dados,1);
-                    pagar_renta = false;
-                }
-
                 if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_2, 1);
                 }
@@ -456,22 +451,12 @@ void JugarMonopoly::ventanaTablero()
                         mensaje = true;
                     }
                 }
-                if(cobrar_impuesto&&infoPropiedad(back_ficha_2)==-1){
-                    cobrarImpuestos(back_ficha_2,1);
-                    cobrar_impuesto = false;
-                }
 
-                cobrarSalida(back_ficha_2,1);
-
-                cout<<"pos x: "<<back_ficha_2->getPosition().x<<endl;
-                cout<<"pos y: "<<back_ficha_2->getPosition().y<<endl;
-                cout<<"suma: "<<suma_dados<<endl;
+                ejecutarFunciones(back_ficha_2,1,suma_dados);
                 txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
                 suma_dados=0;
             }
 
-
-            //PROBANDO TABLERO
             if(utility.clickSprite(back_btnAceptar,mouse)){mensaje = false;}
             if(utility.clickSprite(back_btnCapital_insuf,mouse)){msj_capital_insuf = false;}
             if(utility.clickSprite(back_btnPropiedad_comprada,mouse)){msj_propiedad_comprada = false;}
@@ -480,6 +465,7 @@ void JugarMonopoly::ventanaTablero()
 
         txt_jugador_1.setString(jugadores[0].getNombre()+"\t"+utility.toString(jugadores[0].getCapital()));
         txt_jugador_2.setString(jugadores[1].getNombre()+"\t"+utility.toString(jugadores[1].getCapital()));
+        txt_jugador_3.setString(jugadores[2].getNombre()+"\t"+utility.toString(jugadores[2].getCapital()));
         txt_banco.setString("Banco:\t"+utility.toString(banco.capital_bancario));
 
         if(utility.clickText(txt_jugador_1,mouse)){
@@ -494,6 +480,7 @@ void JugarMonopoly::ventanaTablero()
         window.draw(back_dado_2);
         window.draw(txt_jugador_1);
         window.draw(txt_jugador_2);
+        window.draw(txt_jugador_3);
         window.draw(txt_banco);
         window.draw(txt_turnos);
         window.draw(back_carta_arca);
@@ -521,57 +508,31 @@ void JugarMonopoly::ventanaTablero()
     }
 }
 
-//void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados, sf::Vector2f mouse)
-//{
-//    movimiento(sprite,suma_dados);
-//
-//    if(mostrarCartaArca(sprite)&&carta_arca_activa){
-//        carta_arca_activa = false;
-//        text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-//        ejecutarCartaArca(sprite,posJugador);
-//    }
-//
-//    if(mostrarCartaFortuna(sprite)&&carta_fortuna_activa){
-//        carta_fortuna_activa = false;
-//        text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
-//        ejecutarCartaFortuna(sprite,posJugador,suma_dados);
-//    }
-//
-//
-//    if(utility.clickSprite(back_btnHipotecar,mouse)){
-//        ventanaHipotecar(jugadores[0].getNombre(),0);
-//    }
-//
-//    if(pagar_renta){
-//        cobrarRentaPropiedades(sprite,posJugador);
-//        rentaServicios(sprite,suma_dados,posJugador);
-//        pagar_renta = false;
-//    }
-//
-//    if(sprite->getPosition().x==640&&sprite->getPosition().y==20){
-//        msj_mostrar_accion = true;
-//        aLaCarcel(sprite,posJugador);
-//    }
-//
-//    if(validarCompra(sprite)&&utility.clickSprite(back_comprar,mouse)){
-//        validarInfoDeCompra(sprite, posJugador);
-//    }
-//
-//    if(!validarCompra(sprite)){
-//        if(utility.clickSprite(back_comprar,mouse)){
-//            mensaje = true;
-//        }
-//    }
-//    if(cobrar_impuesto&&infoPropiedad(sprite)==-1){
-//        cobrarImpuestos(sprite,posJugador);
-//        cobrar_impuesto = false;
-//    }
-//
-//    cobrarSalida(sprite,posJugador);
-//
-//    txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
-//    suma_dados=0;
-//}
+void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados)
+{
+        if(!jugadores[posJugador].getIsPreso()){
+            movimiento(sprite,suma_dados);
+        }
+
+        if(sprite->getPosition().x==640&&sprite->getPosition().y==20){
+            sprite->setPosition(20,640);
+            ventanaSalirCarcel(posJugador);
+        }
+
+        if(pagar_renta){
+            cobrarRentaPropiedades(sprite,posJugador);
+            rentaServicios(sprite,suma_dados,posJugador);
+            pagar_renta = false;
+        }
+
+        if(cobrar_impuesto&&infoPropiedad(sprite)==-1){
+            cobrarImpuestos(sprite,posJugador);
+            cobrar_impuesto = false;
+        }
+        cout<<"funcion cobrar impuesto ejecutada"<<endl;
+
+        cobrarSalida(sprite,posJugador);
+}
 
 
 /**
