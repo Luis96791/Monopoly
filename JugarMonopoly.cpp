@@ -337,10 +337,7 @@ void JugarMonopoly::ventanaTablero()
             }
 
             if(clicks%3==0){
-                if(back_ficha_3->getPosition().x==20&&back_ficha_3->getPosition().y==640){
-                    esperarTresTurnos(guardar_dado_1,guardar_dado_2, 2);
-                        back_ficha_3->setPosition(20,640);
-                }
+                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
 
                 if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
                     carta_arca_activa = false;
@@ -372,15 +369,12 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
-                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,2);
                 ejecutarFunciones(back_ficha_3,2,suma_dados);
                 suma_dados=0;
             }
             else if(clicks%2==0){
-                if(back_ficha_1->getPosition().x==20&&back_ficha_1->getPosition().y==640){
-                    esperarTresTurnos(guardar_dado_1,guardar_dado_2, 0);
-                        back_ficha_1->setPosition(20,640);
-                }
+                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
 
                 if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
                     carta_arca_activa = false;
@@ -412,16 +406,11 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
-                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,0);
                 ejecutarFunciones(back_ficha_1,0,suma_dados);
                 suma_dados=0;
             }else if(clicks%1==0){
-
-                if(back_ficha_2->getPosition().x==20&&back_ficha_2->getPosition().y==640){
-                    if(!esperarTresTurnos(guardar_dado_1,guardar_dado_2, 1)){
-                        back_ficha_2->setPosition(20,640);
-                    }
-                }
+                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
 
                 if(utility.clickSprite(back_btnHipotecar,mouse)){
                     ventanaHipotecar(jugadores[1].getNombre(),1);
@@ -452,8 +441,8 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,1);
                 ejecutarFunciones(back_ficha_2,1,suma_dados);
-                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
                 suma_dados=0;
             }
 
@@ -467,10 +456,6 @@ void JugarMonopoly::ventanaTablero()
         txt_jugador_2.setString(jugadores[1].getNombre()+"\t"+utility.toString(jugadores[1].getCapital()));
         txt_jugador_3.setString(jugadores[2].getNombre()+"\t"+utility.toString(jugadores[2].getCapital()));
         txt_banco.setString("Banco:\t"+utility.toString(banco.capital_bancario));
-
-        if(utility.clickText(txt_jugador_1,mouse)){
-            cout<<"Haciendo clic en el texto"<<endl;
-        }
 
 //        back_puntero.setPosition(static_cast<sf::Vector2f>(sf::Mouse::getPosition(window)));
 
@@ -508,7 +493,7 @@ void JugarMonopoly::ventanaTablero()
     }
 }
 
-void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados)
+void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador, int suma_dados)
 {
         if(!jugadores[posJugador].getIsPreso()){
             movimiento(sprite,suma_dados);
@@ -516,8 +501,11 @@ void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma
 
         if(sprite->getPosition().x==640&&sprite->getPosition().y==20){
             sprite->setPosition(20,640);
+            jugadores[posJugador].setIsPreso(true);
             ventanaSalirCarcel(posJugador);
         }
+
+//        esperarTresTurnos(dado1,dado2,posJugador);
 
         if(pagar_renta){
             cobrarRentaPropiedades(sprite,posJugador);
@@ -907,13 +895,13 @@ void JugarMonopoly::ventanaSalirCarcel(int posJugador)
         }
 
         if(utility.clickSprite(back_pagar,mouse)){
+            jugadores[posJugador].setIsPreso(false);
             jugadores[posJugador].retirar(50);
             banco.depositar(50);
             window.close();
         }
 
         if(utility.clickSprite(back_esperar,mouse)){
-            jugadores[posJugador].setIsPreso(true);
             window.close();
         }
 
@@ -951,11 +939,7 @@ void JugarMonopoly::ventanaSalirCarcel(int posJugador)
 //  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
 
 
-bool JugarMonopoly::aLaCarcel(sf::Sprite* sprite, int posJugador)
-{
-    sprite->setPosition(640,20);
-    return true;
-}
+
 
  bool JugarMonopoly::esperarTresTurnos(int dado1, int dado2, int posJugador)
  {
