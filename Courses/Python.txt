@@ -1,0 +1,54 @@
+# 	Sirve para hacer comentarios de una sola linea
+""" 	Sirve para hacer comentarios extensos siempre se cierra con comillas triples """"
+** Se usa entre dos numeros para elevar a la potencia 2**3
+% 	Operador de residuo igual que en otros lenguajes
+\" para imprimir comillas\" 	esto debe de ir dentro de comillas
++\ continuacion de la línea actual 
+len(parametro)	que obtiene el largo (la cantidad de caracteres) de una cadena-->funciona con cualquier tipo de dato
+string.lower() 	para liberarte de todas las mayúsculas de tu cadena
+string.upper()	para liberarte de todas las minúsculas de tu cadena
+str(parametro)	convierte en una cadena algo que no es una cadena-->funciona con cualquier tipo de dato
+Aquí tabien se pueden concatenar las strings usando el signo + 
+print	Imprime en pantalla
+%s 	El operador s después de la cadena se usa para combinar una cadena con variables. El operador s reemplazará un %s en la cadena con la variable de cadena que viene después. Se usa % para mandar los parametros a la función
+from datetime import datetime	importar esta libreria para poder acceder a las funciones de hora y fecha
+datetime.now() 	para recuperar la fecha y hora actual
+variable.year	obtiene el año actual
+variable.month	obtiene el mes actual
+variable.day	obtiene el día actual
+variable.hour	obtiene la hora actual
+variable.minute	obtiene el minuto actual
+variable.second	obtiene el segundo actual
+Operadores booleanos and or not
+primero se calcula not
+después se calcula and
+por último se calcula or
+elif	es else if abreviado
+raw_input("string aquí")	para ingresar datos del teclado
+string.isalpha() 	retorna True si la cadena esta compuesta solo por letras
+nueva_palabra[1:len(nueva_palabra)] 	para obtener la longitud de un arreglo de strings
+def 	sirve para definir una función termina con dos puntos al final
+math 	en python esto es un package
+import	para importar un package
+sqrt(parametro) para calcualar el cuadrado de un numero
+from module import funcion EJEMPLO--->from math import sqrt--> proviene de math 	instancia la funcion una sola vez en el programa luego solo queda llamar la funcion (no el packege de donde proviene)
+from math import *    para importaciones universales ejemplo todos los atributos y funciones de math
+*args	este es un parametro de funcion indica un arreglo de mas de un elemento
+arg este es un parametro de funcion indica un arreglo de un solo elemento
+max(parametros) toma cualquier cantidad de elementos y saca el mayor de ellos sirve para 'ints','doubles' y 'floats'
+min(parametros) devuelve de una serie de argumentos, el menor de ellos.
+abs(parametro)	devuelve el valor absoluto del numero que se envia de parametro
+type(parametro) devuelve el tipo del valor que se envia de parametro
+sum(parametro)	para sumar
+
+
+			Funciones de las Listas Python
+
+lista.append(parametro)	sirve para agregar un elemento a una lista
+lista.index(parametro)	esto retorna la posicion donde se almacena el dato
+lista.insert(index, parametro) asignamos la posicion en donde lo queremos almacenar y el valor que vamos a almacenar
+lista.sort()	ordena la lista en orden alfabetico o numerico
+nombre_diccionario[clave_nueva] = valor_nuevo 	para acceder a los diccionarios
+del nombre_diccionario[nombre_clave]	eliminar un ítem del diccionario
+lista.remove(ítem)	remueve un elemento de la lista
+float(int) para dividir enteros y el resultado es un float
