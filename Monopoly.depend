@@ -772,10 +772,10 @@
 	<vector>
 	"utility.h"
 
-1465917515 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
+1466014714 source:c:\users\user\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1465917159 c:\users\user\desktop\monopoly\jugarmonopoly.h
+1466014361 c:\users\user\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"
@@ -784,6 +784,8 @@
 	"Banco.h"
 	"Mover.h"
 	<SFML/Graphics.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Clock.hpp>
 	<fstream>
 
 1462297275 source:c:\users\user\desktop\monopoly\jugadores.cpp

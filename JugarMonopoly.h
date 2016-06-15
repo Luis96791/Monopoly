@@ -9,6 +9,8 @@
 #include "Banco.h"
 #include "Mover.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/System/Time.hpp>
+#include <SFML/System/Clock.hpp>
 #include <fstream>
 
 using namespace std;
@@ -45,6 +47,7 @@ class JugarMonopoly
         void ventanaHipotecar(string nombre,int posJugador);
         void ventanaDeshipotecar(string nombre, int posJugador);
         bool ventanaInventario(string nombre, int posJugador);
+        void ventanaTerminarJuego();
         void cobrarSalida(sf::Sprite* sprite, int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
         int buscarJugador(string nombre);
@@ -56,6 +59,7 @@ class JugarMonopoly
         bool hipotecar(sf::String nombre_propiedad,int posJugador);
         bool deshipotecar(sf::String nombre_propiedad,int posJugador);
         int inventario(int posJugador);
+        string getTime(int num);
         virtual ~JugarMonopoly();
 
     protected:
