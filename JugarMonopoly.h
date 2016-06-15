@@ -44,6 +44,7 @@ class JugarMonopoly
         void rentaServicios(sf::Sprite* sprite, int dados, int posJugador);
         void ventanaHipotecar(string nombre,int posJugador);
         void ventanaDeshipotecar(string nombre, int posJugador);
+        bool ventanaInventario(string nombre, int posJugador);
         void cobrarSalida(sf::Sprite* sprite, int posJugador);
         int infoPropiedad(sf::Sprite* sprite);
         int buscarJugador(string nombre);
@@ -54,6 +55,7 @@ class JugarMonopoly
         void ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados);
         bool hipotecar(sf::String nombre_propiedad,int posJugador);
         bool deshipotecar(sf::String nombre_propiedad,int posJugador);
+        int inventario(int posJugador);
         virtual ~JugarMonopoly();
 
     protected:

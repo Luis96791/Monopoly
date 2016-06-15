@@ -115,6 +115,7 @@ bool JugarMonopoly::validarCompra(sf::Sprite* ficha)
     return true;
 }
 
+
 /**
     Esta funcion es la responsable de manejar el tablero con todas sus opcioes(compras,hipotecas,turnos,cartas de fortuna
     y arca, movimientos de fichas,dados,nombres de jugadores y capital disponible etc.)
@@ -137,15 +138,15 @@ void JugarMonopoly::ventanaTablero()
 
     sf::Texture text_tablero,text_dado_1,text_dado_2, text_info, text_btnAceptar, text_derecha_tablero,text_capital_insuf,
         text_btnCapital_insuf,text_propiedad_comprada,text_btnPropiedad_comprada,text_msj_carta,
-        text_btnMsj_carta,text_btnDeshipotecar/*,text_puntero*/;
+        text_btnMsj_carta,text_btnDeshipotecar,text_btnRetirarse/*,text_puntero*/;
     sf::Texture ref_text_ficha_1,ref_text_ficha_2,ref_text_ficha_3,ref_text_ficha_4,ref_text_ficha_5,ref_text_ficha_6;
-    sf::Texture *text_ficha_1, *text_ficha_2,*text_ficha_3,*text_ficha_4,*text_ficha_5,*text_ficha_6;
+    sf::Texture *text_ficha_1,*text_ficha_2,*text_ficha_3,*text_ficha_4,*text_ficha_5,*text_ficha_6;
 
     sf::Sprite back_tablero,back_dado_1,back_dado_2,back_info, back_btnAceptar, back_derecha_tablero,
-        back_btnCapital_insuf,back_propiedad_comprada,back_btnPropiedad_comprada,back_msj_carta,
-        back_btnMsj_carta,back_btnDeshipotecar/*,back_puntero*/;
-    sf::Sprite ref_back_ficha_1,ref_back_ficha_2,ref_back_ficha_3,ref_back_ficha_4,ref_back_ficha_5,ref_back_ficha_6,back_capital_insuf;
-    sf::Sprite *back_ficha_1, *back_ficha_2, *back_ficha_3,*back_ficha_4,*back_ficha_5,*back_ficha_6;
+        back_btnCapital_insuf,back_propiedad_comprada,back_btnPropiedad_comprada,back_msj_carta,back_capital_insuf,
+        back_btnMsj_carta,back_btnDeshipotecar,back_btnRetirarse/*,back_puntero*/;
+    sf::Sprite ref_back_ficha_1,ref_back_ficha_2,ref_back_ficha_3,ref_back_ficha_4,ref_back_ficha_5,ref_back_ficha_6;
+    sf::Sprite *back_ficha_1,*back_ficha_2,*back_ficha_3,*back_ficha_4,*back_ficha_5,*back_ficha_6;
 
     sf::Vector2f mouse;
     sf::Font font;
@@ -154,7 +155,6 @@ void JugarMonopoly::ventanaTablero()
     int suma_dados,guardar_dado_1,guardar_dado_2,clicks=0;
     string nombre_jugador_1, nombre_jugador_2;
     int capital_jugador_1;
-    int cant_jugadores;
 
     nombre_archivo = "jugadores.txt";
 
@@ -207,8 +207,7 @@ void JugarMonopoly::ventanaTablero()
     txt_turnos.setColor(sf::Color::Black);
     txt_turnos.setPosition(1155,550);
 
-//    text_puntero.loadFromFile("puntero.png");
-//    back_puntero.setTexture(text_puntero);
+
     text_tablero.loadFromFile("tablero.png");
     back_tablero.setTexture(text_tablero);
     text_dado_1.loadFromFile("dados/1.png");
@@ -241,7 +240,8 @@ void JugarMonopoly::ventanaTablero()
     back_msj_carta.setTexture(text_msj_carta);
     text_btnDeshipotecar.loadFromFile("ventanas/deshipotecar.png");
     back_btnDeshipotecar.setTexture(text_btnDeshipotecar);
-
+    text_btnRetirarse.loadFromFile("ventanas/retirarse.png");
+    back_btnRetirarse.setTexture(text_btnRetirarse);
 
     ifstream cargar("jugadores.txt");
     string n, f;
@@ -287,7 +287,6 @@ void JugarMonopoly::ventanaTablero()
     }
     cargar.close();
 
-    cant_jugadores = jugadores.size();
 
     back_dado_1.setPosition(1140,580);
     back_dado_2.setPosition(1250,580);
@@ -303,6 +302,7 @@ void JugarMonopoly::ventanaTablero()
     back_comprar.setPosition(700,150);
     back_btnHipotecar.setPosition(700,210);
     back_btnDeshipotecar.setPosition(700,270);
+    back_btnRetirarse.setPosition(700,330);
     back_msj_carta.setPosition(700,250);
 
 
@@ -336,7 +336,7 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_2.setTexture(text_dado_2);
             }
 
-            if(clicks%3==0){
+            if(ficha3 &&clicks%3==0){
                 txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
 
                 if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
@@ -369,11 +369,17 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[2].getNombre(),2)){
+                        ficha3 = false;
+                    }
+                }
+
                 esperarTresTurnos(guardar_dado_1,guardar_dado_2,2);
                 ejecutarFunciones(back_ficha_3,2,suma_dados);
                 suma_dados=0;
             }
-            else if(clicks%2==0){
+            else if(ficha1 && clicks%2==0){
                 txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
 
                 if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
@@ -406,10 +412,16 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[0].getNombre(),0)){
+                        ficha1 = false;
+                    }
+                }
+
                 esperarTresTurnos(guardar_dado_1,guardar_dado_2,0);
                 ejecutarFunciones(back_ficha_1,0,suma_dados);
                 suma_dados=0;
-            }else if(clicks%1==0){
+            }else if(ficha2 && clicks%1==0){
                 txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
 
                 if(utility.clickSprite(back_btnHipotecar,mouse)){
@@ -441,6 +453,12 @@ void JugarMonopoly::ventanaTablero()
                     }
                 }
 
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[1].getNombre(),1)){
+                        ficha2 = false;
+                    }
+                }
+
                 esperarTresTurnos(guardar_dado_1,guardar_dado_2,1);
                 ejecutarFunciones(back_ficha_2,1,suma_dados);
                 suma_dados=0;
@@ -463,9 +481,6 @@ void JugarMonopoly::ventanaTablero()
         window.draw(back_derecha_tablero);
         window.draw(back_dado_1);
         window.draw(back_dado_2);
-        window.draw(txt_jugador_1);
-        window.draw(txt_jugador_2);
-        window.draw(txt_jugador_3);
         window.draw(txt_banco);
         window.draw(txt_turnos);
         window.draw(back_carta_arca);
@@ -473,18 +488,17 @@ void JugarMonopoly::ventanaTablero()
         window.draw(back_comprar);
         window.draw(back_btnHipotecar);
         window.draw(back_btnDeshipotecar);
+        window.draw(back_btnRetirarse);
         if(mensaje){window.draw(back_info);}
         if(mensaje){window.draw(back_btnAceptar);}
         if(msj_capital_insuf){window.draw(back_capital_insuf);}
         if(msj_capital_insuf){window.draw(back_btnCapital_insuf);}
         if(msj_propiedad_comprada){window.draw(back_propiedad_comprada);}
         if(msj_propiedad_comprada){window.draw(back_btnPropiedad_comprada);}
-//        window.setView(view);
-//        window.draw(back_puntero);
 
-        if(ficha1){window.draw(*back_ficha_1);}
-        if(ficha2){window.draw(*back_ficha_2);}
-        if(ficha3){window.draw(*back_ficha_3);}
+        if(ficha1){window.draw(*back_ficha_1); window.draw(txt_jugador_1);}
+        if(ficha2){window.draw(*back_ficha_2); window.draw(txt_jugador_2);}
+        if(ficha3){window.draw(*back_ficha_3); window.draw(txt_jugador_3);}
         if(ficha4){window.draw(*back_ficha_4);}
         if(ficha5){window.draw(*back_ficha_5);}
         if(ficha6){window.draw(*back_ficha_6);}
@@ -1317,6 +1331,97 @@ bool JugarMonopoly::deshipotecar(sf::String nombre_propiedad, int posJugador)
         }
     }
     return false;
+}
+
+bool JugarMonopoly::ventanaInventario(string nombre, int posJugador)
+{
+    sf::RenderWindow window;
+    sf::Texture texture, text_pointer, text_btnVer, text_btnRetiro;
+    sf::Sprite background, back_pointer, back_btnVer, back_btnRetiro;
+    sf::View view;
+    sf::Text txt_nombre, txt_inventario;
+    sf::Font font;
+    sf::Vector2f mouse;
+
+    int mi_capital = 0, mis_propiedades = 0, inv = 0;
+
+    window.create(sf::VideoMode(500,450),"Inventario",sf::Style::Close);
+    window.setMouseCursorVisible(false);
+    view = window.getView();
+
+    font.loadFromFile("arial.ttf");
+
+    txt_inventario.setFont(font);
+    txt_inventario.setCharacterSize(24);
+    txt_inventario.setColor(sf::Color::Black);
+    txt_inventario.setPosition(50,100);
+
+    txt_nombre.setFont(font);
+    txt_nombre.setCharacterSize(24);
+    txt_nombre.setColor(sf::Color::Red);
+    txt_nombre.setPosition(50,40);
+
+    texture.loadFromFile("ventanas/back_hipoteca.png");
+    background.setTexture(texture);
+    text_pointer.loadFromFile("punteros/puntero2.png");
+    back_pointer.setTexture(text_pointer);
+    text_btnVer.loadFromFile("ventanas/btnVer.png");
+    back_btnVer.setTexture(text_btnVer);
+    text_btnRetiro.loadFromFile("botones/retiro.png");
+    back_btnRetiro.setTexture(text_btnRetiro);
+
+    back_btnVer.setPosition(360,40);
+    back_btnRetiro.setPosition(40,360);
+
+    while(window.isOpen())
+    {
+        sf::Event event;
+        mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+        while(window.pollEvent(event))
+        {
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+            {
+                window.close();
+            }
+        }
+        if(utility.clickSprite(back_btnVer,mouse)){
+            mi_capital = jugadores[posJugador].getCapital();
+            mis_propiedades = inventario(posJugador);
+            inv = mi_capital+mis_propiedades;
+            txt_inventario.setString("Efectivo: "+utility.toString(mi_capital)+'\n'+
+                                     "Inversión en Propiedades: "+utility.toString(mis_propiedades)+'\n'+
+                                     "Mi Capital: "+utility.toString(inv));
+        }
+
+        txt_nombre.setString("Jugador: "+jugadores[posJugador].getNombre());
+
+        if(utility.clickSprite(back_btnRetiro,mouse)){
+            return true;
+        }
+
+        back_pointer.setPosition(static_cast<sf::Vector2f>(sf::Mouse::getPosition(window)));
+
+        window.draw(background);
+        window.setView(view);
+        window.draw(txt_inventario);
+        window.draw(txt_nombre);
+        window.draw(back_btnVer);
+        window.draw(back_btnRetiro);
+        window.draw(back_pointer);
+        window.display();
+    }
+    return false;
+}
+
+int JugarMonopoly::inventario(int posJugador)
+{
+    int acumular = 0;
+    for(int c = 0;c < propiedades.size(); c++){
+        if(propiedades[c].getNombreDuenio()==jugadores[posJugador].getNombre()){
+            acumular += propiedades[c].getValorHipoteca();
+        }
+    }
+    return acumular;
 }
 
 bool JugarMonopoly::mostrarCartaArca(sf::Sprite* sprite)

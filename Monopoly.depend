@@ -799,10 +799,10 @@
 
 1462223497 c:\users\luis\desktop\monopoly\banco.h
 
-1465873700 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
+1465959134 source:c:\users\luis\desktop\monopoly\jugarmonopoly.cpp
 	"JugarMonopoly.h"
 
-1465871793 c:\users\luis\desktop\monopoly\jugarmonopoly.h
+1465950125 c:\users\luis\desktop\monopoly\jugarmonopoly.h
 	<iostream>
 	<vector>
 	"utility.h"

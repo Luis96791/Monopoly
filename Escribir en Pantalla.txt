@@ -34,14 +34,48 @@ falta carta "Salga de la carcel gratis en fortuna y arca"
 
 
 
-if(clicks%2==0){
-                movimiento(back_ficha_1,suma_dados);
-                cout<<"funcion movimiento ejecutada"<<endl;
+if(clicks%3==0){
+                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
 
+                if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_3,2);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_3)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_3,2,suma_dados);
+                }
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(validarCompra(back_ficha_3)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_3, 2);
+                }
+
+                if(!validarCompra(back_ficha_3)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,2);
+                ejecutarFunciones(back_ficha_3,2,suma_dados);
+                suma_dados=0;
+            }
+            else if(clicks%2==0){
+                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
 
                 if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
                     carta_arca_activa = false;
-                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
                     text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
                     ejecutarCartaArca(back_ficha_1,0);
                 }
@@ -52,54 +86,40 @@ if(clicks%2==0){
                     ejecutarCartaFortuna(back_ficha_1,0,suma_dados);
                 }
 
-
                 if(utility.clickSprite(back_btnHipotecar,mouse)){
                     ventanaHipotecar(jugadores[0].getNombre(),0);
                 }
 
-                if(pagar_renta){
-                    cobrarRentaPropiedades(back_ficha_1,0);
-                    rentaServicios(back_ficha_1,suma_dados,0);
-                    pagar_renta = false;
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[0].getNombre(),0);
                 }
-
-                cout<<"funcion cobrar renta ejecutada"<<endl;
-                if(back_ficha_1->getPosition().x==640&&back_ficha_1->getPosition().y==20){
-                    msj_mostrar_accion = true;
-                    aLaCarcel(back_ficha_1,0);
-                }
-
-                cout<<"a la carcel ejecutada"<<endl;
 
                 if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_1, 0);
                 }
-                cout<<"funcion validdar info de compra ejecutada"<<endl;
+
                 if(!validarCompra(back_ficha_1)){
                     if(utility.clickSprite(back_comprar,mouse)){
                         mensaje = true;
                     }
                 }
-                if(cobrar_impuesto&&infoPropiedad(back_ficha_1)==-1){
-                    cobrarImpuestos(back_ficha_1,0);
-                    cobrar_impuesto = false;
-                }
-                cout<<"funcion cobrar impuesto ejecutada"<<endl;
 
-                cobrarSalida(back_ficha_1,0);
-
-                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,0);
+                ejecutarFunciones(back_ficha_1,0,suma_dados);
                 suma_dados=0;
             }else if(clicks%1==0){
-                movimiento(back_ficha_2,suma_dados);
+                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
 
                 if(utility.clickSprite(back_btnHipotecar,mouse)){
                     ventanaHipotecar(jugadores[1].getNombre(),1);
                 }
 
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[1].getNombre(),1);
+                }
+
                 if(mostrarCartaArca(back_ficha_2)&&carta_arca_activa){
                     carta_arca_activa = false;
-                    cout<<"aumentar Arca: "<<aumentar_arca<<endl;
                     text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
                     ejecutarCartaArca(back_ficha_2,1);
                 }
@@ -110,17 +130,6 @@ if(clicks%2==0){
                     ejecutarCartaFortuna(back_ficha_2,1,suma_dados);
                 }
 
-                if(pagar_renta){
-                    cobrarRentaPropiedades(back_ficha_2,1);
-                    rentaServicios(back_ficha_2,suma_dados,1);
-                    pagar_renta = false;
-                }
-
-                if(back_ficha_2->getPosition().x==640&&back_ficha_2->getPosition().x==20){
-                    msj_mostrar_accion = true;
-                    aLaCarcel(back_ficha_2,1);
-                }
-
                 if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
                     validarInfoDeCompra(back_ficha_2, 1);
                 }
@@ -129,16 +138,12 @@ if(clicks%2==0){
                         mensaje = true;
                     }
                 }
-                if(cobrar_impuesto&&infoPropiedad(back_ficha_2)==-1){
-                    cobrarImpuestos(back_ficha_2,1);
-                    cobrar_impuesto = false;
-                }
 
-                cobrarSalida(back_ficha_2,1);
-
-                cout<<"pos x: "<<back_ficha_2->getPosition().x<<endl;
-                cout<<"pos y: "<<back_ficha_2->getPosition().y<<endl;
-                cout<<"suma: "<<suma_dados<<endl;
-                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,1);
+                ejecutarFunciones(back_ficha_2,1,suma_dados);
                 suma_dados=0;
             }
+	    if(utility.clickSprite(back_btnAceptar,mouse)){mensaje = false;}
+            if(utility.clickSprite(back_btnCapital_insuf,mouse)){msj_capital_insuf = false;}
+            if(utility.clickSprite(back_btnPropiedad_comprada,mouse)){msj_propiedad_comprada = false;}
+        }
