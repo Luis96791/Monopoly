@@ -5,7 +5,7 @@ JugarMonopoly::JugarMonopoly()
     //ctor
 }
 
-bool mensaje, msj_capital_insuf,msj_propiedad_comprada, cobrar_salida=false,
+bool mensaje, msj_capital_insuf,msj_propiedad_comprada, cobrar_salida=false, is_close_all=false,
     msj_ejecutar_accion, carta_arca_activa, carta_fortuna_activa,
      cobrar_impuesto, pagar_renta,carcel_tres_turnos;
 int aumentar_arca=0, aumentar_fortuna=0;
@@ -132,21 +132,9 @@ bool JugarMonopoly::validarCompra(sf::Sprite* ficha)
         validarInfoCompra();
 */
 
-string JugarMonopoly::getTime(int num){
-    int c;
-    int s;
-    if(num>=60){
-        c = num%60==0;
-        return ""+c;
-    }
-}
-
 void JugarMonopoly::ventanaTablero()
 {
     sf::RenderWindow window;
-
-    sf::Clock clock;
-    sf::Time time;
 
     sf::Texture text_tablero,text_dado_1,text_dado_2, text_info, text_btnAceptar, text_derecha_tablero,text_capital_insuf,
         text_btnCapital_insuf,text_propiedad_comprada,text_btnPropiedad_comprada,text_msj_carta,
@@ -330,7 +318,6 @@ void JugarMonopoly::ventanaTablero()
      while (window.isOpen())
     {
         sf::Event event;
-        time=clock.getElapsedTime();
         while (window.pollEvent(event))
         {
             mouse = window.mapPixelToCoords(sf::Mouse::getPosition(window));
@@ -493,13 +480,11 @@ void JugarMonopoly::ventanaTablero()
             if(utility.clickSprite(back_btnAceptar,mouse)){mensaje = false;}
             if(utility.clickSprite(back_btnCapital_insuf,mouse)){msj_capital_insuf = false;}
             if(utility.clickSprite(back_btnPropiedad_comprada,mouse)){msj_propiedad_comprada = false;}
+
+            if(is_close_all){
+                window.close();
+            }
         }
-
-
-
-
-            txt_time.setString(utility.toString(time.asSeconds()));
-
 
         txt_jugador_1.setString(jugadores[0].getNombre()+"\t"+utility.toString(jugadores[0].getCapital()));
         txt_jugador_2.setString(jugadores[1].getNombre()+"\t"+utility.toString(jugadores[1].getCapital()));
@@ -1439,6 +1424,7 @@ bool JugarMonopoly::ventanaInventario(string nombre, int posJugador)
                     }
                 }
             }
+            jugadores[posJugador].setNombre("retirado");
             return true;
         }
 
@@ -1470,16 +1456,14 @@ int JugarMonopoly::inventario(int posJugador)
 void JugarMonopoly::ventanaTerminarJuego(){
 
     sf::RenderWindow window;
-    sf::Texture texture, text_btnVer;
-    sf::Sprite background, back_btnVer;
+    sf::Texture texture, text_btnVer, text_msjGanador, text_btnTerminar, text_btnAceptar, text_msjEmpate;
+    sf::Sprite background, back_btnVer, back_msjGanador, back_btnTerminar, back_btnAceptar, back_msjEmpate;
     sf::Font font;
-    sf::Text txt_todos;
+    sf::Text txt_todos, txt_ganador;
     sf::Vector2f mouse;
-
-
-
-    string acInforme = "";
-
+    string acInforme;
+    int mayor = 0;
+    bool is_ganador = false, is_empate = false;
 
     window.create(sf::VideoMode(500, 450), "Terminar Juego", sf::Style::Close);
     window.setVerticalSyncEnabled(true);
@@ -1488,15 +1472,33 @@ void JugarMonopoly::ventanaTerminarJuego(){
     background.setTexture(texture);
     text_btnVer.loadFromFile("botones/ver_ganador.png");
     back_btnVer.setTexture(text_btnVer);
+    text_msjGanador.loadFromFile("ventanas/msj_ganador.png");
+    back_msjGanador.setTexture(text_msjGanador);
+    text_btnTerminar.loadFromFile("botones/terminar.png");
+    back_btnTerminar.setTexture(text_btnTerminar);
+    text_btnAceptar.loadFromFile("ventanas/btnAceptarSalida.png");
+    back_btnAceptar.setTexture(text_btnAceptar);
+    text_msjEmpate.loadFromFile("ventanas/msj_empate.png");
+    back_msjEmpate.setTexture(text_msjEmpate);
 
     font.loadFromFile("arial.ttf");
 
     txt_todos.setFont(font);
-    txt_todos.setCharacterSize(24);
+    txt_todos.setCharacterSize(22);
     txt_todos.setColor(sf::Color::Blue);
-    txt_todos.setPosition(50,40);
+    txt_todos.setPosition(50,100);
+
+    txt_ganador.setFont(font);
+    txt_ganador.setCharacterSize(48);
+    txt_ganador.setStyle(sf::Text::Bold);
+    txt_ganador.setColor(sf::Color::White);
+    txt_ganador.setPosition(190,240);
 
     back_btnVer.setPosition(360,40);
+    back_msjGanador.setPosition(20,230);
+    back_btnTerminar.setPosition(190,390);
+    back_btnAceptar.setPosition(195,340);
+    back_msjEmpate.setPosition(20,230);
 
     while (window.isOpen())
     {
@@ -1512,17 +1514,78 @@ void JugarMonopoly::ventanaTerminarJuego(){
         if(utility.clickSprite(back_btnVer,mouse)){
             acInforme = "";
             for(int c = 0; c < jugadores.size(); c++){
-                acInforme += "Nombre: "+jugadores[c].getNombre()+'\n'+
+                if(jugadores[c].getNombre()!="retirado"){
+                    acInforme += "Nombre: "+jugadores[c].getNombre()+'\t'+
                                     "Capital: "+utility.toString(jugadores[c].getCapital()+inventario(c))+'\n';
+                }
             }
             txt_todos.setString(acInforme);
         }
 
+        if(utility.clickSprite(back_btnTerminar,mouse)){
+            if(empate()){
+                is_empate = true;
+            }else{
+                is_ganador = true;
+            }
+        }
+
+        if(utility.clickSprite(back_btnAceptar,mouse)){
+            window.close();
+            is_close_all = true;
+        }
+
+        txt_ganador.setString(jugadores[ganador()].getNombre());
+
         window.draw(background);
         window.draw(back_btnVer);
+        window.draw(back_btnTerminar);
+        if(is_ganador){
+            window.draw(back_msjGanador);
+            window.draw(txt_ganador);
+            window.draw(back_btnAceptar);
+        }
+        if(is_empate){
+            window.draw(back_msjEmpate);
+        }
         window.draw(txt_todos);
         window.display();
     }
+}
+
+int JugarMonopoly::ganador()
+{
+    int mayor = 0, cap_mas_inv = 0;
+    int save_pos;
+
+    for(int w = 0; w < jugadores.size(); w++){
+        if(jugadores[w].getNombre()!="retirado"){
+            cap_mas_inv = jugadores[w].getCapital()+inventario(w);
+            if(cap_mas_inv > mayor){
+                mayor = cap_mas_inv;
+                save_pos = w;
+            }
+        }
+    }
+    return save_pos;
+}
+
+bool JugarMonopoly::empate()
+{
+    int cap_mas_inv = 0,cont_empates=0;
+    int save_pos;
+
+    for(int s = 0; s < jugadores.size(); s++){
+        cap_mas_inv = jugadores[s].getCapital()+inventario(s);
+        if(cap_mas_inv==(jugadores[ganador()].getCapital()+inventario(ganador()))){
+            cont_empates++;
+        }
+    }
+
+    if(cont_empates>1){
+        return true;
+    }else
+        return false;
 }
 
 bool JugarMonopoly::mostrarCartaArca(sf::Sprite* sprite)

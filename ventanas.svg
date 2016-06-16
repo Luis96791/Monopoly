@@ -76,11 +76,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8150175"
-     inkscape:cx="-2640.98"
-     inkscape:cy="1937.3374"
+     inkscape:zoom="0.90750876"
+     inkscape:cx="-2154.5536"
+     inkscape:cy="2098.8166"
      inkscape:document-units="px"
-     inkscape:current-layer="g3728-0"
+     inkscape:current-layer="g3859-1"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -150,51 +150,57 @@
                  inkscape:export-xdpi="90"
                  inkscape:export-ydpi="90"
                  transform="translate(-80.914202,43.539884)">
-                <rect
-                   style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967"
-                   id="rect3336"
-                   width="594.15479"
-                   height="471.4761"
-                   x="64.351158"
-                   y="250.99907"
-                   transform="translate(0.00975627,0.00847058)" />
-                <flowRoot
-                   xml:space="preserve"
-                   id="flowRoot3338"
-                   style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                   transform="matrix(1,0,0,1.3226213,-7.1331005,-63.125416)"><flowRegion
-                     id="flowRegion3340"><rect
-                       id="rect3342"
-                       width="222.85715"
-                       height="68.571426"
-                       x="107.14286"
-                       y="298.07648"
-                       style="fill:#ffffff" /></flowRegion><flowPara
-                     id="flowPara3344">Nombre: </flowPara></flowRoot>                <flowRoot
-                   xml:space="preserve"
-                   id="flowRoot3346"
-                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                   transform="matrix(0.78501569,0,0,1,40.35529,-17.991524)"><flowRegion
-                     id="flowRegion3348"><rect
-                       id="rect3350"
-                       width="549.75513"
-                       height="58.571442"
-                       x="140"
-                       y="278.07648"
-                       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9" /></flowRegion><flowPara
-                     id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>                <flowRoot
-                   xml:space="preserve"
-                   id="flowRoot3356"
-                   style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                   transform="matrix(0.55699835,0,0,0.67410327,39.919263,143.97993)"><flowRegion
-                     id="flowRegion3358"><rect
-                       id="rect3360"
-                       width="531.34027"
-                       height="60.609158"
-                       x="101.01525"
-                       y="399.80365"
-                       style="fill:#ffffff" /></flowRegion><flowPara
-                     id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>                <g
+                <g
+                   id="g3702"
+                   inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\registro.png"
+                   inkscape:export-xdpi="90"
+                   inkscape:export-ydpi="90">
+                  <rect
+                     transform="translate(0.00975627,0.00847058)"
+                     y="250.99907"
+                     x="64.351158"
+                     height="471.4761"
+                     width="594.15479"
+                     id="rect3336"
+                     style="opacity:0.98999999;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.13089216;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99421967" />
+                  <flowRoot
+                     transform="matrix(1,0,0,1.3226213,-7.1331005,-63.125416)"
+                     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                     id="flowRoot3338"
+                     xml:space="preserve"><flowRegion
+                       id="flowRegion3340"><rect
+                         style="fill:#ffffff"
+                         y="298.07648"
+                         x="107.14286"
+                         height="68.571426"
+                         width="222.85715"
+                         id="rect3342" /></flowRegion><flowPara
+                       id="flowPara3344">Nombre: </flowPara></flowRoot>                  <flowRoot
+                     transform="matrix(0.78501569,0,0,1,40.35529,-17.991524)"
+                     style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                     id="flowRoot3346"
+                     xml:space="preserve"><flowRegion
+                       id="flowRegion3348"><rect
+                         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9"
+                         y="278.07648"
+                         x="140"
+                         height="58.571442"
+                         width="549.75513"
+                         id="rect3350" /></flowRegion><flowPara
+                       id="flowPara3352">Registro de  Jugadores</flowPara></flowRoot>                  <flowRoot
+                     transform="matrix(0.55699835,0,0,0.67410327,39.919263,143.97993)"
+                     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                     id="flowRoot3356"
+                     xml:space="preserve"><flowRegion
+                       id="flowRegion3358"><rect
+                         style="fill:#ffffff"
+                         y="399.80365"
+                         x="101.01525"
+                         height="60.609158"
+                         width="531.34027"
+                         id="rect3360" /></flowRegion><flowPara
+                       id="flowPara3362">Seleccione su Ficha:</flowPara></flowRoot>                </g>
+                <g
                    inkscape:export-ydpi="90"
                    inkscape:export-xdpi="90"
                    inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\1.png"
@@ -436,7 +442,7 @@
                   </g>
                   <g
                      id="g4397-7"
-                     transform="translate(-211.27008,-841.33088)"
+                     transform="translate(-472.64309,-1070.4716)"
                      inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\info_de_carta.png"
                      inkscape:export-xdpi="90"
                      inkscape:export-ydpi="90"
@@ -658,6 +664,43 @@
                                    id="flowPara4452-8"
                                    style="text-align:justify;text-anchor:start">Escribe los nombres de las propiedades tal como aparecen en pantalla luego presiona &quot;Espacio&quot; para deshipotecar.</flowPara></flowRoot>                            </g>
                           </g>
+                          <g
+                             style="opacity:1;fill:#ff0000"
+                             id="g4398-2"
+                             transform="matrix(0.55782964,-0.00121734,-0.00193133,0.78946192,3389.4775,-10825.556)"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btnVer.png"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-ydpi="90">
+                            <g
+                               id="g3713"
+                               inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\ver_ganador.png"
+                               inkscape:export-xdpi="90"
+                               inkscape:export-ydpi="90">
+                              <rect
+                                 style="opacity:1;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                 id="rect4378-1"
+                                 width="569.55121"
+                                 height="239.92519"
+                                 x="353.17996"
+                                 y="-1071.0812"
+                                 transform="matrix(-0.00833734,0.99996524,-0.99998619,-0.00525517,0,0)" />
+                              <flowRoot
+                                 xml:space="preserve"
+                                 id="flowRoot4388-4"
+                                 style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+                                 transform="matrix(-0.02168521,2.6008852,-2.0712972,-0.01088517,1706.3659,-2230.9679)"><flowRegion
+                                   id="flowRegion4390-3"><rect
+                                   style="fill:#ffffff;"
+                                   id="rect4392-2"
+                                   width="201.70099"
+                                   height="99.420593"
+                                   x="1003.909"
+                                   y="299.87234" /></flowRegion><flowPara
+                                   id="flowPara4394-1"
+                                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;">Ver </flowPara><flowPara
+                                   id="flowPara3711"
+                                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;">Jugadores</flowPara></flowRoot>                            </g>
+                          </g>
                         </g>
                         <g
                            style="opacity:1;fill:#ff0000"
@@ -695,58 +738,67 @@
                      inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\hipotecar.png"
                      inkscape:export-xdpi="90"
                      inkscape:export-ydpi="90">
-                    <rect
-                       ry="53.253605"
-                       y="-582.76477"
-                       x="-2732.9219"
-                       height="203.94998"
-                       width="690.75073"
-                       id="rect3642"
-                       style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-                    <flowRoot
-                       transform="matrix(4.3495634,0,0,5.6622975,9637.4535,4258.1202)"
-                       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                       id="flowRoot3644"
-                       xml:space="preserve"><flowRegion
-                         id="flowRegion3646"><rect
-                           style="fill:#000000"
-                           y="-855.0545"
-                           x="-2829.9583"
-                           height="62.333893"
-                           width="177.65173"
-                           id="rect3648" /></flowRegion><flowPara
-                         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000"
-                         id="flowPara3650">HIPOTECAR</flowPara><flowPara
-                         id="flowPara3652" /></flowRoot>                  </g>
+                    <g
+                       id="g3788">
+                      <rect
+                         style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3642"
+                         width="690.75073"
+                         height="203.94998"
+                         x="-2732.9219"
+                         y="-582.76477"
+                         ry="53.253605" />
+                      <flowRoot
+                         xml:space="preserve"
+                         id="flowRoot3644"
+                         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99949837px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         transform="matrix(3.6458493,0,0,5.6622975,7646.5986,4258.1202)"><flowRegion
+                           id="flowRegion3646"><rect
+                             id="rect3648"
+                             width="177.65173"
+                             height="62.333893"
+                             x="-2829.9583"
+                             y="-855.0545"
+                             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99949837px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff" /></flowRegion><flowPara
+                           id="flowPara3650"
+                           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99949837px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">HIPOTECAR</flowPara><flowPara
+                           id="flowPara3652" /></flowRoot>                    </g>
+                  </g>
                   <g
                      id="g3654-0"
                      transform="matrix(0.15910056,0,0,0.17825155,-2286.8646,-318.55566)"
                      inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\salir.png"
                      inkscape:export-xdpi="90"
                      inkscape:export-ydpi="90">
-                    <rect
-                       ry="53.253605"
-                       y="-582.76477"
-                       x="-2732.9219"
-                       height="203.94998"
-                       width="690.75073"
-                       id="rect3642-0"
-                       style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-                    <flowRoot
-                       transform="matrix(4.3495634,0,0,5.6622975,9784.9264,4263.7386)"
-                       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                       id="flowRoot3644-8"
-                       xml:space="preserve"><flowRegion
-                         id="flowRegion3646-9"><rect
-                           style="fill:#000000"
-                           y="-855.0545"
-                           x="-2829.9583"
-                           height="62.333893"
-                           width="177.65173"
-                           id="rect3648-0" /></flowRegion><flowPara
-                         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000"
-                         id="flowPara3650-5">SALIR</flowPara><flowPara
-                         id="flowPara3652-1" /></flowRoot>                  </g>
+                    <g
+                       id="g3796"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\salir.png"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-ydpi="90">
+                      <rect
+                         style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         id="rect3642-0"
+                         width="690.75073"
+                         height="203.94998"
+                         x="-2732.9219"
+                         y="-582.76477"
+                         ry="53.253605" />
+                      <flowRoot
+                         xml:space="preserve"
+                         id="flowRoot3644-8"
+                         style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                         transform="matrix(4.3495634,0,0,5.6622975,9738.8764,4263.7386)"><flowRegion
+                           id="flowRegion3646-9"><rect
+                             id="rect3648-0"
+                             width="177.65173"
+                             height="62.333893"
+                             x="-2829.9583"
+                             y="-855.0545"
+                             style="fill:#000000" /></flowRegion><flowPara
+                           id="flowPara3650-5"
+                           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99949837px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">SALIR</flowPara><flowPara
+                           id="flowPara3652-1" /></flowRoot>                    </g>
+                  </g>
                   <g
                      id="g3654-1"
                      transform="matrix(0.15910056,0,0,0.17825155,-2287.4595,-273.82701)"
@@ -758,33 +810,36 @@
                        inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\deshipotecar.png"
                        inkscape:export-xdpi="90"
                        inkscape:export-ydpi="90">
-                      <rect
-                         style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                         id="rect3642-5"
-                         width="690.75073"
-                         height="203.94998"
-                         x="-2732.9219"
-                         y="-582.76477"
-                         ry="53.253605" />
-                      <flowRoot
-                         xml:space="preserve"
-                         id="flowRoot3644-5"
-                         style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                         transform="matrix(3.2448537,0,0,5.6622975,6514.8692,4263.4173)"><flowRegion
-                           id="flowRegion3646-8"><rect
-                             id="rect3648-4"
-                             width="177.65173"
-                             height="62.333893"
-                             x="-2829.9583"
-                             y="-855.0545"
-                             style="fill:#000000" /></flowRegion><flowPara
-                           id="flowPara3650-0"
-                           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000">DESHIPOTECAR</flowPara><flowPara
-                           id="flowPara3652-19" /></flowRoot>                    </g>
+                      <g
+                         id="g3780">
+                        <rect
+                           ry="53.253605"
+                           y="-582.76477"
+                           x="-2732.9219"
+                           height="203.94998"
+                           width="690.75073"
+                           id="rect3642-5"
+                           style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        <flowRoot
+                           transform="matrix(2.7055572,0,0,5.9134624,4989.1825,4476.3001)"
+                           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                           id="flowRoot3644-5"
+                           xml:space="preserve"><flowRegion
+                             id="flowRegion3646-8"><rect
+                               style="fill:#000000"
+                               y="-855.0545"
+                               x="-2829.9583"
+                               height="32.566486"
+                               width="236.29451"
+                               id="rect3648-4" /></flowRegion><flowPara
+                             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99999428px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"
+                             id="flowPara3650-0">DESHIPOTECAR</flowPara><flowPara
+                             id="flowPara3652-19" /></flowRoot>                      </g>
+                    </g>
                     <g
                        transform="translate(6.0267415,254.76173)"
                        id="g3728-0"
-                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\deshipotecar.png"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\retiro.png"
                        inkscape:export-xdpi="90"
                        inkscape:export-ydpi="90">
                       <g
@@ -792,29 +847,191 @@
                          inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\retiro.png"
                          inkscape:export-xdpi="90"
                          inkscape:export-ydpi="90">
-                        <rect
-                           ry="53.253605"
-                           y="-582.76477"
-                           x="-1882.9706"
-                           height="203.94998"
-                           width="690.75073"
-                           id="rect3642-5-5"
-                           style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        <g
+                           id="g3768">
+                          <rect
+                             style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                             id="rect3642-5-5"
+                             width="690.75073"
+                             height="203.94998"
+                             x="-1882.9706"
+                             y="-582.76477"
+                             ry="53.253605" />
+                          <flowRoot
+                             xml:space="preserve"
+                             id="flowRoot3644-5-1"
+                             style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                             transform="matrix(3.2986041,0,0,3.0755458,7488.5236,2045.4405)"><flowRegion
+                               id="flowRegion3646-8-6"><rect
+                                 id="rect3648-4-8"
+                                 width="187.15349"
+                                 height="65.305145"
+                                 x="-2829.9583"
+                                 y="-855.0545"
+                                 style="fill:#000000" /></flowRegion><flowPara
+                               id="flowPara3650-0-0"
+                               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99909728px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:center;writing-mode:lr;text-anchor:middle;fill:#ffffff">RETIRARME DEL JUEGO</flowPara><flowPara
+                               id="flowPara3652-19-8" /></flowRoot>                        </g>
+                      </g>
+                    </g>
+                    <g
+                       transform="translate(-885.15375,387.35593)"
+                       id="g3728-0-7"
+                       inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\terminar.png"
+                       inkscape:export-xdpi="90"
+                       inkscape:export-ydpi="90">
+                      <g
+                         id="g3731-5"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\botones\retiro.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <g
+                           id="g3759">
+                          <rect
+                             style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                             id="rect3642-5-5-7"
+                             width="690.75073"
+                             height="203.94998"
+                             x="-1882.9706"
+                             y="-582.76477"
+                             ry="53.253605" />
+                          <flowRoot
+                             xml:space="preserve"
+                             id="flowRoot3644-5-1-0"
+                             style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+                             transform="matrix(3.2986041,0,0,3.0755458,7488.5236,2045.4405)"><flowRegion
+                               id="flowRegion3646-8-6-2"><rect
+                                 id="rect3648-4-8-7"
+                                 width="187.15349"
+                                 height="65.305145"
+                                 x="-2829.9583"
+                                 y="-855.0545"
+                                 style="fill:#ffffff;" /></flowRegion><flowPara
+                               id="flowPara3650-0-0-3"
+                               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99909728px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:center;writing-mode:lr;text-anchor:middle;fill:#ffffff">TERMINAR</flowPara><flowPara
+                               id="flowPara3757"
+                               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24.99909728px;line-height:125%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Semi-Bold';text-align:center;writing-mode:lr;text-anchor:middle;fill:#ffffff">JUEGO</flowPara><flowPara
+                               id="flowPara3652-19-8-7" /></flowRoot>                        </g>
+                      </g>
+                    </g>
+                    <g
+                       id="g3849">
+                      <g
+                         id="g3859"
+                         transform="matrix(0.90031974,0,0,0.76298096,-348.41205,-480.59471)"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <g
+                           id="g3844"
+                           transform="translate(7.0451865,55.964516)"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-ydpi="90">
+                          <rect
+                             ry="5.0166159"
+                             y="-1491.2927"
+                             x="-1290.537"
+                             height="804.55524"
+                             width="2879.6858"
+                             id="rect3804"
+                             style="opacity:1;fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                          <rect
+                             ry="4.7083325"
+                             y="-1466.5714"
+                             x="-1252.4801"
+                             height="755.11328"
+                             width="2790.885"
+                             id="rect3804-6"
+                             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                          <rect
+                             ry="4.6044383"
+                             y="-1457.7418"
+                             x="-1240.1128"
+                             height="738.45074"
+                             width="2761.7976"
+                             id="rect3804-6-1"
+                             style="opacity:1;fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
                         <flowRoot
-                           transform="matrix(3.2986041,0,0,3.0755458,7488.5236,2045.4405)"
-                           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                           id="flowRoot3644-5-1"
-                           xml:space="preserve"><flowRegion
-                             id="flowRegion3646-8-6"><rect
-                               style="fill:#000000"
-                               y="-855.0545"
-                               x="-2829.9583"
-                               height="65.305145"
-                               width="187.15349"
-                               id="rect3648-4-8" /></flowRegion><flowPara
-                             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
-                             id="flowPara3650-0-0">RETIRARME DEL JUEGO</flowPara><flowPara
-                             id="flowPara3652-19-8" /></flowRoot>                      </g>
+                           xml:space="preserve"
+                           id="flowRoot3806"
+                           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.00012207px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                           transform="matrix(9.7336135,0,0,7.5781648,23187.882,8199.1907)"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-ydpi="90"><flowRegion
+                             id="flowRegion3808"><rect
+                               id="rect3810"
+                               width="287.60052"
+                               height="85.949585"
+                               x="-2498.0476"
+                               y="-1227.5056"
+                               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.00012207px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff" /></flowRegion><flowPara
+                             id="flowPara3812">¡Has ganado el juego!</flowPara></flowRoot>                      </g>
+                    </g>
+                    <g
+                       transform="translate(1.7480467,-707.92967)"
+                       id="g3849-0">
+                      <g
+                         id="g3859-1"
+                         transform="matrix(0.90031974,0,0,0.76298096,-348.41205,-480.59471)"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <g
+                           id="g3806"
+                           inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_empate.png"
+                           inkscape:export-xdpi="90"
+                           inkscape:export-ydpi="90">
+                          <g
+                             inkscape:export-ydpi="90"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                             transform="translate(7.0451865,55.964516)"
+                             id="g3844-0">
+                            <rect
+                               style="opacity:1;fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                               id="rect3804-3"
+                               width="2879.6858"
+                               height="804.55524"
+                               x="-1290.537"
+                               y="-1491.2927"
+                               ry="5.0166159" />
+                            <rect
+                               style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                               id="rect3804-6-6"
+                               width="2790.885"
+                               height="755.11328"
+                               x="-1252.4801"
+                               y="-1466.5714"
+                               ry="4.7083325" />
+                            <rect
+                               style="opacity:1;fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                               id="rect3804-6-1-0"
+                               width="2761.7976"
+                               height="738.45074"
+                               x="-1240.1128"
+                               y="-1457.7418"
+                               ry="4.6044383" />
+                          </g>
+                          <flowRoot
+                             inkscape:export-ydpi="90"
+                             inkscape:export-xdpi="90"
+                             inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\msj_ganador.png"
+                             transform="matrix(9.7336135,0,0,7.5781648,23413.328,7928.2046)"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.00012207px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                             id="flowRoot3806-6"
+                             xml:space="preserve"><flowRegion
+                               id="flowRegion3808-8"><rect
+                                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.00012207px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
+                                 y="-1227.5056"
+                                 x="-2498.0476"
+                                 height="77.398567"
+                                 width="208.70642"
+                                 id="rect3810-2" /></flowRegion><flowPara
+                               id="flowPara3812-5">¡El juego esta en empate!</flowPara></flowRoot>                        </g>
+                      </g>
                     </g>
                   </g>
                 </g>
@@ -1693,6 +1910,49 @@
                      id="path4301"
                      d="m 1340.1825,-58.611942 -104.7207,1.473146 c -33.8812,11.951134 -51.047,87.246125 20.9385,118.0344 5.1954,35.847281 1.122,98.756566 75.8498,105.084496 -35.4937,-64.30313 -35.2476,-161.1941417 7.9324,-224.592042 z"
                      style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.98695236px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+                </g>
+                <g
+                   id="g3464-9"
+                   transform="matrix(0.8118033,0,0,0.80720703,336.16202,443.28552)"
+                   inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btn_propiedad_comprada.png"
+                   inkscape:export-xdpi="90"
+                   inkscape:export-ydpi="90">
+                  <g
+                     id="g3528-9"
+                     transform="translate(26.665562,6.4909917)">
+                    <g
+                       id="g3750">
+                      <g
+                         id="g3757"
+                         transform="translate(-213.18665,72.863103)"
+                         inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\ventanas\btnAceptarSalida.png"
+                         inkscape:export-xdpi="90"
+                         inkscape:export-ydpi="90">
+                        <rect
+                           style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                           id="rect3454-0"
+                           width="114.42619"
+                           height="26.716984"
+                           x="875.82886"
+                           y="1197.9193"
+                           rx="221.88301"
+                           ry="3.9209311" />
+                        <flowRoot
+                           xml:space="preserve"
+                           id="flowRoot3456-9"
+                           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                           transform="matrix(0.4135408,0,0,0.47986552,708.30644,363.91341)"><flowRegion
+                             id="flowRegion3458-2"><rect
+                               style="fill:#000000"
+                               id="rect3460-3"
+                               width="213.51564"
+                               height="46.139042"
+                               x="449.60995"
+                               y="1741.9932" /></flowRegion><flowPara
+                             id="flowPara3462-9"
+                             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99993515px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000">ACEPTAR</flowPara></flowRoot>                      </g>
+                    </g>
+                  </g>
                 </g>
               </g>
             </g>

@@ -29,6 +29,11 @@ void CrearJugador::setIsPreso(bool p)
     isPreso = p;
 }
 
+void CrearJugador::setNombre(string n)
+{
+    nombre = n;
+}
+
 int CrearJugador::getCapital()
 {
     return capital;

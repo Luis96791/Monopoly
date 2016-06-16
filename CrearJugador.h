@@ -27,6 +27,7 @@ class CrearJugador
         void setIsPreso(bool p);
         int getCapital();
         void setCapital(int c);
+        void setNombre(string n);
         void depositar(int cant);
         int retirar(int cant);
         void escribirArchivo();
