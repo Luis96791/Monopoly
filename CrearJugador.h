@@ -32,7 +32,7 @@ class CrearJugador
         int retirar(int cant);
         void escribirArchivo();
 
-        void ventanaCrearJugador();
+        bool ventanaCrearJugador();
         void removerJugadores();
         virtual ~CrearJugador();
     protected:
