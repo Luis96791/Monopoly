@@ -15,10 +15,11 @@ int main()
 */
 
     CrearJugador crearJugador("","");
-    crearJugador.ventanaCrearJugador();
 ////
     JugarMonopoly jugar;
-    jugar.ventanaTablero();
+    if(crearJugador.ventanaCrearJugador()){
+        jugar.ventanaTablero();
+    }
 //    CrearJugador crearJugador("","");
 //   JugarMonopoly jugarMonopoly;
 //    crearJugador.ventanaCrearJugador();
