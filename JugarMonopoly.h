@@ -59,7 +59,8 @@ class JugarMonopoly
         bool hipotecar(sf::String nombre_propiedad,int posJugador);
         bool deshipotecar(sf::String nombre_propiedad,int posJugador);
         int inventario(int posJugador);
-        string getTime(int num);
+        int ganador();
+        bool empate();
         virtual ~JugarMonopoly();
 
     protected:
