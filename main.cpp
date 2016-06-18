@@ -10,23 +10,10 @@ using namespace std;
 
 int main()
 {
-/**
-    AQUI SE HACEN LAS PRUEBAS (CLASES, FUNCIONES Y VENTANAS)
-*/
-
-    CrearJugador crearJugador("","");
-////
+    CrearJugador crearJugador(0,"","");
     JugarMonopoly jugar;
     if(crearJugador.ventanaCrearJugador()){
         jugar.ventanaTablero();
     }
-//    CrearJugador crearJugador("","");
-//   JugarMonopoly jugarMonopoly;
-//    crearJugador.ventanaCrearJugador();
-//   jugarMonopoly.ventanaTablero();
-
-/**
-    AQUI SE HACEN LAS PRUEBAS (CLASES, FUNCIONES Y VENTANAS)
-*/
     return 0;
 }

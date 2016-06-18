@@ -1,0 +1,9 @@
+0
+luis
+ficha_azul
+1
+ casa
+ficha_roja
+2
+ vaso
+ficha_verde

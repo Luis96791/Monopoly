@@ -58,8 +58,10 @@ class JugarMonopoly
         void ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados);
         bool hipotecar(sf::String nombre_propiedad,int posJugador);
         bool deshipotecar(sf::String nombre_propiedad,int posJugador);
+        bool propiedadExiste(sf::String nombre_propiedad,int posJugador);
         int inventario(int posJugador);
         int ganador();
+        int ganadorPorDefault();
         bool empate();
         virtual ~JugarMonopoly();
 
