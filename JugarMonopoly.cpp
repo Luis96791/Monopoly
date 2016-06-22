@@ -152,7 +152,7 @@ void JugarMonopoly::ventanaTablero()
     sf::Font font;
 //    sf::View view;
     sf::Text txt_jugador_1, txt_jugador_2, txt_jugador_3, txt_banco, txt_ganador;
-    int suma_dados,guardar_dado_1,guardar_dado_2,clicks=10;
+    int suma_dados=0,guardar_dado_1,guardar_dado_2,clicks;
     string nombre_jugador_1, nombre_jugador_2;
     int capital_jugador_1;
 
@@ -164,9 +164,6 @@ void JugarMonopoly::ventanaTablero()
     window.create(sf::VideoMode(1360,690,32),"Monopoly",sf::Style::Default);
     window.setPosition(sf::Vector2i(0,0));
     window.setVerticalSyncEnabled(true);
-//    window.setMouseCursorVisible(false);
-
-//    view = window.getView();
 
     text_ficha_1 = &ref_text_ficha_1;
     text_ficha_2 = &ref_text_ficha_2;
@@ -258,7 +255,7 @@ void JugarMonopoly::ventanaTablero()
     ifstream cargar("jugadores.txt");
     int num;
     string n, f;
-    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6,turno, is_unico = false;
+    bool ficha1,ficha2,ficha3,ficha4,ficha5,ficha6, is_unico = false;
     while(cargar>>num&&cargar>>n&&cargar>>f){
         if(f=="ficha_azul"){
             text_ficha_1->loadFromFile("fichas_tablero/ficha_azul.png");
@@ -331,7 +328,6 @@ void JugarMonopoly::ventanaTablero()
             if(utility.clickSprite(back_dado_1,mouse)||utility.clickSprite(back_dado_2,mouse))
             {
                 msj_ejecutar_accion = false;
-                turno=true;
                 cobrar_impuesto = true;
                 pagar_renta = true;
                 carta_arca_activa = true;
@@ -347,156 +343,142 @@ void JugarMonopoly::ventanaTablero()
                 back_dado_2.setTexture(text_dado_2);
             }
 
-            for(int c = 0; c < jugadores.size();c++){
-                if(ficha1 &&clicks%jugadores[c].getNumero()==0){
-                    txt_turnos.setString("Turno de: "+jugadores[c].getNombre());
-                     if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
-                        carta_arca_activa = false;
-                        text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-                        ejecutarCartaArca(back_ficha_1,jugadores[c].getNumero());
-                    }
-                    esperarTresTurnos(guardar_dado_1,guardar_dado_2,jugadores[c].getNumero());
-                    ejecutarFunciones(back_ficha_1,jugadores[c].getNumero(),suma_dados);
-                    suma_dados=0;
-                }
-            }
+            if(ficha3 &&clicks%3==0){
+                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
 
-//            if(ficha3 &&clicks%3==0){
-//                txt_turnos.setString("Turno de: "+jugadores[2].getNombre());
-//
-//                if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
-//                    carta_arca_activa = false;
-//                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-//                    ejecutarCartaArca(back_ficha_3,2);
-//                }
-//
-//                if(mostrarCartaFortuna(back_ficha_3)&&carta_fortuna_activa){
-//                    carta_fortuna_activa = false;
-//                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
-//                    ejecutarCartaFortuna(back_ficha_3,2,suma_dados);
-//                }
-//
-//                if(utility.clickSprite(back_btnHipotecar,mouse)){
-//                    ventanaHipotecar(jugadores[2].getNombre(),2);
-//                }
-//
-//                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
-//                    ventanaDeshipotecar(jugadores[2].getNombre(),2);
-//                }
-//
-//                if(validarCompra(back_ficha_3)&&utility.clickSprite(back_comprar,mouse)){
-//                    validarInfoDeCompra(back_ficha_3, 2);
-//                }
-//
-//                if(!validarCompra(back_ficha_3)){
-//                    if(utility.clickSprite(back_comprar,mouse)){
-//                        mensaje = true;
-//                    }
-//                }
-//
-//                if(utility.clickSprite(back_btnRetirarse, mouse)){
-//                    if(ventanaInventario(jugadores[2].getNombre(),2)){
-//                        ficha3 = false;
-//                    }
-//                }
-//
-//                esperarTresTurnos(guardar_dado_1,guardar_dado_2,2);
-//                ejecutarFunciones(back_ficha_3,2,suma_dados);
-//                suma_dados=0;
-//            }
-//            else if(ficha1 && clicks%2==0){
-//                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
-//
-//                if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
-//                    carta_arca_activa = false;
-//                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-//                    ejecutarCartaArca(back_ficha_1,0);
-//                }
-//
-//                if(mostrarCartaFortuna(back_ficha_1)&&carta_fortuna_activa){
-//                    carta_fortuna_activa = false;
-//                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
-//                    ejecutarCartaFortuna(back_ficha_1,0,suma_dados);
-//                }
-//
-//                if(utility.clickSprite(back_btnHipotecar,mouse)){
-//                    ventanaHipotecar(jugadores[0].getNombre(),0);
-//                }
-//
-//                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
-//                    ventanaDeshipotecar(jugadores[0].getNombre(),0);
-//                }
-//
-//                if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
-//                    validarInfoDeCompra(back_ficha_1, 0);
-//                }
-//
-//                if(!validarCompra(back_ficha_1)){
-//                    if(utility.clickSprite(back_comprar,mouse)){
-//                        mensaje = true;
-//                    }
-//                }
-//
-//                if(utility.clickSprite(back_btnRetirarse, mouse)){
-//                    if(ventanaInventario(jugadores[0].getNombre(),0)){
-//                        ficha1 = false;
-//                    }
-//                }
-//
-//                esperarTresTurnos(guardar_dado_1,guardar_dado_2,0);
-//                ejecutarFunciones(back_ficha_1,0,suma_dados);
-//                suma_dados=0;
-//            }else if(ficha2 && clicks%1==0){
-//                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
-//
-//                if(utility.clickSprite(back_btnHipotecar,mouse)){
-//                    ventanaHipotecar(jugadores[1].getNombre(),1);
-//                }
-//
-//                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
-//                    ventanaDeshipotecar(jugadores[1].getNombre(),1);
-//                }
-//
-//                if(mostrarCartaArca(back_ficha_2)&&carta_arca_activa){
-//                    carta_arca_activa = false;
-//                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
-//                    ejecutarCartaArca(back_ficha_2,1);
-//                }
-//
-//                if(mostrarCartaFortuna(back_ficha_2)&&carta_fortuna_activa){
-//                    carta_fortuna_activa = false;
-//                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
-//                    ejecutarCartaFortuna(back_ficha_2,1,suma_dados);
-//                }
-//
-//                if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
-//                    validarInfoDeCompra(back_ficha_2, 1);
-//                }
-//                if(!validarCompra(back_ficha_2)){
-//                    if(utility.clickSprite(back_comprar,mouse)){
-//                        mensaje = true;
-//                    }
-//                }
-//
-//                if(utility.clickSprite(back_btnRetirarse, mouse)){
-//                    if(ventanaInventario(jugadores[1].getNombre(),1)){
-//                        ficha2 = false;
-//                    }
-//                }
-//
-//                esperarTresTurnos(guardar_dado_1,guardar_dado_2,1);
-//                ejecutarFunciones(back_ficha_2,1,suma_dados);
-//                suma_dados=0;
-//            }
+                if(mostrarCartaArca(back_ficha_3)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_3,2);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_3)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_3,2,suma_dados);
+                }
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[2].getNombre(),2);
+                }
+
+                if(validarCompra(back_ficha_3)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_3, 2);
+                }
+
+                if(!validarCompra(back_ficha_3)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[2].getNombre(),2)){
+                        ficha3 = false;
+                    }
+                }
+
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,2);
+                ejecutarFunciones(back_ficha_3,2,suma_dados);
+                suma_dados=0;
+            }
+            else if(ficha1 && clicks%2==0){
+                txt_turnos.setString("Turno de: "+jugadores[0].getNombre());
+
+                if(mostrarCartaArca(back_ficha_1)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_1,0);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_1)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_1,0,suma_dados);
+                }
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[0].getNombre(),0);
+                }
+
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[0].getNombre(),0);
+                }
+
+                if(validarCompra(back_ficha_1)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_1, 0);
+                }
+
+                if(!validarCompra(back_ficha_1)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[0].getNombre(),0)){
+                        ficha1 = false;
+                    }
+                }
+
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,0);
+                ejecutarFunciones(back_ficha_1,0,suma_dados);
+                suma_dados=0;
+            }else if(ficha2 && clicks%1==0){
+                txt_turnos.setString("Turno de: "+jugadores[1].getNombre());
+
+                if(utility.clickSprite(back_btnHipotecar,mouse)){
+                    ventanaHipotecar(jugadores[1].getNombre(),1);
+                }
+
+                if(utility.clickSprite(back_btnDeshipotecar,mouse)){
+                    ventanaDeshipotecar(jugadores[1].getNombre(),1);
+                }
+
+                if(mostrarCartaArca(back_ficha_2)&&carta_arca_activa){
+                    carta_arca_activa = false;
+                    text_carta_arca.loadFromFile("arca_comunal/"+utility.toString(aumentar_arca)+".png");
+                    ejecutarCartaArca(back_ficha_2,1);
+                }
+
+                if(mostrarCartaFortuna(back_ficha_2)&&carta_fortuna_activa){
+                    carta_fortuna_activa = false;
+                    text_carta_fortuna.loadFromFile("fortuna/"+utility.toString(aumentar_fortuna)+".png");
+                    ejecutarCartaFortuna(back_ficha_2,1,suma_dados);
+                }
+
+                if(validarCompra(back_ficha_2)&&utility.clickSprite(back_comprar,mouse)){
+                    validarInfoDeCompra(back_ficha_2, 1);
+                }
+                if(!validarCompra(back_ficha_2)){
+                    if(utility.clickSprite(back_comprar,mouse)){
+                        mensaje = true;
+                    }
+                }
+
+                if(utility.clickSprite(back_btnRetirarse, mouse)){
+                    if(ventanaInventario(jugadores[1].getNombre(),1)){
+                        ficha2 = false;
+                    }
+                }
+
+                esperarTresTurnos(guardar_dado_1,guardar_dado_2,1);
+                ejecutarFunciones(back_ficha_2,1,suma_dados);
+                suma_dados=0;
+            }
 
             if(utility.clickSprite(back_btnTerminar,mouse)){
                 ventanaTerminarJuego();
             }
 
-//            if(ganadorPorDefault()!=-1){
-//                is_unico = true;
-//                txt_ganador.setString(jugadores[ganadorPorDefault()].getNombre());
-//            }
+            if(ganadorPorDefault()!=-1){
+                is_unico = true;
+                txt_ganador.setString(jugadores[ganadorPorDefault()].getNombre());
+            }
 
             if(utility.clickSprite(back_btnGanador,mouse)){
                 is_close_all = true;
@@ -566,8 +548,6 @@ void JugarMonopoly::ejecutarFunciones(sf::Sprite* sprite,int posJugador, int sum
             ventanaSalirCarcel(posJugador);
         }
 
-//        esperarTresTurnos(dado1,dado2,posJugador);
-
         if(pagar_renta){
             cobrarRentaPropiedades(sprite,posJugador);
             rentaServicios(sprite,suma_dados,posJugador);
@@ -635,6 +615,9 @@ bool JugarMonopoly::ventanaCompras(sf::Sprite* sprite, string nombre)
     else if(sprite->getPosition().x==20&&sprite->getPosition().y==555){
         text_titulo.loadFromFile("propiedades/avenida_circunvalacion.png");
     }
+    else if(sprite->getPosition().x==20&&sprite->getPosition().y==495){
+        text_titulo.loadFromFile("propiedades/compania_electricidad.png");
+    }
     else if(sprite->getPosition().x==20&&sprite->getPosition().y==440){
         text_titulo.loadFromFile("propiedades/105_brigada.png");
     }
@@ -664,6 +647,9 @@ bool JugarMonopoly::ventanaCompras(sf::Sprite* sprite, string nombre)
     }
     else if(sprite->getPosition().x==440&&sprite->getPosition().y==20){
         text_titulo.loadFromFile("propiedades/mercado_el_rapido.png");
+    }
+    else if(sprite->getPosition().x==495&&sprite->getPosition().y==20){
+        text_titulo.loadFromFile("propiedades/compania_agua.png");
     }
     else if(sprite->getPosition().x==555&&sprite->getPosition().y==20){
         text_titulo.loadFromFile("propiedades/bulevar_del_norte.png");
@@ -884,13 +870,6 @@ void JugarMonopoly::cobrarImpuestos(sf::Sprite* sprite, int posJugador)
     }
 }
 
-//bool JugarMonopoly::verificarSalida(sf::Sprite* sprite)
-//{
-//    if(sprite->getPosition().x==640&&sprite->getPosition().y > 20){
-//        return true;
-//    }
-//}
-
 void JugarMonopoly::cobrarSalida(sf::Sprite* sprite,int posJugador)
 {
     if(sprite->getPosition().x==640&&sprite->getPosition().y > 20&&sprite->getPosition().y < 640){
@@ -981,15 +960,6 @@ void JugarMonopoly::ventanaSalirCarcel(int posJugador)
     }
 }
 
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-
-
 
 
  bool JugarMonopoly::esperarTresTurnos(int dado1, int dado2, int posJugador)
@@ -1015,13 +985,6 @@ void JugarMonopoly::ventanaSalirCarcel(int posJugador)
     }
     return false;
  }
-
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
-//  WORKING HERE    WORKING HERE    WORKING HERE    WORKING HERE
 
 bool JugarMonopoly::cobrarRentaPropiedades(sf::Sprite* sprite, int posJugador)
 {
@@ -1149,7 +1112,7 @@ void JugarMonopoly::ventanaHipotecar(string nombre, int posJugador)
                 txt_nombre_propiedad.setString(nombre_propiedad);
             }
 
-            if(propiedadExiste(nombre_propiedad,posJugador)){
+            if(propiedadExiste(nombre_propiedad)){
                 is_disabled = false;
                 back_btnHipotecar.setPosition(10,380);
             }else{
@@ -1290,7 +1253,7 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
                 txt_nombre_propiedad.setString(nombre_propiedad);
             }
 
-            if(propiedadExiste(nombre_propiedad,posJugador)){
+            if(propiedadExiste(nombre_propiedad)){
                 is_disabled = false;
                 back_btnDeshipotecar.setPosition(10,380);
             }else{
@@ -1359,7 +1322,7 @@ void JugarMonopoly::ventanaDeshipotecar(string nombre, int posJugador){
     }
 }
 
-bool JugarMonopoly::propiedadExiste(sf::String nombre_propiedad,int posJugador)
+bool JugarMonopoly::propiedadExiste(sf::String nombre_propiedad)
 {
     for(int i = 0; i < propiedades.size(); i++){
         if(nombre_propiedad==propiedades[i].getNombrePosesion()){
@@ -1454,6 +1417,7 @@ bool JugarMonopoly::ventanaInventario(string nombre, int posJugador)
 
         if(utility.clickSprite(back_btnRetiro,mouse)){
             jugadores[posJugador].retirar(mi_capital);
+            jugadores[posJugador].setNombre("retirado");
             banco.depositar(inv);
             for(int t = 0; t < propiedades.size(); t++){
                 if(propiedades[t].getNombreDuenio()==jugadores[posJugador].getNombre()){
@@ -1463,7 +1427,6 @@ bool JugarMonopoly::ventanaInventario(string nombre, int posJugador)
                     }
                 }
             }
-            jugadores.erase(jugadores.begin()+posJugador);
             return true;
         }
 
@@ -1581,8 +1544,10 @@ void JugarMonopoly::ventanaTerminarJuego(){
             txt_tituloVenatana.setString("JUGADORES");
             acInforme = "";
             for(int c = 0; c < jugadores.size(); c++){
-                acInforme += "Nombre: "+jugadores[c].getNombre()+'\t'+
+                if(jugadores[c].getNombre()!="retirado"){
+                     acInforme += "Nombre: "+jugadores[c].getNombre()+'\t'+
                                 "Capital: "+utility.toString(jugadores[c].getCapital()+inventario(c))+'\n';
+                }
             }
             txt_todos.setString(acInforme);
         }
@@ -1638,21 +1603,20 @@ void JugarMonopoly::ventanaTerminarJuego(){
 
 int JugarMonopoly::ganadorPorDefault()
 {
-//    int contador = 0;
-//    for(int x = 0; x < jugadores.size(); x++){
-//            return x;
-////        if(jugadores[x].getNombre()=="retirado"){
-////            contador++;
-////            if(contador==jugadores.size()-1){
-////                for(int s = 0; s < jugadores.size(); s++){
-////                    if(jugadores[s].getNombre()!="retirado"){
-////                        return s;
-////                    }
-////                }
-////            }
-////        }
-//    }
-//    return -1;
+    int contador = 0;
+    for(int x = 0; x < jugadores.size(); x++){
+        if(jugadores[x].getNombre()=="retirado"){
+            contador++;
+            if(contador==jugadores.size()-1){
+                for(int s = 0; s < jugadores.size(); s++){
+                    if(jugadores[s].getNombre()!="retirado"){
+                        return s;
+                    }
+                }
+            }
+        }
+    }
+    return -1;
 }
 
 int JugarMonopoly::ganador()

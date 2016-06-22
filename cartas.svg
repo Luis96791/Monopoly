@@ -229,6 +229,29 @@
        x2="394.78183"
        y2="952.07935"
        gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4896">
+      <rect
+         style="opacity:1;fill:#cde6d0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4898"
+         width="52.234985"
+         height="48.937836"
+         x="-1551.4961"
+         y="744.09125" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4902">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4904"
+         width="50.326141"
+         height="48.590698"
+         x="1501.3159"
+         y="-788.59033"
+         transform="matrix(-0.99999577,0.00290778,-0.00290778,-0.99999577,0,0)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -237,11 +260,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36015094"
-     inkscape:cx="180.9951"
-     inkscape:cy="354.58768"
+     inkscape:zoom="1.4406038"
+     inkscape:cx="-2601.1026"
+     inkscape:cy="-80.383921"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6110-6"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -5148,6 +5171,160 @@
                      y="-1198.4789"
                      transform="matrix(-0.99999859,-0.00168169,0.00168169,-0.99999859,0,0)" />
                 </g>
+              </g>
+              <g
+                 transform="translate(-718.44094,-337.02734)"
+                 id="g6110-6"
+                 inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\propiedades\ferrocarril_oeste.png"
+                 inkscape:export-xdpi="90"
+                 inkscape:export-ydpi="90">
+                <g
+                   id="g4857"
+                   inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\propiedades\compania_agua.png"
+                   inkscape:export-xdpi="90"
+                   inkscape:export-ydpi="90">
+                  <rect
+                     style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.48460567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     id="rect3880-35-0-3-7-5-2-5-2-8-3-8-5-6-4-7-1-6-9-9"
+                     width="198.5154"
+                     height="248.5154"
+                     x="-2383.9458"
+                     y="1357.7933" />
+                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-6-73-9-4-1-1-9-5-6-2-0-1-7-1-9-8-3-2-5-4"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28522327,0,0,0.55724845,-1784.403,834.21042)"><flowRegion
+                       id="flowRegion4703-9-3-5-1-4-5-1-6-4-1-3-9-9-5-5-4-1-3-8-7-4"><rect
+                         id="rect4705-0-8-1-2-3-1-4-1-5-2-5-2-5-2-6-6-6-4-2-3-8"
+                         width="608.11194"
+                         height="83.438622"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4707-1-3-73-9-6-9-1-2-7-0-3-8-7-0-2-3-7-7-7-7-1"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VALOR HIPOTECA:   $M. 75</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-04-3-8-3-1-3-9-3-4-6-6-1-6-8-1-0-1-2-2-2-3"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28536154,0,0,0.25007349,-1786.5737,1136.1158)"><flowRegion
+                       id="flowRegion4703-9-31-9-8-1-5-2-6-8-8-9-7-7-1-9-3-4-7-7-8-5-2"><rect
+                         id="rect4705-0-0-3-0-0-3-3-2-2-5-7-2-0-9-8-4-3-6-4-3-6-3"
+                         width="559.9502"
+                         height="146.24776"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4707-1-7-0-3-9-6-2-6-3-9-6-9-2-0-0-5-5-5-0-1-3-5"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Si es dueño de un &quot;Servicio&quot;,</flowPara><flowPara
+                       id="flowPara4814"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">la renta es 4 veces lo que muestren los dados.</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4690-8-5-7-3-2-4-2-8-1-9-4-1-1-5-2-0-5-4-8"
+                     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.45540443;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.51930213,0,0,0.27436795,-1326.7877,1140.9178)"><flowRegion
+                       id="flowRegion4692-04-0-4-7-5-3-5-0-8-6-5-3-1-4-0-2-0-79-0"><rect
+                         id="rect4694-6-4-6-3-8-2-7-4-2-2-6-4-2-4-7-9-9-2-6"
+                         width="427.81595"
+                         height="109.78915"
+                         x="-2054"
+                         y="1058.3622"
+                         style="stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara5464-8-0-0"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99985504px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">COMPAÑIA</flowPara><flowPara
+                       id="flowPara4812"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99985504px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">DE AGUA</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-04-3-8-3-1-3-9-3-4-6-6-1-6-8-1-0-1-2-2-2-3-5"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28536154,0,0,0.25007349,-1802.808,1188.6056)"><flowRegion
+                       id="flowRegion4703-9-31-9-8-1-5-2-6-8-8-9-7-7-1-9-3-4-7-7-8-5-2-7"><rect
+                         id="rect4705-0-0-3-0-0-3-3-2-2-5-7-2-0-9-8-4-3-6-4-3-6-3-0"
+                         width="657.99396"
+                         height="148.21059"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4814-6"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Si es dueño de ambos &quot;Servicios&quot;</flowPara><flowPara
+                       id="flowPara4853"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">la renta es 10 veces lo que</flowPara><flowPara
+                       id="flowPara4855"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">muestren los dados.</flowPara></flowRoot>                </g>
+                <g
+                   transform="translate(261.70224,0.33685728)"
+                   id="g4857-1"
+                   inkscape:export-filename="C:\Users\Luis\Desktop\Monopoly\propiedades\compania_electricidad.png"
+                   inkscape:export-xdpi="90"
+                   inkscape:export-ydpi="90">
+                  <rect
+                     style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.48460567;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     id="rect3880-35-0-3-7-5-2-5-2-8-3-8-5-6-4-7-1-6-9-9-2"
+                     width="198.5154"
+                     height="248.5154"
+                     x="-2383.9458"
+                     y="1357.7933" />
+                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-6-73-9-4-1-1-9-5-6-2-0-1-7-1-9-8-3-2-5-4-3"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28522327,0,0,0.55724845,-1784.403,834.21042)"><flowRegion
+                       id="flowRegion4703-9-3-5-1-4-5-1-6-4-1-3-9-9-5-5-4-1-3-8-7-4-4"><rect
+                         id="rect4705-0-8-1-2-3-1-4-1-5-2-5-2-5-2-6-6-6-4-2-3-8-6"
+                         width="608.11194"
+                         height="83.438622"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4707-1-3-73-9-6-9-1-2-7-0-3-8-7-0-2-3-7-7-7-7-1-8"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VALOR HIPOTECA:   $M. 75</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-04-3-8-3-1-3-9-3-4-6-6-1-6-8-1-0-1-2-2-2-3-7"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28536154,0,0,0.25007349,-1786.5737,1136.1158)"><flowRegion
+                       id="flowRegion4703-9-31-9-8-1-5-2-6-8-8-9-7-7-1-9-3-4-7-7-8-5-2-2"><rect
+                         id="rect4705-0-0-3-0-0-3-3-2-2-5-7-2-0-9-8-4-3-6-4-3-6-3-8"
+                         width="559.9502"
+                         height="146.24776"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4707-1-7-0-3-9-6-2-6-3-9-6-9-2-0-0-5-5-5-0-1-3-5-0"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Si es dueño de un &quot;Servicio&quot;,</flowPara><flowPara
+                       id="flowPara4814-0"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">la renta es 4 veces lo que muestren los dados.</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4690-8-5-7-3-2-4-2-8-1-9-4-1-1-5-2-0-5-4-8-0"
+                     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.45540443;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.45792779,0,0,0.27448213,-1441.4101,1140.7917)"><flowRegion
+                       id="flowRegion4692-04-0-4-7-5-3-5-0-8-6-5-3-1-4-0-2-0-79-0-9"><rect
+                         id="rect4694-6-4-6-3-8-2-7-4-2-2-6-4-2-4-7-9-9-2-6-5"
+                         width="427.81595"
+                         height="109.78915"
+                         x="-2054"
+                         y="1058.3622"
+                         style="stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara5464-8-0-0-2"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99985504px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">COMPAÑIA</flowPara><flowPara
+                       id="flowPara4812-9"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.99985504px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.45540443;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">DE ELECTRICIDAD</flowPara></flowRoot>                  <flowRoot
+                     xml:space="preserve"
+                     id="flowRoot4701-3-04-3-8-3-1-3-9-3-4-6-6-1-6-8-1-0-1-2-2-2-3-5-8"
+                     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.55413282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                     transform="matrix(0.28536154,0,0,0.25007349,-1802.808,1188.6056)"><flowRegion
+                       id="flowRegion4703-9-31-9-8-1-5-2-6-8-8-9-7-7-1-9-3-4-7-7-8-5-2-7-1"><rect
+                         id="rect4705-0-0-3-0-0-3-3-2-2-5-7-2-0-9-8-4-3-6-4-3-6-3-0-2"
+                         width="657.99396"
+                         height="148.21059"
+                         x="-2027.9823"
+                         y="1298.4354"
+                         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+                       id="flowPara4814-6-7"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Si es dueño de ambos &quot;Servicios&quot;</flowPara><flowPara
+                       id="flowPara4853-2"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">la renta es 10 veces lo que</flowPara><flowPara
+                       id="flowPara4855-2"
+                       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Italic';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:#000000;stroke-width:0.55413282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">muestren los dados.</flowPara></flowRoot>                </g>
               </g>
             </g>
           </g>

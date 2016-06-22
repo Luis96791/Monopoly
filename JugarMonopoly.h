@@ -37,7 +37,6 @@ class JugarMonopoly
         void llenarPropiedades();
         void cobrarImpuestos(sf::Sprite* sprite, int posJugador);
         bool ventanaCompras(sf::Sprite* sprite, string nombre);
-        bool verificarSalida(sf::Sprite* sprite);
         bool aLaCarcel(sf::Sprite* sprite,int posJugador);
         bool esperarTresTurnos(int dado1, int dado2, int posJugador);
         bool cobrarRentaPropiedades(sf::Sprite* sprite,int posJugador);
@@ -58,7 +57,7 @@ class JugarMonopoly
         void ejecutarFunciones(sf::Sprite* sprite,int posJugador,int suma_dados);
         bool hipotecar(sf::String nombre_propiedad,int posJugador);
         bool deshipotecar(sf::String nombre_propiedad,int posJugador);
-        bool propiedadExiste(sf::String nombre_propiedad,int posJugador);
+        bool propiedadExiste(sf::String nombre_propiedad);
         int inventario(int posJugador);
         int ganador();
         int ganadorPorDefault();
